@@ -140,13 +140,16 @@ p  { font-size: 1.05rem; color: var(--text-mid); margin-bottom: 1rem; }
   color: var(--white);
 }
 .nav-logo-icon {
-  width: 44px;
-  height: 44px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding: 4px;
+  flex-shrink: 0;
 }
 .nav-logo-icon img {
   width: 100%;
@@ -628,12 +631,15 @@ footer {
   font-size: 1.1rem;
 }
 .footer-logo-icon {
-  width: 42px; height: 42px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding: 4px;
   flex-shrink: 0;
 }
 .footer-logo-icon img {
