@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="40%">
+      <stop offset="0%" stop-color="#2d7a52" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0e2d1e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#1a4731"/>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <!-- Decorative circles suggesting cells/molecules -->
+  <circle cx="900" cy="200" r="180" fill="none" stroke="#4caf80" stroke-width="1" stroke-opacity="0.15"/>
+  <circle cx="900" cy="200" r="120" fill="none" stroke="#4caf80" stroke-width="1" stroke-opacity="0.12"/>
+  <circle cx="900" cy="200" r="60"  fill="none" stroke="#4caf80" stroke-width="1" stroke-opacity="0.10"/>
+  <circle cx="200" cy="600" r="200" fill="none" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.10"/>
+  <circle cx="1100" cy="700" r="150" fill="none" stroke="#4caf80" stroke-width="1" stroke-opacity="0.08"/>
+  <!-- Leaf-like shapes -->
+  <path d="M1050 50 C1050 50 950 150 1000 300 C1050 450 1150 350 1100 200 C1050 50 1050 50 1050 50Z" fill="#2d7a52" fill-opacity="0.18"/>
+  <path d="M150 400 C150 400 100 500 200 580 C300 660 350 560 250 500 C150 440 150 400 150 400Z" fill="#2d7a52" fill-opacity="0.12"/>
+</svg>
