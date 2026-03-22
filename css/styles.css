@@ -742,3 +742,160 @@ footer {
 [dir="rtl"] .quote-block { border-left: none; border-right: 4px solid var(--gold); border-radius: var(--radius) 0 0 var(--radius); }
 [dir="rtl"] .crisis-card { border-left: none; border-right: 5px solid var(--gold); }
 [dir="rtl"] .about-leaf { right: auto; left: -1.5rem; }
+
+/* ---- Umbrella Diagram ---- */
+.umbrella-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
+  height: 450px;
+}
+
+.umbrella-diagram {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  height: 380px;
+}
+
+.umb-circle {
+  position: absolute;
+  border-radius: 50%;
+  bottom: 0px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.umb-circle-1 {
+  width: 380px;
+  height: 380px;
+  background-color: #699885;
+  z-index: 1;
+}
+
+.umb-circle-2 {
+  width: 270px;
+  height: 270px;
+  background-color: #416a5b;
+  z-index: 2;
+}
+
+.umb-circle-3 {
+  width: 170px;
+  height: 170px;
+  background-color: #244033;
+  z-index: 3;
+}
+
+/* Base Label Styling */
+.umb-label {
+  position: absolute;
+  width: 220px;
+  z-index: 10;
+}
+.umb-label h3 {
+  font-size: 1.1rem;
+  color: var(--blue-dark);
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+.umb-label p {
+  font-size: 0.9rem;
+  color: var(--gray-medium);
+  line-height: 1.35;
+  margin: 0;
+}
+
+/* Connecting Lines */
+.umb-line {
+  position: absolute;
+  background-color: #c1ccc7;
+  height: 1.5px;
+  z-index: 4;
+}
+.umb-line::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: inherit;
+  border-radius: 50%;
+  top: -2.5px;
+}
+
+/* Line 1 (Top Right to Circle 1) */
+.umb-line-1 {
+  width: 120px;
+  top: 80px;
+  right: -50px;
+}
+.umb-line-1::after { right: -3px; background-color: #699885; }
+
+.umb-label-1 {
+  top: 50px;
+  left: calc(100% + 80px);
+}
+
+/* Line 2 (Middle Left to Circle 2) */
+.umb-line-2 {
+  width: 100px;
+  top: 230px;
+  left: -20px; 
+}
+.umb-line-2::after { left: -3px; background-color: #416a5b; }
+
+.umb-label-2 {
+  top: 195px;
+  right: calc(100% + 30px);
+  text-align: right;
+}
+
+/* Line 3 (Bottom Right to Circle 3) */
+.umb-line-3 {
+  width: 110px;
+  bottom: 80px;
+  right: -40px;
+}
+.umb-line-3::after { right: -3px; background-color: #244033; }
+
+.umb-label-3 {
+  bottom: 50px;
+  left: calc(100% + 80px);
+}
+
+/* RTL overrides for umbrella */
+[dir="rtl"] .umb-label-1 { left: auto; right: calc(100% + 80px); text-align: left; }
+[dir="rtl"] .umb-line-1 { right: auto; left: -50px; }
+[dir="rtl"] .umb-line-1::after { right: auto; left: -3px; }
+[dir="rtl"] .umb-label-2 { right: auto; left: calc(100% + 30px); text-align: left; }
+[dir="rtl"] .umb-line-2 { left: auto; right: -20px; }
+[dir="rtl"] .umb-line-2::after { left: auto; right: -3px; }
+[dir="rtl"] .umb-label-3 { left: auto; right: calc(100% + 80px); text-align: left; }
+[dir="rtl"] .umb-line-3 { right: auto; left: -40px; }
+[dir="rtl"] .umb-line-3::after { right: auto; left: -3px; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .umbrella-diagram {
+    position: relative;
+    transform: none;
+    top: auto; left: auto;
+    margin: 0 auto;
+    height: auto;
+    display: flex; flex-direction: column; gap: 1.5rem; width: 100%;
+  }
+  .umbrella-wrapper { height: auto; margin-top: 2rem; margin-bottom: 2rem; }
+  .umb-circle, .umb-line { display: none; }
+  .umb-label { 
+    position: static; width: 100%; text-align: center !important; 
+    background: #fdfdfd; padding: 1.5rem; border-radius: 8px; 
+    border-top: 4px solid var(--green-mid); 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  }
+  .umb-label-1 { border-color: #699885; }
+  .umb-label-2 { border-color: #416a5b; }
+  .umb-label-3 { border-color: #244033; }
+}
