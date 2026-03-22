@@ -46,7 +46,7 @@ const LANG = {
     "crisisStat1Label": "Israelis Affected. Estimated citizens currently experiencing PTSD, anxiety, or clinical depression",
     "crisisStat2Num": "40%",
     "crisisStat2Label": "Dropout Rate. Of trauma patients abandoning standard SSRI and talk-therapy protocols within 12 months",
-    "crisisStat3Num": "1/X",
+    "crisisStat3Num": "1/3",
     "crisisStat3Label": "Combat Veterans. IDF personnel returning from active duty show markers of treatment-resistant PTSD or TBI",
     "problemLabel": "The Problem",
     "problemH2": "Four Dimensions of an Unmet Crisis",
