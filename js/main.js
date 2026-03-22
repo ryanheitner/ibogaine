@@ -163,6 +163,8 @@ const LANG = {
     "research3Title": "Psychedelics for the Management of Symptoms of Traumatic Brain Injury",
     "research3Meta": "Journal: PNPBP (2026)",
     "research3Text": "This open-access global survey study examined the use of psychedelics for managing TBI symptoms across a broad international population, providing real-world evidence.",
+    "gardnerVideoLabel": "Dr. Raquel Gardner — Ibogaine for Traumatic Brain Injury & PTSD",
+    "gardnerBio": "Dr. Raquel Gardner is a U.S. board-certified behavioral neurologist, Associate Professor at Tel Aviv University School of Medicine, and Director of Clinical Research at the Joseph Sagol Neuroscience Center, Sheba Medical Center. Her NIH- and DoD-funded research focuses on traumatic brain injury, aging, and neurodegenerative disease — and since October 7, war-related TBI across the full spectrum of severity. <a href=\"https://www.gardnerlab.health/\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--gold);\">GardnerLab</a> · <a href=\"https://eng.sheba.co.il/Raquel-C-Gardner\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--gold);\">Sheba Medical Center</a>",
     "foundersLabel": "Our Team",
     "foundersH2": "The Founders",
     "founder1Name": "Boaz Wachtel",
@@ -291,6 +293,8 @@ const LANG = {
     israelCard6Label: 'חיילי צה"ל שהתאבדו ב-2024 — הגבוה ביותר בעשור',
     israelP: 'טיפולים קונבנציונליים לבדם אינם יכולים לעמוד בהיקף הצורך הזה. האיבוגאין מציע התערבות מהירה, עמוקה ומגובה בראיות שיכולה לשנות תוצאות עבור אלפי חיילים, כוחות ראשונים, ניצולי 7 באוקטובר ומשפחותיהם. הזמן לפעול הוא עכשיו.',
 
+    gardnerVideoLabel: 'ד"ר רקל גרדנר — איבוגאין לפגיעת ראש טראומטית ו-PTSD',
+    gardnerBio: 'ד"ר רקל גרדנר היא נוירולוגית התנהגותית מוסמכת בארה"ב, פרופסור חבר בבית הספר לרפואה של אוניברסיטת תל אביב, ומנהלת המחקר הקליני במרכז הנוירומדע ע"ש יוסף סגול במרכז הרפואי שיבא. מחקרה הממומן על ידי NIH ומשרד ההגנה האמריקאי מתמקד בפגיעת ראש טראומטית, הזדקנות ומחלות ניווניות של מערכת העצבים — ומאז 7 באוקטובר, ב-TBI הקשור למלחמה בכל רמות החומרה. <a href="https://www.gardnerlab.health/" target="_blank" rel="noopener" style="color:var(--gold);">GardnerLab</a> · <a href="https://eng.sheba.co.il/Raquel-C-Gardner" target="_blank" rel="noopener" style="color:var(--gold);">מרכז רפואי שיבא</a>',
     foundersLabel: 'הצוות שלנו',
     foundersH2: 'המייסדים',
     founder1Name: 'בועז וכטל',
