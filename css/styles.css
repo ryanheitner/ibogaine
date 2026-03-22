@@ -156,7 +156,7 @@ p  { font-size: 1.05rem; color: var(--text-mid); margin-bottom: 1rem; }
   object-fit: contain;
 }
 .nav-logo-text { font-weight: 700; font-size: 1.1rem; line-height: 1.2; }
-.nav-logo-text small { font-weight: 400; font-size: 0.75rem; opacity: 0.75; display: block; }
+.nav-logo-text small { font-weight: 700; font-size: 1.1rem; opacity: 0.85; display: block; }
 
 .nav-links {
   display: flex;
