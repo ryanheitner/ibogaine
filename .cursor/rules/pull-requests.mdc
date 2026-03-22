@@ -1,0 +1,8 @@
+---
+description: PR conventions for this project
+alwaysApply: true
+---
+
+# Pull Requests
+
+This is a solo project. Do NOT request code reviewers when creating pull requests. Create PRs without any `--reviewer` flags.
