@@ -1,0 +1,80 @@
+<svg width="680" height="720" viewBox="0 0 680 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="starG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a7a6e"/>
+      <stop offset="100%" stop-color="#145f55"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Star of David — thin outline, background -->
+  <polygon points="340,60 570,440 110,440"
+    fill="none" stroke="url(#starG)" stroke-width="22" stroke-linejoin="round"/>
+  <polygon points="340,620 570,240 110,240"
+    fill="none" stroke="url(#starG)" stroke-width="22" stroke-linejoin="round"/>
+
+  <!-- ROOTS -->
+  <path d="M340,590 Q320,610 295,635" fill="none" stroke="#2a5c10" stroke-width="6" stroke-linecap="round"/>
+  <path d="M340,590 Q325,618 310,648" fill="none" stroke="#2a5c10" stroke-width="5" stroke-linecap="round"/>
+  <path d="M340,590 Q340,622 336,652" fill="none" stroke="#2a5c10" stroke-width="5" stroke-linecap="round"/>
+  <path d="M340,590 Q356,618 368,648" fill="none" stroke="#2a5c10" stroke-width="5" stroke-linecap="round"/>
+  <path d="M340,590 Q362,610 385,634" fill="none" stroke="#2a5c10" stroke-width="6" stroke-linecap="round"/>
+  <path d="M340,595 Q306,622 285,655" fill="none" stroke="#2a5c10" stroke-width="4" stroke-linecap="round"/>
+  <path d="M340,595 Q372,620 396,652" fill="none" stroke="#2a5c10" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- MAIN STEM -->
+  <path d="M340,592 L340,170" fill="none" stroke="#2a5c10" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- LOWER LEFT LARGE LEAF -->
+  <path d="M338,490 Q270,450 240,380 Q300,400 338,460 Z"
+    fill="#2d6e14" stroke="#1e4d0c" stroke-width="1.5"/>
+  <path d="M338,490 Q280,448 248,385" fill="none" stroke="#1e4d0c" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M305,466 Q285,455 272,440" fill="none" stroke="#1e4d0c" stroke-width="0.8" stroke-linecap="round"/>
+  <path d="M280,445 Q268,432 262,416" fill="none" stroke="#1e4d0c" stroke-width="0.8" stroke-linecap="round"/>
+
+  <!-- LOWER RIGHT LARGE LEAF -->
+  <path d="M342,480 Q410,440 442,370 Q380,392 342,460 Z"
+    fill="#2d6e14" stroke="#1e4d0c" stroke-width="1.5"/>
+  <path d="M342,480 Q400,440 440,372" fill="none" stroke="#1e4d0c" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M375,460 Q394,448 408,432" fill="none" stroke="#1e4d0c" stroke-width="0.8" stroke-linecap="round"/>
+  <path d="M400,438 Q414,424 420,408" fill="none" stroke="#1e4d0c" stroke-width="0.8" stroke-linecap="round"/>
+
+  <!-- MIDDLE LEFT LEAF -->
+  <path d="M337,385 Q268,348 248,282 Q306,310 337,368 Z"
+    fill="#316012" stroke="#1e4d0c" stroke-width="1.5"/>
+  <path d="M337,385 Q272,346 250,285" fill="none" stroke="#1e4d0c" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M305,366 Q284,352 270,335" fill="none" stroke="#1e4d0c" stroke-width="0.8" stroke-linecap="round"/>
+  <path d="M278,344 Q264,330 258,314" fill="none" stroke="#1e4d0c" stroke-width="0.8" stroke-linecap="round"/>
+
+  <!-- MIDDLE RIGHT LEAF -->
+  <path d="M343,375 Q412,338 432,272 Q374,300 343,365 Z"
+    fill="#316012" stroke="#1e4d0c" stroke-width="1.5"/>
+  <path d="M343,375 Q412,336 430,274" fill="none" stroke="#1e4d0c" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M374,357 Q394,342 408,324" fill="none" stroke="#1e4d0c" stroke-width="0.8" stroke-linecap="round"/>
+  <path d="M400,334 Q414,318 420,302" fill="none" stroke="#1e4d0c" stroke-width="0.8" stroke-linecap="round"/>
+
+  <!-- ORANGE IBOGA BERRIES -->
+  <path d="M340,310 Q362,295 372,276" fill="none" stroke="#2a5c10" stroke-width="3" stroke-linecap="round"/>
+  <path d="M340,310 Q368,306 384,296" fill="none" stroke="#2a5c10" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M340,310 Q364,318 376,316" fill="none" stroke="#2a5c10" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M340,310 Q318,296 308,278" fill="none" stroke="#2a5c10" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="372" cy="272" r="13" fill="#f5a623" stroke="#c07a10" stroke-width="1.5"/>
+  <circle cx="386" cy="292" r="13" fill="#f5a623" stroke="#c07a10" stroke-width="1.5"/>
+  <circle cx="377" cy="318" r="12" fill="#f5a623" stroke="#c07a10" stroke-width="1.5"/>
+  <circle cx="306" cy="274" r="11" fill="#f5a623" stroke="#c07a10" stroke-width="1.5"/>
+
+  <!-- UPPER LEFT LEAF -->
+  <path d="M336,260 Q272,224 258,162 Q310,196 336,245 Z"
+    fill="#2d6e14" stroke="#1e4d0c" stroke-width="1.5"/>
+  <path d="M336,260 Q275,222 260,164" fill="none" stroke="#1e4d0c" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M305,242 Q284,226 272,208" fill="none" stroke="#1e4d0c" stroke-width="0.8" stroke-linecap="round"/>
+
+  <!-- UPPER RIGHT LEAF -->
+  <path d="M344,240 Q390,200 400,148 Q358,178 344,228 Z"
+    fill="#2d6e14" stroke="#1e4d0c" stroke-width="1.5"/>
+  <path d="M344,240 Q390,198 398,150" fill="none" stroke="#1e4d0c" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- TOP LEAF -->
+  <path d="M340,175 Q308,138 318,88 Q342,122 340,168 Z"
+    fill="#316012" stroke="#1e4d0c" stroke-width="1.5"/>
+  <path d="M340,175 Q316,138 320,92" fill="none" stroke="#1e4d0c" stroke-width="1.2" stroke-linecap="round"/>
+</svg>
