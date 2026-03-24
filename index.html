@@ -128,24 +128,31 @@
 <!-- ===== ISRAEL CRISIS ===== -->
 <section id="crisis" class="section section-dark">
   <div class="container">
-    <div class="text-center">
-      <span class="section-label" data-i18n="crisisLabel"></span>
-      <h2 data-i18n="crisisH2"></h2>
-      <div class="divider divider-center"></div>
-      <p style="max-width:750px;margin:0 auto 2.5rem;" data-i18n="crisisIntro"></p>
-    </div>
-    <div class="crisis-grid" style="grid-template-columns: repeat(3, 1fr);">
-      <div class="crisis-card">
-        <span class="crisis-num" data-i18n="crisisStat1Num"></span>
-        <span data-i18n="crisisStat1Label"></span>
+    <div class="grid-2 crisis-grid-with-image" style="align-items: start; gap: 3rem;">
+      <div class="crisis-grid-image" style="order: -1;">
+        <img src="images/support-group.jpg" alt="Support group circle discussion" style="width:100%;height:auto;border-radius:12px;" />
       </div>
-      <div class="crisis-card">
-        <span class="crisis-num" data-i18n="crisisStat2Num"></span>
-        <span data-i18n="crisisStat2Label"></span>
-      </div>
-      <div class="crisis-card">
-        <span class="crisis-num" data-i18n="crisisStat3Num"></span>
-        <span data-i18n="crisisStat3Label"></span>
+      <div class="crisis-content">
+        <div class="text-left">
+          <span class="section-label" data-i18n="crisisLabel"></span>
+          <h2 data-i18n="crisisH2"></h2>
+          <div class="divider"></div>
+          <p data-i18n="crisisIntro"></p>
+        </div>
+        <div class="crisis-grid" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="crisis-card">
+            <span class="crisis-num" data-i18n="crisisStat1Num"></span>
+            <span data-i18n="crisisStat1Label"></span>
+          </div>
+          <div class="crisis-card">
+            <span class="crisis-num" data-i18n="crisisStat2Num"></span>
+            <span data-i18n="crisisStat2Label"></span>
+          </div>
+          <div class="crisis-card">
+            <span class="crisis-num" data-i18n="crisisStat3Num"></span>
+            <span data-i18n="crisisStat3Label"></span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -220,18 +227,23 @@
       <div class="divider divider-center"></div>
       <p style="max-width:750px;margin:0 auto 2.5rem;" data-i18n-html="solutionIntro"></p>
     </div>
-    <div class="info-cards">
-      <div class="info-card">
-        <h3 data-i18n="solution1Title"></h3>
-        <p data-i18n="solution1Text"></p>
+    <div class="grid-2 solution-grid-with-image" style="gap: 3rem;">
+      <div class="info-cards">
+        <div class="info-card">
+          <h3 data-i18n="solution1Title"></h3>
+          <p data-i18n="solution1Text"></p>
+        </div>
+        <div class="info-card">
+          <h3 data-i18n="solution2Title"></h3>
+          <p data-i18n="solution2Text"></p>
+        </div>
+        <div class="info-card">
+          <h3 data-i18n="solution3Title"></h3>
+          <p data-i18n="solution3Text"></p>
+        </div>
       </div>
-      <div class="info-card">
-        <h3 data-i18n="solution2Title"></h3>
-        <p data-i18n="solution2Text"></p>
-      </div>
-      <div class="info-card">
-        <h3 data-i18n="solution3Title"></h3>
-        <p data-i18n="solution3Text"></p>
+      <div class="solution-grid-image">
+        <img src="images/brain-research.jpg" alt="Brain research visualization" style="width:100%;height:auto;border-radius:12px;" />
       </div>
     </div>
   </div>
@@ -305,7 +317,7 @@
 <!-- ===== LEGAL STRATEGY ===== -->
 <section id="legal" class="section">
   <div class="container">
-    <div class="grid-2">
+    <div class="grid-2 legal-grid-with-image" style="gap: 3rem;">
       <div>
         <span class="section-label" data-i18n="legalLabel"></span>
         <h2 data-i18n="legalH2"></h2>
@@ -331,18 +343,9 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== ORGANISATION ===== -->
-<section id="organisation" class="section section-alt">
-  <div class="container">
-    <div class="text-center">
-      <span class="section-label" data-i18n="orgLabel"></span>
-      <h2 data-i18n="orgH2"></h2>
-      <div class="divider divider-center"></div>
-      <p style="max-width:750px;margin:0 auto 2.5rem;" data-i18n-html="orgIntro"></p>
+      <div class="legal-grid-image">
+        <img src="images/knesset.jpg" alt="The Knesset building" style="width:100%;height:auto;border-radius:12px;" />
+      </div>
     </div>
   </div>
 </section>
@@ -355,20 +358,32 @@
       <h2 data-i18n="projH2"></h2>
       <div class="divider divider-center"></div>
     </div>
-    <div class="info-cards">
+    <div class="info-cards projects-cards-with-images">
       <div class="info-card">
+        <div class="card-image-thumb">
+          <img src="images/support-group.jpg" alt="Project Iron Mind - IDF veterans support" />
+        </div>
         <h3 data-i18n="proj1Title"></h3>
         <p data-i18n-html="proj1Text"></p>
       </div>
       <div class="info-card">
+        <div class="card-image-thumb">
+          <img src="images/brain-research.jpg" alt="The Ibogaine Registry - research data" />
+        </div>
         <h3 data-i18n="proj2Title"></h3>
         <p data-i18n="proj2Text"></p>
       </div>
       <div class="info-card">
+        <div class="card-image-thumb">
+          <img src="images/community-circle.jpg" alt="Survivor Outreach - community support" />
+        </div>
         <h3 data-i18n="proj3Title"></h3>
         <p data-i18n="proj3Text"></p>
       </div>
       <div class="info-card">
+        <div class="card-image-thumb">
+          <img src="images/medical-donation.jpg" alt="Patient Subsidy Fund - financial assistance" />
+        </div>
         <h3 data-i18n="proj4Title"></h3>
         <p data-i18n="proj4Text"></p>
       </div>
@@ -377,28 +392,30 @@
 </section>
 
 <!-- ===== THE PATH FORWARD ===== -->
-<section id="path-forward" class="section section-dark">
+<section id="path-forward" class="section">
   <div class="container">
-    <div class="text-center">
-      <span class="section-label" data-i18n="pathLabel"></span>
-      <h2 data-i18n="pathH2"></h2>
-      <div class="divider divider-center"></div>
-      <p style="max-width:750px;margin:0 auto 2.5rem;" data-i18n="pathIntro"></p>
+    <span class="section-label" data-i18n="pathLabel"></span>
+    <h2 data-i18n="pathH2"></h2>
+    <div class="divider"></div>
+    <p style="max-width:900px; margin-bottom:2.5rem;" data-i18n="pathIntro"></p>
+    <div class="path-cards">
+      <div class="path-card">
+        <div class="path-num">1</div>
+        <h3 data-i18n="path1Title"></h3>
+        <p data-i18n="path1Text"></p>
+      </div>
+      <div class="path-card">
+        <div class="path-num">2</div>
+        <h3 data-i18n="path2Title"></h3>
+        <p data-i18n="path2Text"></p>
+      </div>
+      <div class="path-card path-card-wide">
+        <div class="path-num">3</div>
+        <h3 data-i18n="path3Title"></h3>
+        <p data-i18n="path3Text"></p>
+      </div>
     </div>
-    <div class="grid-3">
-      <div class="stat-box" style="background: rgba(255,255,255,0.05); padding: 2rem 1.5rem;">
-        <h3 style="color:var(--gold); font-size:1.2rem; margin-bottom:1rem;" data-i18n="path1Title"></h3>
-        <p style="color:rgba(255,255,255,0.85);" data-i18n="path1Text"></p>
-      </div>
-      <div class="stat-box" style="background: rgba(255,255,255,0.05); padding: 2rem 1.5rem;">
-        <h3 style="color:var(--gold); font-size:1.2rem; margin-bottom:1rem;" data-i18n="path2Title"></h3>
-        <p style="color:rgba(255,255,255,0.85);" data-i18n="path2Text"></p>
-      </div>
-      <div class="stat-box" style="background: rgba(255,255,255,0.05); padding: 2rem 1.5rem;">
-        <h3 style="color:var(--gold); font-size:1.2rem; margin-bottom:1rem;" data-i18n="path3Title"></h3>
-        <p style="color:rgba(255,255,255,0.85);" data-i18n="path3Text"></p>
-      </div>
-    </div>
+    <p class="path-closing" data-i18n="pathClosing"></p>
   </div>
 </section>
 
@@ -444,6 +461,10 @@
         <p data-i18n="imp3Text"></p>
       </div>
     </div>
+    <div class="imp-closing">
+      <span data-i18n="impClosingJoin"></span>
+      <strong class="imp-closing-names">Israelis for Ibogaine &nbsp;·&nbsp; עמותת איבוגאין ישראל</strong>
+    </div>
   </div>
 </section>
 
@@ -455,19 +476,24 @@
       <h2 data-i18n="impactH2"></h2>
       <div class="divider divider-center"></div>
     </div>
-    <div class="grid-3">
-      <blockquote class="quote-block" style="border-left:4px solid var(--green-mid);">
-        <p data-i18n="impact1Quote" style="color:var(--text-dark);font-style:italic;margin-bottom:1rem;"></p>
-        <strong data-i18n="impact1Author" style="font-size:0.9rem;color:var(--text-mid);"></strong>
-      </blockquote>
-      <blockquote class="quote-block" style="border-left:4px solid var(--green-mid);">
-        <p data-i18n="impact2Quote" style="color:var(--text-dark);font-style:italic;margin-bottom:1rem;"></p>
-        <strong data-i18n="impact2Author" style="font-size:0.9rem;color:var(--text-mid);"></strong>
-      </blockquote>
-      <blockquote class="quote-block" style="border-left:4px solid var(--green-mid);">
-        <p data-i18n="impact3Quote" style="color:var(--text-dark);font-style:italic;margin-bottom:1rem;"></p>
-        <strong data-i18n="impact3Author" style="font-size:0.9rem;color:var(--text-mid);"></strong>
-      </blockquote>
+    <div class="impact-layout">
+      <div class="impact-image">
+        <img src="images/embracing-hope.jpg" alt="Two women embracing in hope" style="width:100%;height:100%;object-fit:cover;border-radius:12px;" />
+      </div>
+      <div class="impact-quotes">
+        <blockquote class="quote-block" style="border-left:4px solid var(--green-mid);">
+          <p data-i18n="impact1Quote" style="color:var(--text-dark);font-style:italic;margin-bottom:1rem;"></p>
+          <strong data-i18n="impact1Author" style="font-size:0.9rem;color:var(--text-mid);"></strong>
+        </blockquote>
+        <blockquote class="quote-block" style="border-left:4px solid var(--green-mid);">
+          <p data-i18n="impact2Quote" style="color:var(--text-dark);font-style:italic;margin-bottom:1rem;"></p>
+          <strong data-i18n="impact2Author" style="font-size:0.9rem;color:var(--text-mid);"></strong>
+        </blockquote>
+        <blockquote class="quote-block" style="border-left:4px solid var(--green-mid);">
+          <p data-i18n="impact3Quote" style="color:var(--text-dark);font-style:italic;margin-bottom:1rem;"></p>
+          <strong data-i18n="impact3Author" style="font-size:0.9rem;color:var(--text-mid);"></strong>
+        </blockquote>
+      </div>
     </div>
   </div>
 </section>
@@ -480,21 +506,26 @@
       <h2 data-i18n="researchH2"></h2>
       <div class="divider divider-center"></div>
     </div>
-    <div class="info-cards" style="grid-template-columns: 1fr;">
-      <div class="info-card" style="border-left: 4px solid var(--green-mid); border-top:none;">
-        <h3 data-i18n="research1Title"></h3>
-        <span style="font-size:0.85rem;color:var(--text-mid);display:block;margin-bottom:0.5rem;" data-i18n="research1Meta"></span>
-        <p data-i18n="research1Text"></p>
+    <div class="research-layout">
+      <div class="research-cards">
+        <div class="info-card" style="border-left: 4px solid var(--green-mid); border-top:none;">
+          <h3 data-i18n="research1Title"></h3>
+          <span style="font-size:0.85rem;color:var(--text-mid);display:block;margin-bottom:0.5rem;" data-i18n="research1Meta"></span>
+          <p data-i18n="research1Text"></p>
+        </div>
+        <div class="info-card" style="border-left: 4px solid var(--green-mid); border-top:none;">
+          <h3 data-i18n="research2Title"></h3>
+          <span style="font-size:0.85rem;color:var(--text-mid);display:block;margin-bottom:0.5rem;" data-i18n="research2Meta"></span>
+          <p data-i18n="research2Text"></p>
+        </div>
+        <div class="info-card" style="border-left: 4px solid var(--green-mid); border-top:none;">
+          <h3 data-i18n="research3Title"></h3>
+          <span style="font-size:0.85rem;color:var(--text-mid);display:block;margin-bottom:0.5rem;" data-i18n="research3Meta"></span>
+          <p data-i18n="research3Text"></p>
+        </div>
       </div>
-      <div class="info-card" style="border-left: 4px solid var(--green-mid); border-top:none;">
-        <h3 data-i18n="research2Title"></h3>
-        <span style="font-size:0.85rem;color:var(--text-mid);display:block;margin-bottom:0.5rem;" data-i18n="research2Meta"></span>
-        <p data-i18n="research2Text"></p>
-      </div>
-      <div class="info-card" style="border-left: 4px solid var(--green-mid); border-top:none;">
-        <h3 data-i18n="research3Title"></h3>
-        <span style="font-size:0.85rem;color:var(--text-mid);display:block;margin-bottom:0.5rem;" data-i18n="research3Meta"></span>
-        <p data-i18n="research3Text"></p>
+      <div class="research-image">
+        <img src="images/soldier-neural.jpg" alt="IDF soldier with neural network overlay" style="width:100%;height:100%;object-fit:cover;border-radius:12px;" />
       </div>
     </div>
   </div>
