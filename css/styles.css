@@ -64,7 +64,7 @@ p  { font-size: 1.05rem; color: var(--text-mid); margin-bottom: 1rem; }
 }
 
 /* ---- Layout Helpers ---- */
-.container { max-width: 1180px; margin: 0 auto; padding: 0 1.5rem; }
+.container { max-width: 1180px; margin: 0 auto; padding: 0 1.5rem; overflow-x: hidden; }
 .section    { padding: 6rem 0; }
 .section-alt { background: var(--off-white); }
 .section-dark { background: var(--green-dark); color: var(--white); }
@@ -261,6 +261,12 @@ p  { font-size: 1.05rem; color: var(--text-mid); margin-bottom: 1rem; }
   padding: 2.5rem 0;
 }
 .stats-strip .grid-4 { text-align: center; }
+@media (max-width: 600px) {
+  .stats-strip .grid-4 { grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+}
+@media (max-width: 400px) {
+  .stats-strip .grid-4 { grid-template-columns: 1fr; }
+}
 .stat-item .stat-num {
   font-size: 2.5rem;
   font-weight: 800;
@@ -294,18 +300,18 @@ p  { font-size: 1.05rem; color: var(--text-mid); margin-bottom: 1rem; }
 .about-leaf {
   position: absolute;
   bottom: -1.5rem;
-  right: -1.5rem;
+  right: -1rem;
   background: var(--gold);
   border-radius: var(--radius);
-  padding: 1.5rem 2rem;
+  padding: 1.25rem 1.5rem;
   box-shadow: var(--shadow);
-  max-width: 200px;
+  max-width: 180px;
 }
 .about-leaf strong { font-size: 1.4rem; color: #0D2B52; display: block; }
 .about-leaf span   { font-size: 0.85rem; color: var(--text-mid); }
 
 /* ---- IBOGAINE INFO CARDS ---- */
-.info-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+.info-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
 .info-card {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -405,9 +411,6 @@ p  { font-size: 1.05rem; color: var(--text-mid); margin-bottom: 1rem; }
   .crisis-grid-image { order: 0 !important; }
   .crisis-grid { grid-template-columns: repeat(3, 1fr); }
 }
-@media (max-width: 900px) {
-  .crisis-grid { grid-template-columns: repeat(3, 1fr); }
-}
 @media (max-width: 600px) {
   .crisis-grid { grid-template-columns: 1fr; }
 }
@@ -485,7 +488,7 @@ p  { font-size: 1.05rem; color: var(--text-mid); margin-bottom: 1rem; }
 .solution-grid-with-image .info-cards { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-top: 0; }
 @media (max-width: 1200px) {
   .solution-grid-with-image { grid-template-columns: 1fr; }
-  .solution-grid-image { order: 0 !important; margin-top: 2rem; }
+  .solution-grid-image { order: 0 !important; }
 }
 /* ---- RESEARCH ---- */
 .research-layout {
@@ -508,7 +511,6 @@ p  { font-size: 1.05rem; color: var(--text-mid); margin-bottom: 1rem; }
 [dir="rtl"] .research-cards .info-card { border-left: none !important; border-right: 4px solid var(--green-mid); }
 @media (max-width: 900px) {
   .research-layout { grid-template-columns: 1fr; }
-  .research-image { position: static; max-height: 300px; }
   [dir="rtl"] .research-image { order: 0; }
 }
 
@@ -670,7 +672,6 @@ p  { font-size: 1.05rem; color: var(--text-mid); margin-bottom: 1rem; }
 [dir="rtl"] .impact-quotes .quote-block { border-left: none; border-right: 4px solid var(--green-mid); border-radius: var(--radius) 0 0 var(--radius); }
 @media (max-width: 900px) {
   .impact-layout { grid-template-columns: 1fr; }
-  .impact-image { position: static; max-height: 320px; order: -1 !important; }
 }
 
 /* ---- VIDEOS ---- */
@@ -899,6 +900,31 @@ footer {
   color: #664d03;
 }
 
+/* ---- Mobile image banners (all image+content sections) ---- */
+@media (max-width: 900px) {
+  .crisis-grid-image,
+  .solution-grid-image,
+  .impact-image,
+  .research-image {
+    position: static;
+    max-height: 220px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    order: -1 !important;
+  }
+  .crisis-grid-image img,
+  .solution-grid-image img,
+  .impact-image img,
+  .research-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center top;
+  }
+}
+
 /* ---- Responsive ---- */
 @media (max-width: 900px) {
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
@@ -906,12 +932,50 @@ footer {
   .contact-grid { grid-template-columns: 1fr; }
   .stat-row { grid-template-columns: 1fr 1fr; }
   .hero-btns .btn { width: 100%; text-align: center; }
+
+  /* Navbar: hamburger takes over at 900px */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(13, 43, 82, 0.98);
+    padding: 0.5rem 0;
+    gap: 0;
+    list-style: none;
+    z-index: 999;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links li {
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .nav-links li:last-child { border-bottom: none; }
+  .nav-links a {
+    display: block;
+    padding: 0.85rem 1.5rem;
+    font-size: 1rem;
+  }
+  .nav-links li:last-child {
+    padding: 0.85rem 1.5rem;
+  }
+  .nav-links .lang-btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  .nav-hamburger { display: flex; }
+
+  /* RTL mobile nav */
+  [dir="rtl"] .nav-links { left: 0; right: 0; text-align: right; }
+  [dir="rtl"] .nav-links a { text-align: right; }
+  [dir="rtl"] .nav-links li:last-child { text-align: center; }
 }
 
 @media (max-width: 600px) {
-  .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: rgba(13, 43, 82, 0.98); padding: 1rem 1.5rem; }
-  .nav-links.open { display: flex; }
-  .nav-hamburger { display: flex; }
   .footer-grid { grid-template-columns: 1fr; }
   .stat-row { grid-template-columns: 1fr; }
   .section { padding: 4rem 0; }
@@ -923,7 +987,7 @@ footer {
 [dir="rtl"] .timeline-item::before { left: auto; right: -2.05rem; }
 [dir="rtl"] .quote-block { border-left: none; border-right: 4px solid var(--gold); border-radius: var(--radius) 0 0 var(--radius); }
 [dir="rtl"] .crisis-card { border-left: none; border-right: 5px solid var(--gold); }
-[dir="rtl"] .about-leaf { right: auto; left: -1.5rem; }
+[dir="rtl"] .about-leaf { right: auto; left: -1rem; }
 
 /* ---- Umbrella Diagram ---- */
 .umbrella-wrapper {
