@@ -210,7 +210,33 @@ const LANG = {
     "footerLegal2": "Terms of Use",
     "footerLegal3": "Medical Disclaimer",
     "footerCopy": "\u00a9 2026 Ibogaine Foundation of Israel. All rights reserved.",
-    "disclaimer": "\u26a0\ufe0f This website is for educational and informational purposes only. Ibogaine is a controlled substance in many countries. Nothing here constitutes medical advice. Always consult a qualified physician."
+    "disclaimer": "\u26a0\ufe0f This website is for educational and informational purposes only. Ibogaine is a controlled substance in many countries. Nothing here constitutes medical advice. Always consult a qualified physician.",
+    "blogLabel": "Latest",
+    "blogH2": "Articles \u0026 Insights",
+    "post1Tag": "Research",
+    "post1Title": "Stanford\u2019s Landmark Study: Ibogaine Reduces PTSD by 88% in Veterans",
+    "post1Excerpt": "A peer-reviewed study published in Nature Medicine confirms ibogaine\u2019s extraordinary efficacy for traumatic brain injury and PTSD. Here\u2019s what it means for Israel.",
+    "post2Tag": "History",
+    "post2Title": "From Gabon to the Clinic: The Remarkable History of Ibogaine",
+    "post2Excerpt": "The iboga plant has been sacred to Bwiti communities for centuries. We trace the journey from Central African rainforests to modern psychiatric clinics.",
+    "post3Tag": "Israel",
+    "post3Title": "October 7 and After: Israel\u2019s Mental Health Crisis Demands Bold Solutions",
+    "post3Excerpt": "With 85,000 soldiers receiving psychological treatment and therapist shortages reaching crisis levels, conventional approaches are falling short.",
+    "post4Tag": "Parkinson\u2019s",
+    "post4Title": "Can Ibogaine Help Parkinson\u2019s Patients? Early Evidence Is Promising",
+    "post4Excerpt": "Ibogaine\u2019s ability to stimulate GDNF \u2014 a key neurotrophic factor for dopamine neurons \u2014 is opening new possibilities for neurodegenerative disease treatment.",
+    "post5Tag": "Advocacy",
+    "post5Title": "Israel Needs Ibogaine: The Case for Fast-Tracking Regulatory Approval",
+    "post5Excerpt": "As Texas allocates $50 million for ibogaine clinical trials, Israel must move swiftly to ensure its trauma survivors have access to the world\u2019s most promising new therapy.",
+    "post6Tag": "Recovery",
+    "post6Title": "Howard Lotsof\u2019s Gift: The Discovery That Changed Everything",
+    "post6Excerpt": "In 1962, a 19-year-old heroin addict named Howard Lotsof took ibogaine and woke up free. His life\u2019s work created the global ibogaine treatment movement.",
+    "readMore": "Read More \u2192",
+    "videosLabel": "Watch \u0026 Learn",
+    "videosH2": "Ibogaine in the Media",
+    "video1Label": "How Ibogaine Therapy is Changing Lives for Veterans",
+    "video2Label": "In Search of Hope: Veterans Turn to Psychedelic Treatment",
+    "video3Label": "Ibogaine: Rite of Passage \u2014 Full Documentary"
 },
     he: {
     dir: 'rtl',
@@ -537,6 +563,7 @@ let currentLang = 'en';
 
 // ---- Render ---- //
 function applyLang(lang) {
+  const scrollY = window.scrollY;
   const L = LANG[lang];
   document.documentElement.setAttribute('lang', lang);
   document.body.setAttribute('dir', L.dir || 'ltr');
@@ -566,6 +593,7 @@ function applyLang(lang) {
   });
 
   localStorage.setItem('iboLang', lang);
+  window.scrollTo({ top: scrollY, behavior: 'instant' });
 }
 
 function toggleLang() {
