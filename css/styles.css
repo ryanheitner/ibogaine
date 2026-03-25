@@ -218,7 +218,7 @@ p  { font-size: 1.05rem; color: var(--text-mid); margin-bottom: 1rem; }
   min-height: 100vh;
   background:
     linear-gradient(135deg, rgba(13,43,82,0.82) 0%, rgba(27,79,143,0.72) 100%),
-    url('../images/soldier-neural.jpg') center/cover no-repeat;
+    url('../images/ibogain_main.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   padding: 8rem 0 5rem;

@@ -596,6 +596,11 @@ function applyLang(lang) {
     if (text !== undefined) el.innerHTML = text;
   });
 
+  // Swap blog card hrefs between EN and HE versions
+  document.querySelectorAll('[data-href-en][data-href-he]').forEach(el => {
+    el.href = lang === 'he' ? el.getAttribute('data-href-he') : el.getAttribute('data-href-en');
+  });
+
   localStorage.setItem('iboLang', lang);
   window.scrollTo({ top: scrollY, behavior: 'instant' });
 }
