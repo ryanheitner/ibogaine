@@ -719,8 +719,7 @@
       </div>
 
       <div class="contact-form">
-        <form id="contact-form" netlify name="contact" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact" />
+        <form id="contact-form" method="POST" action="https://script.google.com/macros/s/AKfycbwX33ynP9CSrKLhL5yFYXw1HXSdTylnzOUKIKY8iDI1bMCzGRtejdL6I4F8P6E7SN9w/exec">
           <div class="form-group">
             <label data-i18n="formName">Full Name</label>
             <input type="text" name="name" required placeholder="Your full name" />
@@ -749,7 +748,7 @@
             <textarea name="message" required placeholder="How can we help you?"></textarea>
           </div>
           <button type="submit" class="btn btn-green" style="width:100%;" data-i18n="formSubmit">Send Message</button>
-          <div class="form-success" id="form-success" data-i18n="formSuccess">✓ Thank you! We will be in touch soon.</div>
+          <div class="form-success" id="form-success" data-i18n="formSuccess" style="display:none;">✓ Thank you! We will be in touch soon.</div>
         </form>
       </div>
     </div>
