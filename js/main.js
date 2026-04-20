@@ -629,34 +629,12 @@ function initContactForm() {
   const form = document.getElementById('contact-form');
   if (!form) return;
   form.addEventListener('submit', e => {
-    e.preventDefault();
-    
-    const formData = new FormData(form);
-    const url = form.getAttribute('action');
-    
-    // Submit to Google Apps Script
-    fetch(url, {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => {
-      const success = document.getElementById('form-success');
-      if (success) {
-        success.style.display = 'block';
-        form.reset();
-        setTimeout(() => { success.style.display = 'none'; }, 6000);
-      }
-    })
-    .catch(error => {
-      console.error('Error:', error);
-      const success = document.getElementById('form-success');
-      if (success) {
-        success.textContent = '✓ Message sent! We will be in touch soon.';
-        success.style.display = 'block';
-        form.reset();
-        setTimeout(() => { success.style.display = 'none'; }, 6000);
-      }
-    });
+    const success = document.getElementById('form-success');
+    if (success) {
+      success.style.display = 'block';
+      form.reset();
+      setTimeout(() => { success.style.display = 'none'; }, 6000);
+    }
   });
 }
 
