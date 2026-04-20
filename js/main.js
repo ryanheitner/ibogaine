@@ -197,7 +197,7 @@ const LANG = {
     "formMessage": "Message",
     "formSubmit": "Send Message",
     "formSuccess": "\u2713 Thank you! We will be in touch soon.",
-    "contactEmail": "JillyRubenstein@gmail.com",
+    "contactEmail": "israelis.for.Ibogaine@gmail.com",
     "contactCity": "Tel Aviv, Israel",
     "footerDesc": "The Ibogaine Foundation of Israel is a non-profit organization dedicated to advancing ibogaine-assisted therapy for PTSD, TBI, addiction, and neurological conditions. We advocate for evidence-based policy, clinical access, and public education.",
     "footerLinks": "Quick Links",
