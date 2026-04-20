@@ -722,11 +722,11 @@
         <form id="contact-form" method="POST" action="https://script.google.com/macros/s/AKfycbwX33ynP9CSrKLhL5yFYXw1HXSdTylnzOUKIKY8iDI1bMCzGRtejdL6I4F8P6E7SN9w/exec" target="hidden_iframe">
           <div class="form-group">
             <label data-i18n="formName">Full Name</label>
-            <input type="text" name="name" required placeholder="Your full name" />
+            <input type="text" name="fullname" required placeholder="Your full name" />
           </div>
           <div class="form-group">
             <label data-i18n="formEmail">Email Address</label>
-            <input type="email" name="email" required placeholder="your@email.com" />
+            <input type="email" name="replyto" required placeholder="your@email.com" />
           </div>
           <div class="form-group">
             <label data-i18n="formPhone">Phone (optional)</label>
@@ -735,12 +735,12 @@
           <div class="form-group">
             <label data-i18n="formSubject">Subject</label>
             <select name="subject">
-              <option data-i18n="formSubjectOpt1">I am a patient / family member seeking help</option>
-              <option data-i18n="formSubjectOpt2">Research collaboration inquiry</option>
-              <option data-i18n="formSubjectOpt3">Media / Press inquiry</option>
-              <option data-i18n="formSubjectOpt4">Donation / Sponsorship</option>
-              <option data-i18n="formSubjectOpt5">Volunteer</option>
-              <option data-i18n="formSubjectOpt6">Other</option>
+              <option value="Patient / Family Member" data-i18n="formSubjectOpt1">I am a patient / family member seeking help</option>
+              <option value="Research Collaboration" data-i18n="formSubjectOpt2">Research collaboration inquiry</option>
+              <option value="Media / Press" data-i18n="formSubjectOpt3">Media / Press inquiry</option>
+              <option value="Donation / Sponsorship" data-i18n="formSubjectOpt4">Donation / Sponsorship</option>
+              <option value="Volunteer" data-i18n="formSubjectOpt5">Volunteer</option>
+              <option value="Other" data-i18n="formSubjectOpt6">Other</option>
             </select>
           </div>
           <div class="form-group">
