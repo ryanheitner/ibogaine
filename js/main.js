@@ -632,7 +632,6 @@ function initContactForm() {
     const success = document.getElementById('form-success');
     if (success) {
       success.style.display = 'block';
-      form.reset();
       setTimeout(() => { success.style.display = 'none'; }, 6000);
     }
   });
