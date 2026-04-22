@@ -211,6 +211,8 @@ const LANG = {
     "footerLegal1": "Privacy Policy",
     "footerLegal2": "Terms of Use",
     "footerLegal3": "Medical Disclaimer",
+    "footerSocial": "Social",
+    "footerXLink": "X (Twitter)",
     "footerCopy": "\u00a9 2026 Ibogaine Foundation of Israel. All rights reserved.",
     "disclaimer": "\u26a0\ufe0f This website is for educational and informational purposes only. Ibogaine is a controlled substance in many countries. Nothing here constitutes medical advice. Always consult a qualified physician.",
     "blogLabel": "Latest",
@@ -337,7 +339,7 @@ const LANG = {
     formMessage: 'הודעה',
     formSubmit: 'שליחת הודעה',
     formSuccess: '✓ תודה! ניצור איתכם קשר בקרוב.',
-    contactEmail: 'JillyRubenstein@gmail.com',
+    contactEmail: 'israelis.for.Ibogaine@gmail.com',
     contactCity: 'תל אביב, ישראל',
 
     missionLabel: 'המשימה',
@@ -503,6 +505,8 @@ const LANG = {
     footerLegal1: 'מדיניות פרטיות',
     footerLegal2: 'תנאי שימוש',
     footerLegal3: 'כתב ויתור רפואי',
+    footerSocial: 'חברתי',
+    footerXLink: 'X (טוויטר)',
     footerCopy: '© 2026 קרן האיבוגאין של ישראל. כל הזכויות שמורות.',
     disclaimer: '⚠️ אתר זה מיועד למטרות חינוכיות ומידעיות בלבד! איבוגאין הוא חומר מבוקר במדינות רבות. אין באמור באתר זה משום ייעוץ רפואי. יש להתייעץ תמיד עם רופא מוסמך.',
   }
