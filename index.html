@@ -39,6 +39,7 @@
       <li><a href="#research" data-i18n="navResearch">Research</a></li>
       <li><a href="#crisis" data-i18n="navIsrael">Israel</a></li>
       <li><a href="#blog" data-i18n="navBlog">Blog</a></li>
+      <li><a href="#media" data-i18n="navMedia">Media</a></li>
       <li><a href="#contact" data-i18n="navContact">Contact</a></li>
       <li>
         <button class="lang-btn" data-i18n="langToggle">עברית</button>
@@ -93,6 +94,26 @@
   </div>
 </div>
 
+
+<!-- ===== BREAKING NEWS BANNER ===== -->
+<section id="breaking-news" class="section" style="padding: 3rem 0; background: linear-gradient(135deg, #0D2B52 0%, #1B4F8F 100%);">
+  <div class="container">
+    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+      <span style="background: var(--gold); color: var(--green-dark); padding: 0.35rem 1rem; border-radius: 20px; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em;">Breaking News</span>
+      <span style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">April 18, 2026</span>
+    </div>
+    <h2 style="color: var(--white); font-size: clamp(1.5rem, 4vw, 2.2rem); margin-bottom: 1rem; line-height: 1.3;">
+      <span data-i18n="breakingNewsTitle">Historic Executive Order Prioritizes Ibogaine Research</span>
+    </h2>
+    <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem; max-width: 800px; margin-bottom: 1.5rem; line-height: 1.6;" data-i18n="breakingNewsText">
+      President Trump signs landmark directive directing $50M+ in federal funding to accelerate ibogaine clinical development for veterans with PTSD and TBI.
+    </p>
+    <p style="color: rgba(255,255,255,0.6); font-size: 1rem; max-width: 800px; margin-bottom: 1.5rem; line-height: 1.5; direction: rtl; text-align: right; font-family: 'Segoe UI', 'Arial Hebrew', 'David', system-ui, sans-serif;" data-i18n="breakingNewsHebrew">
+      הנשיא טרמפ חתם על צו נשיאותי היסטורי המקצה למעלה מ-50 מיליון דולר למחקר האיבוגאין — פריצת דרך ענקית לטיפול ב-PTSD ופגיעות ראש טראומטיות בוותיקי צבא.
+    </p>
+    <a href="blog/executive-order.html" class="btn" style="background: var(--gold); color: var(--green-dark); font-weight: 700;" data-i18n="breakingNewsCta" data-href-en="blog/executive-order.html" data-href-he="blog-he/executive-order-he.html">Read Full Article →</a>
+  </div>
+</section>
 
 <!-- ===== MISSION ===== -->
 <section id="mission" class="section">
@@ -581,7 +602,7 @@
       </article>
 
       <article class="blog-card">
-        <div class="blog-thumb"><img src="images/embracing-hope.jpg" alt="Embracing hope" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <div class="blog-thumb"><img src="images/israel-mental-health-crisis.png" alt="Israeli family at home during the national mental health crisis after October 7" style="width:100%;height:100%;object-fit:cover;" /></div>
         <div class="blog-body">
           <div class="blog-meta">
             <span class="blog-tag" data-i18n="post3Tag">Israel</span>
@@ -636,16 +657,194 @@
   </div>
 </section>
 
-<!-- ===== VIDEOS ===== -->
-<section id="videos" class="section section-alt">
+<!-- ===== MEDIA & RESOURCES ===== -->
+<section id="media" class="section section-alt">
   <div class="container">
     <div class="text-center">
-      <span class="section-label" data-i18n="videosLabel">Watch &amp; Learn</span>
-      <h2 data-i18n="videosH2">Ibogaine in the Media</h2>
+      <span class="section-label" data-i18n="mediaLabel">Watch &amp; Listen</span>
+      <h2 data-i18n="mediaH2">Media &amp; Resources</h2>
+      <p style="max-width: 800px; margin: 0 auto 2.5rem;" data-i18n="mediaIntro">Explore curated podcasts, interviews, and videos about ibogaine from leading experts, advocates, and survivors.</p>
       <div class="divider divider-center"></div>
     </div>
-    <!-- Featured Video -->
-    <div style="max-width:800px;margin:0 auto 2.5rem;">
+
+    <!-- Podcasts Section -->
+    <div class="media-section">
+      <h3 class="media-category-title" data-i18n="podcastsTitle">Podcasts &amp; Interviews</h3>
+      <div class="podcasts-grid" id="podcasts-content">
+        <!-- English Podcasts -->
+        <div class="media-item podcast-item" data-lang-content="en">
+          <div class="podcast-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+              <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.5-3c0 3.03-2.47 5.5-5.5 5.5S6.5 14.03 6.5 11H5c0 3.24 2.39 5.93 5.5 6.41V21h1.5v-3.59C15.11 16.93 17.5 14.24 17.5 11h-1.5z"/>
+            </svg>
+          </div>
+          <div class="podcast-content">
+            <h4 data-i18n="enPodcast1Title">The Joe Rogan Experience #2477 - Rick Perry &amp; W. Bryan Hubbard</h4>
+            <p data-i18n="enPodcast1Desc">Former U.S. Secretary of Energy Rick Perry and Americans for Ibogaine CEO W. Bryan Hubbard discuss policy, veteran access, and the legislative push for ibogaine clinical research.</p>
+            <a href="https://www.youtube.com/watch?v=JIArjzI3gas" target="_blank" rel="noopener" class="btn btn-listen" data-i18n="listenNow">Listen Now</a>
+          </div>
+        </div>
+        <div class="media-item podcast-item" data-lang-content="en">
+          <div class="podcast-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+              <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.5-3c0 3.03-2.47 5.5-5.5 5.5S6.5 14.03 6.5 11H5c0 3.24 2.39 5.93 5.5 6.41V21h1.5v-3.59C15.11 16.93 17.5 14.24 17.5 11h-1.5z"/>
+            </svg>
+          </div>
+          <div class="podcast-content">
+            <h4 data-i18n="enPodcast2Title">The Aubrey Marcus Podcast - W. Bryan Hubbard &amp; Robert Gallery</h4>
+            <p data-i18n="enPodcast2Desc">A deep-dive conversation exploring the growing awareness of ibogaine, featuring advocacy insights and the personal healing journey of former NFL player Robert Gallery.</p>
+            <a href="https://www.youtube.com/watch?v=-uwTGfk_sGU" target="_blank" rel="noopener" class="btn btn-listen" data-i18n="listenNow">Listen Now</a>
+          </div>
+        </div>
+        <!-- Hebrew Podcasts -->
+        <div class="media-item podcast-item" data-lang-content="he" style="display: none;">
+          <div class="podcast-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+              <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.5-3c0 3.03-2.47 5.5-5.5 5.5S6.5 14.03 6.5 11H5c0 3.24 2.39 5.93 5.5 6.41V21h1.5v-3.59C15.11 16.93 17.5 14.24 17.5 11h-1.5z"/>
+            </svg>
+          </div>
+          <div class="podcast-content">
+            <h4 data-i18n="hePodcast1Title">ביחס לחומר — פרק 28: אקטיביזם פסיכדלי עם בועז וכטל</h4>
+            <p data-i18n="hePodcast1Desc">ד״ר רן ספיר משוחח עם בועז וכטל על אקטיביזם פסיכדלי בישראל, טיפול בהתמכרויות באיבוגאין בהולנד, וקידום מחקר וגישה חוקית לצמח האיבוגה — בפודקאסט Spotify.</p>
+            <a href="https://open.spotify.com/episode/0H4DCi1KbBfypsKC4pr9IB" target="_blank" rel="noopener" class="btn btn-listen" data-i18n="listenNowHe">האזינו עכשיו</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Videos Section -->
+    <div class="media-section">
+      <h3 class="media-category-title" data-i18n="videosTitle">Videos &amp; Presentations</h3>
+      <div class="videos-grid" id="videos-content">
+        <!-- English Videos -->
+        <div class="media-item video-item" data-lang-content="en">
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/B_Cr0cnBOHA"
+              title="SXSW 2026 - Ibogaine in America: The Parable of Our Time"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <h4 data-i18n="enVideo1Title">SXSW 2026 - Ibogaine in America: The Parable of Our Time</h4>
+          <p data-i18n="enVideo1Desc">A featured panel from South by Southwest (SXSW) exploring ibogaine's transition from the underground to a highly researched clinical tool for addressing modern mental health crises.</p>
+        </div>
+        <div class="media-item video-item" data-lang-content="en">
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/cI6-Acp1DSI"
+              title="ACS Media - Ibogaine Saved Retired NFL Player Robert Gallery's Life"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <h4 data-i18n="enVideo2Title">ACS Media - Ibogaine Saved Retired NFL Player Robert Gallery's Life</h4>
+          <p data-i18n="enVideo2Desc">A powerful short feature profiling former NFL offensive lineman Robert Gallery, his struggle with the long-term effects of repeated head trauma (TBI), and his recovery following ibogaine treatment.</p>
+        </div>
+        <div class="media-item video-item" data-lang-content="en">
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/o5qhPjdb5s4"
+              title="Boaz Wachtel — Ibogaine"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <h4 data-i18n="enVideo3Title">Boaz Wachtel — Ibogaine: The Sacred Molecule of West Africa</h4>
+          <p data-i18n="enVideo3Desc">Israeli policy pioneer and ibogaine advocate Boaz Wachtel on iboga’s traditional roots, decades of clinical experience with addiction interruption, and the push for evidence-based access and research.</p>
+        </div>
+        <!-- Hebrew Videos -->
+        <div class="media-item video-item" data-lang-content="he" style="display: none;">
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/2pPPJbnZOtQ"
+              title="How Ibogaine Could Treat Depression and Anxiety — Dr. Nolan Williams (TED)"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <h4 data-i18n="heVideo1Title">איך איבוגאין עשוי לטפל בדיכאון ובחרדה — ד״ר נולן ויליאמס (TED)</h4>
+          <p data-i18n="heVideo1Desc">הרצאת TED של חוקר מוח מסטנפורד על מחקר MISTIC: איבוגאין בוותיקי כוחות מיוחדים עם פגיעת מוח טראומטית, שיפור בתסמיני PTSD, דיכאון וחרדה, והפוטנציאל גם בהקשר של התמכרויות.</p>
+        </div>
+        <div class="media-item video-item" data-lang-content="he" style="display: none;">
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/o5qhPjdb5s4"
+              title="בועז וכטל - איבוגאין"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <h4 data-i18n="heVideo2Title">בועז וכטל - ״איבוגאין - המולקולה הקדושה של מערב אפריקה״</h4>
+          <p data-i18n="heVideo2Desc">הרצאה מקיפה של בועז וכטל החולקת תובנות מניסויים קליניים ומניסיונו האישי בטיפול במטופלים.</p>
+        </div>
+        <div class="media-item video-item" data-lang-content="he" style="display: none;">
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/txQ6YPz7iuQ"
+              title="הסרט המלא איבוגה — Iboga Documentary"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <h4 data-i18n="heVideo3Title">הסרט המלא 'איבוגה' (Iboga Documentary)</h4>
+          <p data-i18n="heVideo3Desc">סרט דוקומנטרי ישראלי של שי זאדה המספק הצצה נדירה לטקסים המסורתיים ולשילוב הרוחני של צמח האיבוגה בשבט בגבון.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Classic Videos (restored — shown for all languages) -->
+    <div class="media-section">
+      <h3 class="media-category-title" data-i18n="classicVideosTitle">More Videos</h3>
+      <div class="videos-grid">
+        <div class="media-item video-item">
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/360mdHMfACg"
+              title="How Ibogaine Therapy is Changing Lives for Veterans"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <h4 data-i18n="video1Label">How Ibogaine Therapy is Changing Lives for Veterans</h4>
+        </div>
+        <div class="media-item video-item">
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/g695B9P5YdM"
+              title="Veterans Turn to Psychedelic Treatment"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <h4 data-i18n="video2Label">Veterans Turn to Psychedelic Treatment</h4>
+        </div>
+        <div class="media-item video-item">
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/vt0E8N4FRFY"
+              title="Ibogaine: Rite of Passage — Full Documentary"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <h4 data-i18n="video3Label">Ibogaine: Rite of Passage — Full Documentary</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Expert -->
+    <div style="max-width:800px;margin:4rem auto 0;padding-top:3rem;border-top:1px solid rgba(0,0,0,0.1);">
+      <h3 class="media-category-title" style="text-align:center;" data-i18n="featuredExpertTitle">Featured Expert</h3>
       <div class="video-embed">
         <iframe
           src="https://www.youtube.com/embed/MQVU54KH3sg"
@@ -657,44 +856,6 @@
       </div>
       <p class="video-label" data-i18n="gardnerVideoLabel" style="text-align:center;margin-top:1rem;">Dr. Raquel Gardner — Ibogaine for Traumatic Brain Injury &amp; PTSD</p>
       <p data-i18n-html="gardnerBio" style="text-align:center;max-width:700px;margin:0.75rem auto 0;font-size:0.95rem;color:var(--text-light);line-height:1.6;">Dr. Raquel Gardner is a U.S. board-certified behavioral neurologist, Associate Professor at Tel Aviv University School of Medicine, and Director of Clinical Research at the Joseph Sagol Neuroscience Center, Sheba Medical Center. Her NIH- and DoD-funded research focuses on traumatic brain injury, aging, and neurodegenerative disease — and since October 7, war-related TBI across the full spectrum of severity. <a href="https://www.gardnerlab.health/" target="_blank" rel="noopener" style="color:var(--gold);">GardnerLab</a> · <a href="https://eng.sheba.co.il/Raquel-C-Gardner" target="_blank" rel="noopener" style="color:var(--gold);">Sheba Medical Center</a></p>
-    </div>
-    <div class="videos-grid">
-      <div>
-        <div class="video-embed">
-          <iframe
-            src="https://www.youtube.com/embed/360mdHMfACg"
-            title="Ibogaine Therapy for Veterans"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            loading="lazy">
-          </iframe>
-        </div>
-        <p class="video-label" data-i18n="video1Label">How Ibogaine Therapy is Changing Lives for Veterans</p>
-      </div>
-      <div>
-        <div class="video-embed">
-          <iframe
-            src="https://www.youtube.com/embed/g695B9P5YdM"
-            title="Veterans Turn to Psychedelic Treatment"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            loading="lazy">
-          </iframe>
-        </div>
-        <p class="video-label" data-i18n="video2Label">In Search of Hope: Veterans Turn to Psychedelic Treatment</p>
-      </div>
-      <div>
-        <div class="video-embed">
-          <iframe
-            src="https://www.youtube.com/embed/vt0E8N4FRFY"
-            title="Ibogaine Rite of Passage Documentary"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            loading="lazy">
-          </iframe>
-        </div>
-        <p class="video-label" data-i18n="video3Label">Ibogaine: Rite of Passage — Full Documentary</p>
-      </div>
     </div>
   </div>
 </section>
@@ -775,6 +936,7 @@
           <li><a href="#mission" data-i18n="navAbout">About</a></li>
           <li><a href="#science" data-i18n="navIbogaine">Ibogaine</a></li>
           <li><a href="#research" data-i18n="navResearch">Research</a></li>
+          <li><a href="#media" data-i18n="navMedia">Media</a></li>
           <li><a href="#contact" data-i18n="navContact">Contact</a></li>
         </ul>
       </div>

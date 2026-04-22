@@ -239,11 +239,36 @@ const LANG = {
     "post7Title": "Historic Executive Order: Federal Ibogaine Research for Veterans",
     "post7Excerpt": "President Trump signs landmark directive directing $50M+ in federal funding to accelerate ibogaine clinical development for veterans with PTSD and TBI.",
     "readMore": "Read More \u2192",
-    "videosLabel": "Watch \u0026 Learn",
-    "videosH2": "Ibogaine in the Media",
+    "navMedia": "Media",
+    "mediaLabel": "Watch \u0026 Listen",
+    "mediaH2": "Media \u0026 Resources",
+    "mediaIntro": "Explore curated podcasts, interviews, and videos about ibogaine from leading experts, advocates, and survivors.",
+    "podcastsTitle": "Podcasts \u0026 Interviews",
+    "videosTitle": "Videos \u0026 Presentations",
+    "listenNow": "Listen Now",
+    "featuredExpertTitle": "Featured Expert",
+    "classicVideosTitle": "More Videos",
     "video1Label": "How Ibogaine Therapy is Changing Lives for Veterans",
-    "video2Label": "In Search of Hope: Veterans Turn to Psychedelic Treatment",
-    "video3Label": "Ibogaine: Rite of Passage \u2014 Full Documentary"
+    "video2Label": "Veterans Turn to Psychedelic Treatment",
+    "video3Label": "Ibogaine: Rite of Passage — Full Documentary",
+    "enPodcast1Title": "The Joe Rogan Experience #2477 - Rick Perry \u0026 W. Bryan Hubbard",
+    "enPodcast1Desc": "Former U.S. Secretary of Energy Rick Perry and Americans for Ibogaine CEO W. Bryan Hubbard discuss policy, veteran access, and the legislative push for ibogaine clinical research.",
+    "enPodcast2Title": "The Aubrey Marcus Podcast - W. Bryan Hubbard \u0026 Robert Gallery",
+    "enPodcast2Desc": "A deep-dive conversation exploring the growing awareness of ibogaine, featuring advocacy insights and the personal healing journey of former NFL player Robert Gallery.",
+    "enVideo1Title": "SXSW 2026 - Ibogaine in America: The Parable of Our Time",
+    "enVideo1Desc": "A featured panel from South by Southwest (SXSW) exploring ibogaine's transition from the underground to a highly researched clinical tool for addressing modern mental health crises.",
+    "enVideo1PlayHint": "Full session recording",
+    "enVideo2PlayHint": "Full ACS Media segment",
+    "enVideo2Title": "ACS Media - Ibogaine Saved Retired NFL Player Robert Gallery's Life",
+    "enVideo2Desc": "A powerful short feature profiling former NFL offensive lineman Robert Gallery, his struggle with the long-term effects of repeated head trauma (TBI), and his recovery following ibogaine treatment.",
+    "enVideo3Title": "Boaz Wachtel — Ibogaine: The Sacred Molecule of West Africa",
+    "enVideo3Desc": "Israeli policy pioneer and ibogaine advocate Boaz Wachtel on iboga\u2019s traditional roots, decades of clinical experience with addiction interruption, and the push for evidence-based access and research.",
+    "breakingNewsTitle": "Historic Executive Order Prioritizes Ibogaine Research",
+    "breakingNewsText": "President Trump signs landmark directive directing $50M+ in federal funding to accelerate ibogaine clinical development for veterans with PTSD and TBI.",
+    "breakingNewsHebrew": "",
+    "breakingNewsCta": "Read Full Article \u2192",
+    "footerSocial": "Social",
+    "footerXLink": "X (Twitter)"
 },
     he: {
     dir: 'rtl',
@@ -317,11 +342,33 @@ const LANG = {
     post7Excerpt: 'הנשיא טרמפ חתם על צו מכוון המקצה למעלה מ-50 מיליון דולר למחקר האיבוגאין, מאיץ פיתוח קליני ומודרניזציה של מסלולים רגולטוריים לוותיקי צבא עם PTSD ו-TBI.',
     readMore: 'להמשך קריאה ←',
 
-    videosLabel: 'לצפייה וללמידה',
-    videosH2: 'איבוגאין בתקשורת',
-    video1Label: 'כיצד טיפול באיבוגאין משנה חיים של ותיקי צבא',
-    video2Label: 'בחיפוש אחר תקווה: ותיקים פונים לטיפול פסיכדלי',
-    video3Label: 'איבוגאין: טקס מעבר — סרט תיעודי מלא',
+    navMedia: 'מדיה',
+    mediaLabel: 'צפייה והאזנה',
+    mediaH2: 'מדיה ומשאבים',
+    mediaIntro: 'גלו פודקאסטים, ראיונות וסרטונים נבחרים אודות איבוגאין ממומחים מובילים, פעילים וניצולים.',
+    podcastsTitle: 'פודקאסטים וראיונות',
+    videosTitle: 'סרטונים והרצאות',
+    listenNow: 'Listen Now',
+    listenNowHe: 'האזינו עכשיו',
+    featuredExpertTitle: 'מומחית מובילה',
+    classicVideosTitle: 'סרטונים נוספים',
+    video1Label: 'כיצד טיפול באיבוגאין משנה חיים של חיילים משוחררים',
+    video2Label: 'חיילים משוחררים פונים לטיפול פסיכדלי',
+    video3Label: 'איבוגאין: טקס המעבר — סרט דוקומנטרי מלא',
+    hePodcast1Title: 'ביחס לחומר — פרק 28: אקטיביזם פסיכדלי עם בועז וכטל',
+    hePodcast1Desc: 'ד״ר רן ספיר משוחח עם בועז וכטל על אקטיביזם פסיכדלי בישראל, טיפול בהתמכרויות באיבוגאין בהולנד, וקידום מחקר וגישה חוקית לצמח האיבוגה — בפודקאסט Spotify.',
+    heVideo1Title: 'איך איבוגאין עשוי לטפל בדיכאון ובחרדה — ד״ר נולן ויליאמס (TED)',
+    heVideo1Desc: 'הרצאת TED של חוקר מוח מסטנפורד על מחקר MISTIC: איבוגאין בוותיקי כוחות מיוחדים עם פגיעת מוח טראומטית, שיפור בתסמיני PTSD, דיכאון וחרדה, והפוטנציאל גם בהקשר של התמכרויות.',
+    heVideo2Title: 'בועז וכטל - ״איבוגאין - המולקולה הקדושה של מערב אפריקה״',
+    heVideo2Desc: 'הרצאה מקיפה של בועז וכטל החולקת תובנות מניסויים קליניים ומניסיונו האישי בטיפול במטופלים.',
+    heVideo3Title: 'הסרט המלא \'איבוגה\' (Iboga Documentary)',
+    heVideo3Desc: 'סרט דוקומנטרי ישראלי של שי זאדה המספק הצצה נדירה לטקסים המסורתיים ולשילוב הרוחני של צמח האיבוגה בשבט בגבון.',
+    breakingNewsTitle: 'צו נשיאותי היסטורי: מחקר פדרלי באיבוגאין',
+    breakingNewsText: 'הנשיא טרמפ חתם על צו מכוון המקצה למעלה מ-50 מיליון דולר למחקר האיבוגאין ומאיץ פיתוח קליני לטיפול בוותיקי צבא.',
+    breakingNewsHebrew: 'הנשיא טרמפ חתם על צו נשיאותי היסטורי המקצה למעלה מ-50 מיליון דולר למחקר האיבוגאין — פריצת דרך ענקית לטיפול ב-PTSD ופגיעות ראש טראומטיות בוותיקי צבא.',
+    breakingNewsCta: 'לקריאת המאמר המלא \u2190',
+    footerSocial: 'חברתי',
+    footerXLink: 'X (טוויטר)',
 
     contactLabel: 'פנו אלינו',
     contactH2: 'צרו קשר עם הקרן',
@@ -550,6 +597,16 @@ function applyLang(lang) {
   // Swap blog card hrefs between EN and HE versions
   document.querySelectorAll('[data-href-en][data-href-he]').forEach(el => {
     el.href = lang === 'he' ? el.getAttribute('data-href-he') : el.getAttribute('data-href-en');
+  });
+
+  // Show/hide language-specific media content
+  document.querySelectorAll('[data-lang-content]').forEach(el => {
+    const contentLang = el.getAttribute('data-lang-content');
+    if (contentLang === lang) {
+      el.style.display = '';
+    } else {
+      el.style.display = 'none';
+    }
   });
 
   localStorage.setItem('iboLang', lang);

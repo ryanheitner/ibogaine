@@ -693,6 +693,195 @@ p  { font-size: 1.05rem; color: var(--text-mid); margin-bottom: 1rem; }
   color: var(--green-dark);
 }
 
+/* Non-embed video link cards (when YouTube ID is unavailable) */
+.video-link-card {
+  display: block;
+  position: relative;
+  aspect-ratio: 16/9;
+  background: var(--dark);
+  border-radius: var(--radius);
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
+.video-link-card-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  color: #fff;
+}
+.video-link-card .play-icon {
+  width: 72px;
+  height: 72px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.video-link-card:hover .play-icon {
+  background: var(--gold);
+}
+.video-link-card .play-hint {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  letter-spacing: 0.03em;
+}
+
+/* ---- MEDIA & RESOURCES ---- */
+.media-section {
+  margin-bottom: 4rem;
+}
+.media-category-title {
+  font-size: 1.4rem;
+  color: var(--green-dark);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid var(--gold);
+  display: inline-block;
+}
+
+/* Podcast Items */
+.podcasts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+.podcast-item {
+  display: flex;
+  gap: 1.25rem;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border-left: 4px solid var(--green-accent);
+}
+.podcast-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+.podcast-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background: var(--green-mid);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+.podcast-content {
+  flex: 1;
+}
+.podcast-content h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: var(--green-dark);
+  line-height: 1.4;
+}
+.podcast-content p {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+.btn-listen {
+  background: var(--green-mid);
+  color: var(--white);
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: var(--transition);
+}
+.btn-listen:hover {
+  background: var(--green-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(27, 79, 143, 0.3);
+}
+
+/* Video Items in Media Section */
+.media-item.video-item {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+.media-item.video-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+.media-item.video-item .video-embed {
+  border-radius: 0;
+  box-shadow: none;
+}
+.media-item.video-item h4 {
+  font-size: 1.05rem;
+  padding: 1.25rem 1.25rem 0.5rem;
+  margin: 0;
+  color: var(--green-dark);
+  line-height: 1.4;
+}
+.media-item.video-item p {
+  font-size: 0.9rem;
+  padding: 0 1.25rem 1.5rem;
+  margin: 0;
+  color: var(--text-mid);
+  line-height: 1.6;
+}
+
+/* RTL Support for Media Section */
+[dir="rtl"] .podcast-item {
+  border-left: none;
+  border-right: 4px solid var(--green-accent);
+}
+[dir="rtl"] .podcast-content h4 {
+  text-align: right;
+}
+[dir="rtl"] .media-category-title {
+  border-bottom: none;
+  border-right: 4px solid var(--gold);
+  padding-bottom: 0;
+  padding-right: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .podcasts-grid {
+    grid-template-columns: 1fr;
+  }
+  .podcast-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .podcast-icon {
+    margin: 0 auto;
+  }
+  .media-category-title {
+    display: block;
+    text-align: center;
+    border-bottom: 3px solid var(--gold);
+    border-right: none;
+    padding-bottom: 0.75rem;
+    padding-right: 0;
+  }
+  [dir="rtl"] .media-category-title {
+    border-right: none;
+    border-bottom: 3px solid var(--gold);
+  }
+}
+
 /* ---- CONTACT ---- */
 .contact-grid {
   display: grid;
