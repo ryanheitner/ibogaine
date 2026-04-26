@@ -704,7 +704,7 @@ function initContactForm() {
 
 // ---- Init ---- //
 document.addEventListener('DOMContentLoaded', () => {
-  const saved = localStorage.getItem('iboLang') || 'en';
+  const saved = localStorage.getItem('iboLang') || 'he';
   applyLang(saved);
   initNavScroll();
   initMobileMenu();
