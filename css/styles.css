@@ -183,6 +183,20 @@ p  { font-size: 1.05rem; color: var(--text-mid); margin-bottom: 1rem; }
 }
 .nav-links a:hover { color: var(--gold); }
 .nav-links a:hover::after { transform: scaleX(1); }
+.petition-nav-link {
+  background: var(--gold);
+  color: var(--green-dark) !important;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  border: 2px solid transparent;
+}
+.petition-nav-link::after { display: none; }
+.petition-nav-link:hover {
+  background: var(--gold-light);
+  color: var(--green-dark) !important;
+  transform: translateY(-1px);
+}
 
 .lang-btn {
   background: var(--gold);
@@ -1089,6 +1103,157 @@ footer {
   color: #664d03;
 }
 
+/* ---- Petition Pages ---- */
+.petition-page .section-label {
+  margin-bottom: 0.65rem;
+}
+.petition-hero {
+  padding: 9.5rem 0 4rem;
+  background: linear-gradient(135deg, rgba(13,43,82,0.95) 0%, rgba(27,79,143,0.92) 100%);
+  color: var(--white);
+}
+.petition-hero h1,
+.petition-hero p {
+  color: var(--white);
+}
+.petition-sub {
+  max-width: 900px;
+  font-size: 1.08rem;
+}
+.petition-kpi-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.petition-kpi {
+  background: rgba(255,255,255,0.13);
+  border: 1px solid rgba(255,255,255,0.24);
+  border-radius: 14px;
+  padding: 1rem;
+  text-align: center;
+}
+.petition-kpi-num {
+  display: block;
+  font-size: clamp(1.7rem, 3vw, 2.25rem);
+  font-weight: 800;
+  color: var(--gold-light);
+  line-height: 1.1;
+}
+.petition-kpi-label {
+  color: rgba(255,255,255,0.92);
+  font-size: 0.92rem;
+}
+.petition-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+.petition-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.35rem;
+}
+.petition-card h3 {
+  margin-bottom: 0.65rem;
+}
+.petition-checklist {
+  list-style: none;
+  margin: 0.85rem 0 0;
+  padding: 0;
+}
+.petition-checklist li {
+  margin-bottom: 0.65rem;
+  color: var(--text-mid);
+}
+.petition-checklist li::before {
+  content: "✓";
+  color: var(--green-accent);
+  font-weight: 700;
+  margin-right: 0.45rem;
+}
+[dir="rtl"] .petition-checklist li::before {
+  margin-right: 0;
+  margin-left: 0.45rem;
+}
+.petition-pillar {
+  margin-bottom: 1rem;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  padding-top: 0.9rem;
+}
+.petition-pillar:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.petition-pillar-label {
+  color: var(--gold);
+  font-weight: 700;
+  margin-right: 0.35rem;
+}
+[dir="rtl"] .petition-pillar-label {
+  margin-right: 0;
+  margin-left: 0.35rem;
+}
+.petition-form-wrap {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 1.4rem;
+}
+.petition-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.petition-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+.petition-share {
+  margin-top: 1.15rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+.petition-share a,
+.petition-share button {
+  appearance: none;
+  border: 1px solid #cfd8e3;
+  background: var(--white);
+  color: var(--green-dark);
+  border-radius: 999px;
+  padding: 0.5rem 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.petition-share a:hover,
+.petition-share button:hover {
+  border-color: var(--green-light);
+  color: var(--green-mid);
+}
+.petition-footnote {
+  margin-top: 1rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+.petition-contact {
+  margin-top: 0.9rem;
+  font-size: 0.95rem;
+  color: var(--text-mid);
+}
+.petition-contact a {
+  color: var(--green-mid);
+  font-weight: 600;
+}
+.petition-small {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
 /* ---- Mobile image banners (all image+content sections) ---- */
 @media (max-width: 900px) {
   .crisis-grid-image,
@@ -1121,6 +1286,9 @@ footer {
   .contact-grid { grid-template-columns: 1fr; }
   .stat-row { grid-template-columns: 1fr 1fr; }
   .hero-btns .btn { width: 100%; text-align: center; }
+  .petition-kpi-grid { grid-template-columns: 1fr; }
+  .petition-grid { grid-template-columns: 1fr; }
+  .petition-grid-2 { grid-template-columns: 1fr; gap: 0; }
 
   /* Navbar: hamburger takes over at 900px */
   .nav-links {
@@ -1145,6 +1313,12 @@ footer {
     display: block;
     padding: 0.85rem 1.5rem;
     font-size: 1rem;
+  }
+  .nav-links .petition-nav-link {
+    border-radius: 8px;
+    display: inline-block;
+    margin: 0.5rem 1.5rem;
+    text-align: center;
   }
   .nav-links li:last-child {
     padding: 0.85rem 1.5rem;

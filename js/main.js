@@ -6,6 +6,7 @@
 const LANG = {
   en: {
     "navHome": "Home",
+    "navPetition": "Sign Petition",
     "navAbout": "About",
     "navIbogaine": "Ibogaine",
     "navResearch": "Research",
@@ -18,6 +19,7 @@ const LANG = {
     "heroH1": "Healing Trauma, Restoring Hope",
     "heroSub": "Championing ibogaine-assisted therapy as a breakthrough treatment for PTSD, traumatic brain injury, and addiction \u2014 when Israel needs it most.",
     "heroCta1": "Learn More",
+    "heroCtaPetition": "Sign the Petition",
     "heroCta2": "Get Involved",
     "heroBadgeNum": "85,000+",
     "heroBadgeText": "Israelis currently receiving treatment for war-related psychological trauma",
@@ -273,6 +275,7 @@ const LANG = {
     he: {
     dir: 'rtl',
     navHome: 'בית',
+    navPetition: 'חתמו על העצומה',
     navAbout: 'אודות',
     navIbogaine: 'איבוגאין',
     navResearch: 'מחקר',
@@ -286,6 +289,7 @@ const LANG = {
     heroH1: 'ריפוי הטראומה, השבת התקווה',
     heroSub: 'אנו פועלים לקידום הטיפול בסיוע איבוגאין כפריצת דרך לטיפול בפוסט-טראומה (PTSD), בפגיעות ראש טראומטיות ובהתמכרויות — בשעה שישראל זקוקה לכך יותר מתמיד.',
     heroCta1: 'למידע נוסף',
+    heroCtaPetition: 'חתמו על העצומה',
     heroCta2: 'הצטרפו אלינו',
     heroBadgeNum: '85,000+',
     heroBadgeText: 'ישראלים המקבלים כיום טיפול בגין טראומה נפשית הקשורה למלחמה',
