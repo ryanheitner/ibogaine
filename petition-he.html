@@ -50,7 +50,7 @@
 
       <div class="petition-kpi-grid">
         <div class="petition-kpi">
-          <span class="petition-kpi-num">312</span>
+          <span class="petition-kpi-num" id="petition-signature-count-he" data-fallback="312">312</span>
           <span class="petition-kpi-label">חתימות</span>
         </div>
         <div class="petition-kpi">
@@ -240,6 +240,7 @@
       const text = 'חתמו על העצומה הלאומית: ישראל חייבת להוביל את מהפכת האיבוגאין';
       const encodedUrl = encodeURIComponent(pageUrl);
       const encodedText = encodeURIComponent(text);
+      const countUrl = 'https://script.google.com/macros/s/AKfycbzLYJskl7dIhrwSLuBvfJZYjNHOTMmfZC-EGkBJy_0WdDsafg0lpYTjWFAfQyDg1zRPtw/exec?mode=count';
       const wa = document.getElementById('share-whatsapp-he');
       const tg = document.getElementById('share-telegram-he');
       const x = document.getElementById('share-x-he');
@@ -256,6 +257,20 @@
             setTimeout(() => { copyBtn.textContent = '🔗 העתיקו קישור'; }, 2000);
           } catch (_) {}
         });
+      }
+
+      const signatureCount = document.getElementById('petition-signature-count-he');
+      if (signatureCount) {
+        fetch(countUrl)
+          .then((res) => res.json())
+          .then((data) => {
+            if (typeof data.signatures === 'number' && Number.isFinite(data.signatures)) {
+              signatureCount.textContent = data.signatures.toLocaleString('he-IL');
+            }
+          })
+          .catch(() => {
+            signatureCount.textContent = signatureCount.dataset.fallback || '312';
+          });
       }
 
       const form = document.getElementById('petition-form-he');

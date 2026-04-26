@@ -50,7 +50,7 @@
 
       <div class="petition-kpi-grid">
         <div class="petition-kpi">
-          <span class="petition-kpi-num">312</span>
+          <span class="petition-kpi-num" id="petition-signature-count-en" data-fallback="312">312</span>
           <span class="petition-kpi-label">Signatures</span>
         </div>
         <div class="petition-kpi">
@@ -239,6 +239,7 @@
       const text = 'Sign the national petition: Israel must lead the ibogaine revolution';
       const encodedUrl = encodeURIComponent(pageUrl);
       const encodedText = encodeURIComponent(text);
+      const countUrl = 'https://script.google.com/macros/s/AKfycbzLYJskl7dIhrwSLuBvfJZYjNHOTMmfZC-EGkBJy_0WdDsafg0lpYTjWFAfQyDg1zRPtw/exec?mode=count';
       const wa = document.getElementById('share-whatsapp-en');
       const tg = document.getElementById('share-telegram-en');
       const x = document.getElementById('share-x-en');
@@ -255,6 +256,20 @@
             setTimeout(() => { copyBtn.textContent = '🔗 Copy Link'; }, 2000);
           } catch (_) {}
         });
+      }
+
+      const signatureCount = document.getElementById('petition-signature-count-en');
+      if (signatureCount) {
+        fetch(countUrl)
+          .then((res) => res.json())
+          .then((data) => {
+            if (typeof data.signatures === 'number' && Number.isFinite(data.signatures)) {
+              signatureCount.textContent = data.signatures.toLocaleString('en-US');
+            }
+          })
+          .catch(() => {
+            signatureCount.textContent = signatureCount.dataset.fallback || '312';
+          });
       }
 
       const form = document.getElementById('petition-form-en');

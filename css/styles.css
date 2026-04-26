@@ -1212,6 +1212,26 @@ footer {
   align-items: flex-start;
   gap: 0.65rem;
 }
+.petition-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  margin-top: 0.18rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  accent-color: var(--green-mid);
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+.petition-checkbox label {
+  margin-bottom: 0;
+  flex: 1;
+  min-width: 0;
+  line-height: 1.5;
+}
 .petition-share {
   margin-top: 1.15rem;
   display: flex;
