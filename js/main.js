@@ -621,6 +621,7 @@ function applyLang(lang) {
 
   localStorage.setItem('iboLang', lang);
   window.scrollTo({ top: scrollY, behavior: 'instant' });
+  if (typeof window.closeMobileMenu === 'function') window.closeMobileMenu();
 }
 
 function toggleLang() {
@@ -634,17 +635,6 @@ function initNavScroll() {
       ? '0 2px 20px rgba(0,0,0,0.3)'
       : '0 2px 16px rgba(0,0,0,0.2)';
   }, { passive: true });
-}
-
-// ---- Mobile menu ---- //
-function initMobileMenu() {
-  const hamburger = document.querySelector('.nav-hamburger');
-  const navLinks  = document.querySelector('.nav-links');
-  if (!hamburger || !navLinks) return;
-  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
-  navLinks.querySelectorAll('a').forEach(a =>
-    a.addEventListener('click', () => navLinks.classList.remove('open'))
-  );
 }
 
 // ---- Smooth active nav ---- //
@@ -713,7 +703,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('iboLang') || 'he';
   applyLang(saved);
   initNavScroll();
-  initMobileMenu();
   initActiveNav();
   initScrollReveal();
   initContactForm();

@@ -227,6 +227,23 @@ p  { font-size: 1.05rem; color: var(--text-mid); margin-bottom: 1rem; }
   transition: var(--transition);
 }
 
+/* Full-screen tap target below the navbar when the mobile menu is open */
+.nav-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  pointer-events: none;
+}
+body.nav-mobile-menu-open .nav-menu-backdrop {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 /* ---- HERO ---- */
 #hero {
   min-height: 100vh;

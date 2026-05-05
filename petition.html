@@ -224,17 +224,9 @@
     </div>
   </footer>
 
+  <script src="js/nav-mobile.js"></script>
   <script>
     (function () {
-      const hamburger = document.querySelector('.nav-hamburger');
-      const navLinks = document.querySelector('.nav-links');
-      if (hamburger && navLinks) {
-        hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
-      }
-      navLinks?.querySelectorAll('a').forEach((a) => {
-        a.addEventListener('click', () => navLinks.classList.remove('open'));
-      });
-
       const pageUrl = window.location.href;
       const text = 'Sign the national petition: Israel must lead the ibogaine revolution';
       const encodedUrl = encodeURIComponent(pageUrl);
