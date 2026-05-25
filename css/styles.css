@@ -15,6 +15,7 @@
   --text-mid:     #444444;
   --text-light:   #777777;
   --white:        #ffffff;
+  --dark:         #0D2B52;
   --shadow:       0 4px 24px rgba(0,0,0,0.10);
   --shadow-lg:    0 8px 40px rgba(0,0,0,0.15);
   --radius:       12px;
@@ -762,6 +763,25 @@ body.nav-mobile-menu-open .nav-menu-backdrop {
   font-size: 0.85rem;
   opacity: 0.7;
   letter-spacing: 0.03em;
+}
+.video-link-card .play-cta {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0 1rem;
+  text-align: center;
+}
+.lang-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: var(--gold);
+  color: var(--text-dark);
+  vertical-align: middle;
+  margin-inline-start: 0.4rem;
 }
 
 /* ---- MEDIA & RESOURCES ---- */
