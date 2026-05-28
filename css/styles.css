@@ -43,6 +43,29 @@ body[dir="rtl"] {
 img { max-width: 100%; display: block; }
 a { text-decoration: none; color: inherit; }
 
+/* ---- Skip link (accessibility) ---- */
+.skip-link {
+  position: absolute;
+  inset-inline-start: 0.5rem;
+  top: -100px;
+  z-index: 10000;
+  background: var(--green-dark);
+  color: var(--white);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: top 0.15s ease-out;
+}
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+main:focus {
+  outline: none;
+}
+
 /* ---- Typography ---- */
 h1, h2, h3, h4 {
   line-height: 1.25;
@@ -1045,7 +1068,7 @@ footer {
   height: 100%;
   object-fit: contain;
 }
-.footer-col h4 { color: var(--white); margin-bottom: 1rem; font-size: 1rem; }
+.footer-col h3 { color: var(--white); margin-bottom: 1rem; font-size: 1rem; }
 .footer-col ul { list-style: none; }
 .footer-col ul li { margin-bottom: 0.6rem; }
 .footer-col ul li a {

@@ -13,8 +13,44 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Organization", "NonprofitOrganization"],
+        "@id": "https://israelisforibogaine.org/#organization",
+        "name": "Israelis for Ibogaine",
+        "alternateName": "ישראלים למען איבוגאין",
+        "url": "https://israelisforibogaine.org/",
+        "logo": "https://israelisforibogaine.org/images/logo-new.png",
+        "description": "Advocacy for ibogaine-assisted therapy as a breakthrough treatment for PTSD, traumatic brain injury, and addiction in Israel.",
+        "sameAs": [
+          "https://twitter.com/IbogaineIsrael"
+        ],
+        "knowsAbout": [
+          "Ibogaine therapy",
+          "PTSD treatment",
+          "Traumatic brain injury treatment",
+          "Addiction treatment research",
+          "Drug policy reform"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://israelisforibogaine.org/#website",
+        "name": "Israelis for Ibogaine",
+        "url": "https://israelisforibogaine.org/",
+        "publisher": { "@id": "https://israelisforibogaine.org/#organization" },
+        "inLanguage": ["he-IL", "en-US"]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+
+<a class="skip-link" href="#main-content" data-i18n="skipLink">Skip to main content</a>
 
 <!-- Disclaimer Banner -->
 <div class="disclaimer-banner" data-i18n="disclaimer">
@@ -43,7 +79,7 @@
       <li><a href="#media" data-i18n="navMedia">Media</a></li>
       <li><a href="#contact" data-i18n="navContact">Contact</a></li>
       <li>
-        <button class="lang-btn" data-i18n="langToggle">עברית</button>
+        <button type="button" class="lang-btn" data-i18n="langToggle">עברית</button>
       </li>
     </ul>
     <div class="nav-hamburger" aria-label="Menu" role="button" tabindex="0">
@@ -51,6 +87,8 @@
     </div>
   </div>
 </nav>
+
+<main id="main-content" tabindex="-1">
 
 <!-- ===== HERO ===== -->
 <section id="hero">
@@ -935,20 +973,20 @@
       <div class="contact-form">
         <form id="contact-form" method="POST" action="https://script.google.com/macros/s/AKfycbxsWzAMmzoR8heJm065RcIAgHtQnsroGUY16ieWcMm5Y3IQr_dq-8oPj59ZGgMcU0pe/exec" target="hidden_iframe">
           <div class="form-group">
-            <label data-i18n="formName">Full Name</label>
-            <input type="text" name="fullname" required placeholder="Your full name" />
+            <label for="contact-fullname" data-i18n="formName">Full Name</label>
+            <input type="text" id="contact-fullname" name="fullname" required placeholder="Your full name" />
           </div>
           <div class="form-group">
-            <label data-i18n="formEmail">Email Address</label>
-            <input type="email" name="replyto" required placeholder="your@email.com" />
+            <label for="contact-replyto" data-i18n="formEmail">Email Address</label>
+            <input type="email" id="contact-replyto" name="replyto" required placeholder="your@email.com" />
           </div>
           <div class="form-group">
-            <label data-i18n="formPhone">Phone (optional)</label>
-            <input type="tel" name="phone" placeholder="+972 ..." />
+            <label for="contact-phone" data-i18n="formPhone">Phone (optional)</label>
+            <input type="tel" id="contact-phone" name="phone" placeholder="+972 ..." />
           </div>
           <div class="form-group">
-            <label data-i18n="formSubject">Subject</label>
-            <select name="subject">
+            <label for="contact-subject" data-i18n="formSubject">Subject</label>
+            <select id="contact-subject" name="subject">
               <option value="Patient / Family Member" data-i18n="formSubjectOpt1">I am a patient / family member seeking help</option>
               <option value="Research Collaboration" data-i18n="formSubjectOpt2">Research collaboration inquiry</option>
               <option value="Media / Press" data-i18n="formSubjectOpt3">Media / Press inquiry</option>
@@ -958,8 +996,8 @@
             </select>
           </div>
           <div class="form-group">
-            <label data-i18n="formMessage">Message</label>
-            <textarea name="message" required placeholder="How can we help you?"></textarea>
+            <label for="contact-message" data-i18n="formMessage">Message</label>
+            <textarea id="contact-message" name="message" required placeholder="How can we help you?"></textarea>
           </div>
           <button type="submit" class="btn btn-green" style="width:100%;" data-i18n="formSubmit">Send Message</button>
           <div class="form-success" id="form-success" data-i18n="formSuccess" style="display:none;">✓ Thank you! We will be in touch soon.</div>
@@ -969,6 +1007,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- ===== FOOTER ===== -->
 <footer>
@@ -984,7 +1024,7 @@
         <p data-i18n="footerDesc">The Ibogaine Foundation of Israel is a non-profit organization dedicated to advancing ibogaine-assisted therapy for PTSD, TBI, addiction, and neurological conditions. We advocate for evidence-based policy, clinical access, and public education.</p>
       </div>
       <div class="footer-col">
-        <h4 data-i18n="footerLinks">Quick Links</h4>
+        <h3 data-i18n="footerLinks">Quick Links</h3>
         <ul>
           <li><a href="#mission" data-i18n="navAbout">About</a></li>
           <li><a href="#science" data-i18n="navIbogaine">Ibogaine</a></li>
@@ -994,7 +1034,7 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4 data-i18n="footerResources">Resources</h4>
+        <h3 data-i18n="footerResources">Resources</h3>
         <ul>
           <li><a href="blog/stanford-study.html" data-i18n="footerRes1">Stanford Study</a></li>
           <li><a href="blog/history-of-ibogaine.html" data-i18n="footerRes2">Ibogaine History</a></li>
@@ -1004,7 +1044,7 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4 data-i18n="footerLegal">Legal</h4>
+        <h3 data-i18n="footerLegal">Legal</h3>
         <ul>
           <li><a href="#" data-i18n="footerLegal1">Privacy Policy</a></li>
           <li><a href="#" data-i18n="footerLegal2">Terms of Use</a></li>
@@ -1012,7 +1052,7 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4 data-i18n="footerSocial">Social</h4>
+        <h3 data-i18n="footerSocial">Social</h3>
         <ul>
           <li><a href="https://x.com/IbogaineIsrael" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 0.5rem;">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink: 0;">
@@ -1025,7 +1065,7 @@
     </div>
     <div class="footer-bottom">
       <span data-i18n="footerCopy">© 2025 Ibogaine Foundation of Israel. All rights reserved.</span>
-      <button class="lang-btn" onclick="toggleLang()" data-i18n="langToggle">עברית</button>
+      <button type="button" class="lang-btn" onclick="toggleLang()" data-i18n="langToggle">עברית</button>
     </div>
     <p class="footer-disclaimer" data-i18n="disclaimer">⚠️ This website is for educational and informational purposes only!. Ibogaine is a controlled substance in many countries. Nothing here constitutes medical advice. Always consult a qualified physician.</p>
   </div>
