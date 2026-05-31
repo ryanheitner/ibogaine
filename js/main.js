@@ -5,6 +5,7 @@
 // ---- Language Data ---- //
 const LANG = {
   en: {
+    "skipLink": "Skip to main content",
     "navHome": "Home",
     "navPetition": "Sign Petition",
     "navAbout": "About",
@@ -281,6 +282,7 @@ const LANG = {
 },
     he: {
     dir: 'rtl',
+    skipLink: 'דלג לתוכן הראשי',
     navHome: 'בית',
     navPetition: 'חתמו על העצומה',
     navAbout: 'אודות',
