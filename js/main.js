@@ -224,7 +224,7 @@ const LANG = {
     "footerSocial": "Social",
     "footerXLink": "X (Twitter)",
     "footerCopy": "\u00a9 2026 Ibogaine Foundation of Israel. All rights reserved.",
-    "footerLegalEntity": "This website is operated by Sene Iboga (Amutah), Israeli nonprofit registration no. 580841922.",
+    "footerLegalEntity": "This website is operated by Iboga Bush (R.A.) / \u05e1\u05e0\u05d4 \u05d0\u05d9\u05d1\u05d5\u05d2\u05d4 (\u05e2\u201d\u05e8), Israeli nonprofit registration no. 580841922.",
     "disclaimer": "\u26a0\ufe0f This website is for educational and informational purposes only. Ibogaine is a controlled substance in many countries. Nothing here constitutes medical advice. Always consult a qualified physician.",
     "blogLabel": "Latest",
     "blogH2": "Articles \u0026 Insights",
@@ -590,7 +590,7 @@ const LANG = {
     footerSocial: 'חברתי',
     footerXLink: 'X (טוויטר)',
     footerCopy: '© 2026 קרן האיבוגאין של ישראל. כל הזכויות שמורות.',
-    footerLegalEntity: 'אתר זה מופעל על ידי סנה איבוגה (ע”ר), עמותה רשומה בישראל מס׳ 580841922.',
+    footerLegalEntity: 'אתר זה מופעל על ידי סנה איבוגה (ע”ר) / Iboga Bush (R.A.), עמותה רשומה בישראל מס׳ 580841922.',
     disclaimer: '⚠️ אתר זה מיועד למטרות חינוכיות ומידעיות בלבד! איבוגאין הוא חומר מבוקר במדינות רבות. אין באמור באתר זה משום ייעוץ רפואי. יש להתייעץ תמיד עם רופא מוסמך.',
   }
 
