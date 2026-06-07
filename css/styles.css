@@ -1093,6 +1093,49 @@ footer {
   max-width: 600px;
   margin-top: 0.5rem;
 }
+.footer-legal-entity {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.6);
+  margin-top: 1rem;
+}
+
+/* ---- LEGAL ENTITY (About/Legal section) ---- */
+.legal-entity-list {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+.legal-entity-list li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+.legal-entity-list li strong {
+  color: var(--dark);
+  margin-inline-end: 0.35rem;
+}
+.legal-brand-notice {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #555;
+  border-top: 1px solid #e2e2e2;
+  padding-top: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* ---- MINIMAL BLOG FOOTER ---- */
+.blog-footer {
+  background: #f5f5f3;
+  border-top: 1px solid #e2e2e2;
+  padding: 1.75rem 0;
+  text-align: center;
+}
+.blog-footer .footer-legal-entity {
+  color: #555;
+  margin: 0 auto;
+  max-width: 700px;
+}
 
 /* ---- IMPERATIVE CLOSING ---- */
 .imp-closing {
