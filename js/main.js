@@ -207,7 +207,7 @@ const LANG = {
     "formMessage": "Message",
     "formSubmit": "Send Message",
     "formSuccess": "\u2713 Thank you! We will be in touch soon.",
-    "contactEmail": "israelis.for.Ibogaine@gmail.com",
+    "contactEmail": "info@israelisforibogaine.org",
     "contactCity": "Tel Aviv, Israel",
     "footerDesc": "The Ibogaine Foundation of Israel is a non-profit organization dedicated to advancing ibogaine-assisted therapy for PTSD, TBI, addiction, and neurological conditions. We advocate for evidence-based policy, clinical access, and public education.",
     "footerLinks": "Quick Links",
@@ -414,7 +414,7 @@ const LANG = {
     formMessage: 'הודעה',
     formSubmit: 'שליחת הודעה',
     formSuccess: '✓ תודה! ניצור איתכם קשר בקרוב.',
-    contactEmail: 'israelis.for.Ibogaine@gmail.com',
+    contactEmail: 'info@israelisforibogaine.org',
     contactCity: 'תל אביב, ישראל',
 
     missionLabel: 'המשימה',
