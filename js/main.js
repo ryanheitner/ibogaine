@@ -959,6 +959,28 @@ function initMediaFacades() {
   });
 }
 
+// ---- Fixed header offsets ---- //
+// The disclaimer banner and navbar are both fixed; publish their real
+// heights so the first element in normal flow can clear them at any
+// viewport width and in either language.
+function initHeaderOffsets() {
+  const banner = document.querySelector('.disclaimer-banner');
+  const nav = document.getElementById('navbar');
+  const root = document.documentElement;
+  const set = () => {
+    if (banner) root.style.setProperty('--banner-h', banner.offsetHeight + 'px');
+    if (nav) root.style.setProperty('--nav-h', nav.offsetHeight + 'px');
+  };
+  set();
+  window.addEventListener('resize', set, { passive: true });
+  window.addEventListener('load', set);
+  if ('ResizeObserver' in window) {
+    const ro = new ResizeObserver(set);
+    if (banner) ro.observe(banner);
+    if (nav) ro.observe(nav);
+  }
+}
+
 // ---- Init ---- //
 document.addEventListener('DOMContentLoaded', () => {
   // A page written in one language only (e.g. the Hebrew legal pages) locks it.
@@ -968,6 +990,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .some(l => String(l).toLowerCase().startsWith('he'));
   const saved = stored || (browserHe ? 'he' : 'en');
   applyLang(locked || saved);
+  initHeaderOffsets();
   initNavScroll();
   initActiveNav();
   initScrollReveal();

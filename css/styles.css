@@ -149,7 +149,7 @@ p  { font-size: 1.05rem; color: var(--text-mid); margin-bottom: 1rem; }
 /* ---- NAV ---- */
 #navbar {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: var(--banner-h, 44px); left: 0; right: 0;
   z-index: 1000;
   background: rgba(13, 43, 82, 0.97);
   backdrop-filter: blur(8px);
@@ -1044,10 +1044,11 @@ footer {
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr;
+  gap: 2.5rem;
   margin-bottom: 3rem;
 }
+@media (max-width: 1100px) { .footer-grid { grid-template-columns: 1.4fr 1fr 1fr; } }
 .footer-brand { max-width: 320px; }
 .footer-brand p { font-size: 0.9rem; margin-top: 1rem; }
 .footer-logo {
@@ -1217,7 +1218,7 @@ footer {
   margin-bottom: 0.65rem;
 }
 .petition-hero {
-  padding: 9.5rem 0 4rem;
+  padding: calc(var(--banner-h) + var(--nav-h) + 2.5rem) 0 4rem;
   background: linear-gradient(135deg, rgba(13,43,82,0.95) 0%, rgba(27,79,143,0.92) 100%);
   color: var(--white);
 }
@@ -1734,3 +1735,54 @@ footer {
 .legal-body ul { margin: 0 0 1.1rem 1.5rem; color: var(--text-mid); line-height: 1.85; }
 .legal-crosslinks { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--off-white); font-size: 0.92rem; }
 [dir="rtl"] .legal-body ul { margin: 0 1.5rem 1.1rem 0; }
+
+/* blog card titles are links on the homepage featured row */
+.blog-body h3 a { color: var(--green-dark); text-decoration: none; }
+.blog-body h3 a:hover { color: var(--green-mid); text-decoration: underline; }
+.blog-thumb { height: 190px; }
+.blog-thumb picture { display: block; width: 100%; height: 100%; }
+
+/* ============================================================
+   FIXED HEADER STACK
+   The medical-disclaimer banner and, on sub-pages, the breadcrumb
+   were both rendered underneath the fixed navbar and therefore
+   invisible. The banner now sits above the navbar in its own fixed
+   layer, and the first element in normal flow clears both.
+   --banner-h / --nav-h are measured at runtime by initHeaderOffsets()
+   in main.js; the fallbacks below hold if that never runs.
+   ============================================================ */
+:root { --banner-h: 44px; --nav-h: 92px; }
+
+.disclaimer-banner {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1001;
+  margin: 0;
+}
+
+/* sub-pages: breadcrumb is the first thing in flow */
+.breadcrumb { margin-top: calc(var(--banner-h) + var(--nav-h)); }
+
+/* pages whose first flow element is the page head instead */
+.page-head:first-child { padding-top: calc(var(--banner-h) + var(--nav-h) + 2rem); }
+
+/* the hero deliberately bleeds behind the translucent header,
+   so only its content is pushed clear */
+#hero { padding-top: calc(var(--banner-h) + var(--nav-h) + 3rem); }
+
+/* the mobile drop-down hangs off the navbar, which is no longer at top:0 */
+@media (max-width: 900px) {
+  .disclaimer-banner { font-size: 0.76rem; padding: 0.5rem 1rem; }
+}
+
+/* an outline button on a light section was white-on-white */
+.section .btn-outline:not(.cta-band .btn-outline) {
+  border-color: var(--green-mid);
+  color: var(--green-mid);
+}
+.section .btn-outline:not(.cta-band .btn-outline):hover {
+  background: var(--green-mid);
+  color: var(--white);
+}
+.cta-band .btn-outline { border-color: rgba(255,255,255,0.7); color: var(--white); }
+.cta-band .btn-outline:hover { background: var(--white); color: var(--green-dark); }
