@@ -167,6 +167,7 @@ p  { font-size: 1.05rem; color: var(--text-mid); margin-bottom: 1rem; }
   align-items: center;
   gap: 0.75rem;
   color: var(--white);
+  flex-shrink: 0;
 }
 .nav-logo-icon {
   width: 54px;
@@ -190,12 +191,14 @@ p  { font-size: 1.05rem; color: var(--text-mid); margin-bottom: 1rem; }
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.35rem;
   list-style: none;
+  flex-wrap: nowrap;
 }
 .nav-links a {
   color: rgba(255,255,255,0.85);
   font-size: 0.9rem;
+  white-space: nowrap;
   font-weight: 500;
   transition: var(--transition);
   position: relative;
@@ -1786,3 +1789,40 @@ footer {
 }
 .cta-band .btn-outline { border-color: rgba(255,255,255,0.7); color: var(--white); }
 .cta-band .btn-outline:hover { background: var(--white); color: var(--green-dark); }
+
+/* ---- Navigation crowding ----
+   The restructure took the header from 5 links to 9 plus a CTA and a language
+   button. At 2rem gaps that overflowed the bar: "Sign Petition" wrapped onto
+   two lines and collided with the logo. Links no longer wrap, gaps tighten as
+   the viewport narrows, and the hamburger now takes over at 1150px rather
+   than 900px, which is where the full row stops fitting.
+   ---------------------------------------------------------------- */
+@media (max-width: 1250px) {
+  .nav-links { gap: 1rem; }
+  .nav-links a { font-size: 0.86rem; }
+}
+@media (max-width: 1150px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(13, 43, 82, 0.98);
+    padding: 0.5rem 0;
+    gap: 0;
+    z-index: 999;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links li { border-bottom: 1px solid rgba(255,255,255,0.08); width: 100%; }
+  .nav-links li:last-child { border-bottom: none; }
+  .nav-links a { display: block; padding: 0.85rem 1.5rem; font-size: 1rem; }
+  .nav-links .petition-nav-link {
+    border-radius: 8px; display: block; margin: 0.5rem 1.5rem; text-align: center;
+  }
+  .nav-links .lang-btn { width: calc(100% - 3rem); margin: 0.5rem 1.5rem; text-align: center; }
+  .nav-hamburger { display: flex; }
+  [dir="rtl"] .nav-links { text-align: right; }
+  [dir="rtl"] .nav-links a { text-align: right; }
+}
