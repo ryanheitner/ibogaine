@@ -149,7 +149,7 @@ p  { font-size: 1.05rem; color: var(--text-mid); margin-bottom: 1rem; }
 /* ---- NAV ---- */
 #navbar {
   position: fixed;
-  top: var(--banner-h, 44px); left: 0; right: 0;
+  top: var(--banner-h, 0px); left: 0; right: 0;
   z-index: 1000;
   background: rgba(13, 43, 82, 0.97);
   backdrop-filter: blur(8px);
@@ -1754,7 +1754,7 @@ footer {
    --banner-h / --nav-h are measured at runtime by initHeaderOffsets()
    in main.js; the fallbacks below hold if that never runs.
    ============================================================ */
-:root { --banner-h: 44px; --nav-h: 92px; }
+:root { --banner-h: 0px; --nav-h: 92px; }
 
 .disclaimer-banner {
   position: fixed;

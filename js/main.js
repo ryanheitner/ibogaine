@@ -968,7 +968,7 @@ function initHeaderOffsets() {
   const nav = document.getElementById('navbar');
   const root = document.documentElement;
   const set = () => {
-    if (banner) root.style.setProperty('--banner-h', banner.offsetHeight + 'px');
+    root.style.setProperty('--banner-h', (banner ? banner.offsetHeight : 0) + 'px');
     if (nav) root.style.setProperty('--nav-h', nav.offsetHeight + 'px');
   };
   set();
