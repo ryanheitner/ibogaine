@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /_founders-section.draft.html
 
 Sitemap: https://israelisforibogaine.org/sitemap.xml

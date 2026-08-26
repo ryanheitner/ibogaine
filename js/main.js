@@ -598,6 +598,206 @@ const LANG = {
 
 };
 
+// ============================================================
+//  ADDITIONAL KEYS FOR THE MULTI-PAGE SITE (August 2026)
+// ============================================================
+Object.assign(LANG.en, {
+  navHome: "Home",
+  navMedia: "Media",
+  navProjects: "Projects",
+  navGovernance: "Governance",
+  lastUpdatedLabel: "Last reviewed",
+  lastUpdatedDate: "26 August 2026",
+  readMore: "Read the article →",
+
+  // --- page heads ---
+  aboutLabel: "About the organization",
+  aboutH1: "Who we are and what we are trying to change",
+  aboutIntro: "Israelis for Ibogaine is a registered Israeli non-profit association — Iboga Bush (R.A.) / סנה איבוגה (ע\"ר), registration number 580841922. We exist because Israel is facing a scale of psychological and neurological injury its mental-health system was never built to absorb, and because a body of published research now points to a treatment approach the country has not yet seriously evaluated. We are not a clinic and we do not provide treatment. We do four things: we educate the public, we work to bring clinical trials into Israeli hospitals, we support academic and biosynthetic research, and we make the policy case for a regulated pathway to access.",
+  iboLabel: "The compound",
+  iboH1: "What ibogaine is, and why researchers are studying it",
+  iboIntro: "Ibogaine is an alkaloid found in the root bark of Tabernanthe iboga, a shrub native to West and Central Africa, where iboga has been used ceremonially for generations. Pharmacologically it is unlike any approved psychiatric medicine: rather than modulating a single neurotransmitter system day after day, a single supervised session appears to trigger a period of heightened neuroplasticity. This page explains the proposed mechanisms in plain language, what conditions ibogaine is being investigated for, and — just as importantly — the cardiac and other risks that make unsupervised use dangerous. Nothing on this page is medical advice.",
+  isrLabel: "The situation in Israel",
+  isrH1: "A mental health emergency of historic scale",
+  isrIntro: "Israel's psychological casualty count from October 7th and the conflict that followed is not a marginal public-health problem — it is a national one. Tens of thousands of soldiers are in active treatment for war-related trauma, an estimated three million citizens are symptomatic, and roughly forty percent of trauma patients abandon standard SSRI and talk-therapy protocols within a year. Layered on top of that is a quieter emergency: blast-related traumatic brain injury, frequently co-occurring with treatment-resistant PTSD, which conventional psychiatric care was not designed to address.",
+  resLabel: "Evidence",
+  resH1: "What the published research actually shows",
+  resIntro: "Advocacy without evidence is noise, so this page collects the peer-reviewed literature we rely on and is explicit about its limits. The most-cited work is the magnesium–ibogaine study in special-operations veterans with traumatic brain injury, published in Nature Medicine in 2024, alongside functional-neuroimaging work and reviews of psychedelics in TBI. These are small, mostly open-label studies with short follow-up — genuinely striking results that are not the same thing as proof of safety or efficacy for any individual.",
+  projLabel: "Programme of work",
+  projH1: "What we are building in 2026 and 2027",
+  projIntro: "These are the four initiatives we are actively working on, described honestly in terms of where each one currently stands. Some are observational studies awaiting ethics approval, one is a data infrastructure project, one is outreach work already underway with survivors, and one is a funding mechanism that is planned rather than operating. We would rather list a project as planned than imply it is running.",
+  govLabel: "Governance",
+  govH1: "Our legal status and regulatory strategy",
+  govIntro: "We think an organization asking for a change in national drug policy should be legible about its own governance. Israelis for Ibogaine operates as an Amuta — a non-profit association registered with the Israeli Ministry of Justice — under the Hebrew name סנה איבוגה (ע\"ר) and the English name IBOGA BUSH (R.A.), registration number 580841922. We hold a board-approved conflict-of-interest policy and whistleblower policy, and we do not currently accept public donations through this website.",
+  teamLabel: "People",
+  teamH1: "The people behind the organization",
+  teamIntro: "A small team, and deliberately so. Between us we bring clinical-trial management in psilocybin and MDMA studies, functional-neuroimaging research with survivors of the Nova festival attack, startup and investment experience in the psychedelics sector, and three and a half decades of building technology for organizations across sectors.",
+  medLabel: "Watch & listen",
+  medH1: "Talks, documentaries, podcasts and press",
+  medIntro: "A curated library for people who want to go deeper than a summary — in English and Hebrew. Videos load only when you choose to play them, so this page stays fast. Inclusion here is not endorsement of every claim made by a speaker; we link material we think is worth your time and leave you to weigh it.",
+  conLabel: "Reach out",
+  conH1: "Contact the organization",
+  conIntro: "Whether you are a patient or family member looking for information, a researcher or clinician interested in collaboration, a journalist on deadline, or someone who simply wants to help — we read and answer every message. We are based in Tel Aviv and we work in Hebrew and English. Please note two things: we are not a treatment provider and cannot arrange or supervise ibogaine treatment, and we are not currently accepting donations through this website.",
+  blogLabel: "Articles",
+  blogH1: "Articles & insights",
+  blogIntro: "Explainers we have written for people who want the detail rather than the headline: what the Stanford results did and did not show, how iboga travelled from ritual use in Gabon to clinics in Mexico and Portugal, why blast-related brain injury behaves differently from psychological trauma alone, and the regulatory argument for a supervised access pathway in Israel.",
+
+  // --- homepage mission summary ---
+  homeMissionLabel: "Our mission",
+  homeMissionH2: "Advancing research and responsible access to ibogaine in Israel",
+  homeMissionP1: "Israelis for Ibogaine is a registered Israeli non-profit association — Iboga Bush (R.A.) / סנה איבוגה (ע\"ר), Amuta no. 580841922. We advance public understanding and responsible medical access to ibogaine for post-traumatic stress disorder, traumatic brain injury, and addiction.",
+  homeMissionP2: "We are not a clinic and we do not provide or arrange treatment. We support research, we work to bring clinical trials into Israeli hospitals, we educate the public and reduce stigma, and we make the policy case for a supervised, regulated pathway to access.",
+  homeMissionCta: "Read more about the organization",
+
+  // --- explore grid ---
+  exploreLabel: "Explore the site",
+  exploreH2: "Where to start",
+  exploreIntro: "Nine sections covering the science, the situation in Israel, the published evidence, our programme of work, and how to reach us. Each one is a full page — not a marketing summary.",
+  expAboutT: "About the organization", expAboutD: "A registered Israeli non-profit — our mission, mandate, and the four pillars of our work.",
+  expIboT: "What ibogaine is", expIboD: "The compound, the proposed mechanism of action, what it is studied for, and its risks.",
+  expIsrT: "The crisis in Israel", expIsrD: "Three million symptomatic citizens, a 40% treatment dropout rate, and a TBI surge.",
+  expResT: "The published research", expResD: "The Nature Medicine study in veterans with TBI, and the questions still unanswered.",
+  expProjT: "Projects 2026–2027", expProjD: "Project Iron Mind, the Ibogaine Registry, survivor outreach, and a planned subsidy fund.",
+  expGovT: "Governance & registration", expGovD: "Amuta no. 580841922, our policies, and the three regulatory pathways we pursue.",
+  expTeamT: "Our team", expTeamD: "The three people leading the organization, and what each of them brings.",
+  expMedT: "Watch & listen", expMedD: "Conference talks, documentaries, Israeli television, and long-form podcasts.",
+  expBlogT: "Articles & insights", expBlogD: "Sourced long-form explainers on the science, the history, and the policy case.",
+
+  // --- featured articles ---
+  featuredLabel: "Start here",
+  featuredH2: "Three articles worth your time",
+  featuredAll: "See all articles",
+  featur1T: "What the Stanford results actually showed",
+  featur1D: "A magnesium–ibogaine protocol in special-operations veterans with traumatic brain injury produced large reductions in PTSD, depression and anxiety scores. Here is the study design, the numbers, and the limits.",
+  featur1M: "Research",
+  featur2T: "Israel's mental health crisis after October 7",
+  featur2D: "The scale of psychological injury, why standard protocols are losing forty percent of patients within a year, and the quieter epidemic of blast-related brain injury underneath it.",
+  featur2M: "Israel",
+  featur3T: "From Gabon to the modern clinic",
+  featur3D: "How a West African ceremonial plant became an addiction-interruption treatment, why it was scheduled in the United States, and how the research restarted decades later.",
+  featur3M: "History",
+
+  // --- related cards ---
+  relatedH2: "Continue reading",
+  relAboutT: "About Israelis for Ibogaine", relAboutD: "Our mission, mandate, and the four pillars of our work.",
+  relIboT: "What ibogaine is", relIboD: "The compound, its mechanism of action, and what it treats.",
+  relIsrT: "The crisis in Israel", relIsrD: "Why Israel faces a mental-health emergency without modern precedent.",
+  relResT: "The research base", relResD: "Peer-reviewed studies and the research agenda ahead.",
+  relProjT: "Our projects", relProjD: "What we are building in 2026 and 2027.",
+  relGovT: "Governance & registration", relGovD: "Our legal status, registration number, and regulatory strategy.",
+  relTeamT: "Who we are", relTeamD: "The people leading the organization.",
+  relMedT: "Watch & listen", relMedD: "Talks, documentaries, podcasts, and press coverage.",
+  relBlogT: "Articles & insights", relBlogD: "Long-form explainers on the science, history, and policy.",
+  relConT: "Get in touch", relConD: "Patients, researchers, journalists, and volunteers.",
+
+  // --- CTA band ---
+  ctaH2: "Help make ibogaine therapy available in Israel",
+  ctaText: "Add your name to the public petition, or contact us about research collaboration, clinical partnership, volunteering, or media enquiries. We reply to every message.",
+  ctaBtn1: "Sign the petition",
+  ctaBtn2: "Contact us",
+
+  // --- footer ---
+  footerLinks: "The organization",
+  footerTopics: "Topics",
+  footerResources: "Key articles",
+  footerCopy: "© 2026 Israelis for Ibogaine. All rights reserved.",
+});
+
+Object.assign(LANG.he, {
+  navHome: "בית",
+  navMedia: "מדיה",
+  navProjects: "פרויקטים",
+  navGovernance: "ממשל תאגידי",
+  lastUpdatedLabel: "עודכן לאחרונה",
+  lastUpdatedDate: "26 באוגוסט 2026",
+  readMore: "לקריאת הכתבה →",
+
+  aboutLabel: "אודות העמותה",
+  aboutH1: "מי אנחנו ומה אנחנו מבקשים לשנות",
+  aboutIntro: "ישראלים למען איבוגאין היא עמותה רשומה בישראל — סנה איבוגה (ע\"ר) / Iboga Bush (R.A.), מספר רישום 580841922. אנחנו קיימים מפני שישראל מתמודדת עם היקף של פגיעה נפשית ונוירולוגית שמערכת בריאות הנפש שלה לא נבנתה כדי להכיל, ומפני שגוף מחקר שפורסם מצביע על גישה טיפולית שהמדינה עדיין לא בחנה ברצינות. איננו מרפאה ואיננו מספקים טיפול. אנחנו עושים ארבעה דברים: מחנכים את הציבור, פועלים להבאת ניסויים קליניים לבתי חולים בישראל, תומכים במחקר אקדמי וביוסינתטי, ומציגים את הטיעון המדיני למסלול גישה מפוקח.",
+  iboLabel: "החומר",
+  iboH1: "מהו איבוגאין, ומדוע חוקרים אותו",
+  iboIntro: "איבוגאין הוא אלקלואיד המצוי בקליפת השורש של Tabernanthe iboga, שיח הגדל במערב ובמרכז אפריקה, שם נעשה באיבוגה שימוש טקסי לאורך דורות. מבחינה פרמקולוגית הוא שונה מכל תרופה פסיכיאטרית מאושרת: במקום לווסת מערכת נוירוטרנסמיטרים אחת יום אחר יום, מפגש מפוקח בודד מעורר, כך נראה, תקופה של פלסטיסיות עצבית מוגברת. עמוד זה מסביר את המנגנונים המשוערים בשפה פשוטה, את המצבים הנחקרים — ולא פחות חשוב, את הסיכונים הקרדיולוגיים והאחרים שהופכים שימוש לא מפוקח למסוכן. אין באמור בעמוד זה ייעוץ רפואי.",
+  isrLabel: "המצב בישראל",
+  isrH1: "מצב חירום בבריאות הנפש בהיקף היסטורי",
+  isrIntro: "מספר הנפגעים הנפשיים בישראל מ־7 באוקטובר ומהמערכה שבאה אחריו אינו בעיה שולית בבריאות הציבור — הוא בעיה לאומית. עשרות אלפי חיילים מטופלים כיום בשל טראומה מלחמתית, כשלושה מיליון אזרחים מדווחים על סימפטומים, וכ־40% ממטופלי הטראומה נוטשים פרוטוקולים של SSRI וטיפול בשיחות בתוך שנה. מעל כל אלה מונח מצב חירום שקט יותר: פגיעות מוח טראומטיות מהדף, לעיתים קרובות בתחלואה נלווית עם PTSD עמיד לטיפול, שהטיפול הפסיכיאטרי המקובל לא נבנה כדי להתמודד עמן.",
+  resLabel: "עדויות מחקריות",
+  resH1: "מה המחקר שפורסם אכן מראה",
+  resIntro: "פעילות ציבורית בלי עדויות היא רעש, ולכן עמוד זה מרכז את הספרות שנבדקה בביקורת עמיתים שעליה אנו מסתמכים — ומציין במפורש את מגבלותיה. העבודה המצוטטת ביותר היא מחקר מגנזיום–איבוגאין בלוחמי כוחות מיוחדים עם פגיעת מוח טראומטית, שפורסם ב־Nature Medicine ב־2024, לצד עבודות דימות מוחי תפקודי וסקירות על פסיכדליים בפגיעות מוח. אלה מחקרים קטנים, בעיקר פתוחי־תווית ועם מעקב קצר — תוצאות מרשימות באמת, שאינן זהות להוכחת בטיחות או יעילות עבור אדם מסוים.",
+  projLabel: "תוכנית העבודה",
+  projH1: "מה אנחנו בונים ב־2026 וב־2027",
+  projIntro: "אלה ארבע היוזמות שאנו פועלים עליהן, ומתוארות בכל הכנות לפי המצב שבו כל אחת מהן נמצאת בפועל. חלקן מחקרים תצפיתיים הממתינים לאישור ועדת הלסינקי, אחת היא פרויקט תשתית נתונים, אחת היא עבודת הסברה שכבר מתקיימת עם שורדים, ואחת היא מנגנון מימון מתוכנן ולא פעיל. אנו מעדיפים לציין פרויקט כמתוכנן מלרמוז שהוא פועל.",
+  govLabel: "ממשל תאגידי",
+  govH1: "המצב המשפטי שלנו והאסטרטגיה הרגולטורית",
+  govIntro: "לדעתנו, ארגון שמבקש שינוי במדיניות הסמים הלאומית חייב להיות שקוף לגבי הממשל התאגידי שלו. ישראלים למען איבוגאין פועלת כעמותה רשומה אצל רשם העמותות במשרד המשפטים, בשם העברי סנה איבוגה (ע\"ר) ובשם האנגלי IBOGA BUSH (R.A.), מספר רישום 580841922. אימצנו מדיניות למניעת ניגוד עניינים ומדיניות הגנה על חושפי שחיתויות באישור הוועד המנהל, ואיננו מקבלים כיום תרומות מהציבור באתר זה.",
+  teamLabel: "אנשים",
+  teamH1: "האנשים שמאחורי העמותה",
+  teamIntro: "צוות קטן, ובמכוון. יחד אנו מביאים ניהול ניסויים קליניים בפסילוסיבין וב־MDMA, מחקר דימות מוחי תפקודי עם שורדי הטבח במסיבת נובה, ניסיון יזמי והשקעתי בתחום הפסיכדליים, ושלושה עשורים וחצי של בניית טכנולוגיה עבור ארגונים במגזרים שונים.",
+  medLabel: "לצפייה ולהאזנה",
+  medH1: "הרצאות, סרטים תיעודיים, פודקאסטים ותקשורת",
+  medIntro: "ספרייה מוקפדת למי שרוצה להעמיק מעבר לתקציר — בעברית ובאנגלית. הסרטונים נטענים רק כשאתם בוחרים להפעיל אותם, כך שהעמוד נשאר מהיר. הכללת פריט כאן אינה אישור לכל טענה שמשמיע דובר; אנו מקשרים לחומר שלדעתנו שווה את זמנכם ומשאירים לכם לשקול אותו.",
+  conLabel: "צרו קשר",
+  conH1: "יצירת קשר עם העמותה",
+  conIntro: "אם אתם מטופלים או בני משפחה המחפשים מידע, חוקרים או קלינאים המעוניינים בשיתוף פעולה, עיתונאים בלחץ זמן, או פשוט מי שרוצה לעזור — אנו קוראים ומשיבים לכל הודעה. אנו יושבים בתל אביב ופועלים בעברית ובאנגלית. שימו לב לשני דברים: איננו ספק טיפול ואיננו יכולים לארגן או לפקח על טיפול באיבוגאין, ואיננו מקבלים כיום תרומות באתר זה.",
+  blogLabel: "כתבות",
+  blogH1: "כתבות ותובנות",
+  blogIntro: "הסברים שכתבנו למי שרוצה את הפרטים ולא את הכותרת: מה תוצאות סטנפורד הראו ומה לא, איך איבוגה עברה משימוש טקסי בגבון למרפאות במקסיקו ובפורטוגל, מדוע פגיעת מוח מהדף מתנהגת אחרת מטראומה נפשית בלבד, והטיעון הרגולטורי למסלול גישה מפוקח בישראל.",
+
+  homeMissionLabel: "המשימה שלנו",
+  homeMissionH2: "קידום מחקר וגישה אחראית לאיבוגאין בישראל",
+  homeMissionP1: "ישראלים למען איבוגאין היא עמותה רשומה בישראל — סנה איבוגה (ע\"ר) / Iboga Bush (R.A.), מספר רישום 580841922. אנו מקדמים הבנה ציבורית וגישה רפואית אחראית לאיבוגאין עבור הפרעת דחק פוסט־טראומטית, פגיעת מוח טראומטית והתמכרות.",
+  homeMissionP2: "איננו מרפאה ואיננו מספקים או מארגנים טיפול. אנו תומכים במחקר, פועלים להבאת ניסויים קליניים לבתי חולים בישראל, מחנכים את הציבור ומפחיתים סטיגמה, ומציגים את הטיעון המדיני למסלול גישה מפוקח ומוסדר.",
+  homeMissionCta: "קראו עוד על העמותה",
+
+  exploreLabel: "לסיור באתר",
+  exploreH2: "מאיפה להתחיל",
+  exploreIntro: "תשעה מדורים המכסים את המדע, המצב בישראל, העדויות שפורסמו, תוכנית העבודה שלנו ואיך להשיג אותנו. כל אחד מהם הוא עמוד מלא — לא תקציר שיווקי.",
+  expAboutT: "אודות העמותה", expAboutD: "עמותה רשומה בישראל — המשימה, המנדט וארבעת עמודי התווך של עבודתנו.",
+  expIboT: "מהו איבוגאין", expIboD: "החומר, מנגנון הפעולה המשוער, המצבים הנחקרים והסיכונים.",
+  expIsrT: "המשבר בישראל", expIsrD: "שלושה מיליון אזרחים סימפטומטיים, 40% נשירה מטיפול, וגל פגיעות מוח.",
+  expResT: "המחקר שפורסם", expResD: "מחקר Nature Medicine בלוחמים עם פגיעת מוח, והשאלות שנותרו פתוחות.",
+  expProjT: "פרויקטים 2026–2027", expProjD: "פרויקט \"מוח מפלדה\", מרשם האיבוגאין, הסברה לשורדים וקרן סיוע מתוכננת.",
+  expGovT: "ממשל ורישום", expGovD: "עמותה מס' 580841922, המדיניות שלנו ושלושת המסלולים הרגולטוריים.",
+  expTeamT: "הצוות שלנו", expTeamD: "שלושת האנשים המובילים את העמותה, ומה כל אחד מהם מביא.",
+  expMedT: "לצפייה ולהאזנה", expMedD: "פאנלים בכינוסים, סרטים תיעודיים, טלוויזיה ישראלית ופודקאסטים.",
+  expBlogT: "כתבות ותובנות", expBlogD: "הסברים מעמיקים ומקורות על המדע, ההיסטוריה והטיעון המדיני.",
+
+  featuredLabel: "התחילו כאן",
+  featuredH2: "שלוש כתבות ששוות את זמנכם",
+  featuredAll: "לכל הכתבות",
+  featur1T: "מה תוצאות סטנפורד באמת הראו",
+  featur1D: "פרוטוקול מגנזיום–איבוגאין בלוחמי כוחות מיוחדים עם פגיעת מוח טראומטית הביא לירידה ניכרת במדדי PTSD, דיכאון וחרדה. הנה מתווה המחקר, המספרים והמגבלות.",
+  featur1M: "מחקר",
+  featur2T: "משבר בריאות הנפש בישראל אחרי 7 באוקטובר",
+  featur2D: "היקף הפגיעה הנפשית, מדוע פרוטוקולים מקובלים מאבדים ארבעים אחוז מהמטופלים בתוך שנה, והמגפה השקטה של פגיעות מוח מהדף שמתחתיה.",
+  featur2M: "ישראל",
+  featur3T: "מגבון אל המרפאה המודרנית",
+  featur3D: "איך צמח טקסי ממערב אפריקה הפך לטיפול לקטיעת התמכרות, מדוע סווג כחומר אסור בארצות הברית, וכיצד המחקר התחדש עשורים אחר כך.",
+  featur3M: "היסטוריה",
+
+  relatedH2: "להמשך קריאה",
+  relAboutT: "אודות ישראלים למען איבוגאין", relAboutD: "המשימה, המנדט וארבעת עמודי התווך של עבודתנו.",
+  relIboT: "מהו איבוגאין", relIboD: "החומר, מנגנון הפעולה שלו ומה הוא מטפל בו.",
+  relIsrT: "המשבר בישראל", relIsrD: "מדוע ישראל מתמודדת עם מצב חירום נפשי חסר תקדים מודרני.",
+  relResT: "בסיס המחקר", relResD: "מחקרים שנבדקו בביקורת עמיתים וסדר היום המחקרי שלפנינו.",
+  relProjT: "הפרויקטים שלנו", relProjD: "מה אנחנו בונים ב־2026 וב־2027.",
+  relGovT: "ממשל ורישום", relGovD: "המצב המשפטי, מספר הרישום והאסטרטגיה הרגולטורית שלנו.",
+  relTeamT: "מי אנחנו", relTeamD: "האנשים שמובילים את העמותה.",
+  relMedT: "לצפייה ולהאזנה", relMedD: "הרצאות, סרטים תיעודיים, פודקאסטים וסיקור תקשורתי.",
+  relBlogT: "כתבות ותובנות", relBlogD: "הסברים מעמיקים על המדע, ההיסטוריה והמדיניות.",
+  relConT: "יצירת קשר", relConD: "מטופלים, חוקרים, עיתונאים ומתנדבים.",
+
+  ctaH2: "עזרו לנו להנגיש טיפול באיבוגאין בישראל",
+  ctaText: "הוסיפו את שמכם לעצומה הציבורית, או פנו אלינו בנושא שיתוף פעולה מחקרי, שותפות קלינית, התנדבות או פניות תקשורת. אנו משיבים לכל הודעה.",
+  ctaBtn1: "חתמו על העצומה",
+  ctaBtn2: "צרו קשר",
+
+  footerLinks: "העמותה",
+  footerTopics: "נושאים",
+  footerResources: "כתבות מרכזיות",
+  footerCopy: "© 2026 ישראלים למען איבוגאין. כל הזכויות שמורות.",
+});
+
 // ---- State ---- //
 let currentLang = 'en';
 
@@ -669,6 +869,7 @@ function initNavScroll() {
 function initActiveNav() {
   const sections = document.querySelectorAll('section[id]');
   const links = document.querySelectorAll('.nav-links a[href^="#"]');
+  if (!links.length || !sections.length) return;
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -693,6 +894,10 @@ function animateCounters() {
 
 // ---- Scroll reveal ---- //
 function initScrollReveal() {
+  // Fail safe: if IntersectionObserver or motion preferences rule this out,
+  // leave every element fully visible rather than hiding content.
+  if (!('IntersectionObserver' in window) ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   const els = document.querySelectorAll(
     '.info-card, .founder-card, .blog-card, .crisis-card, .stat-box, .timeline-item'
   );
@@ -711,6 +916,11 @@ function initScrollReveal() {
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     obs.observe(el);
   });
+  // Safety net: reveal anything still hidden after 1.2s so no content can be
+  // lost to a stalled observer, a headless crawler, or a review tool.
+  setTimeout(() => els.forEach(el => {
+    if (el.style.opacity === '0') { el.style.opacity = '1'; el.style.transform = 'none'; }
+  }), 1200);
 }
 
 // ---- Contact form ---- //
@@ -726,14 +936,43 @@ function initContactForm() {
   });
 }
 
+// ---- Click-to-play media facades ---- //
+// Video and podcast embeds are not loaded until the visitor asks for them.
+// This keeps every page free of third-party player JavaScript on first load.
+function initMediaFacades() {
+  document.addEventListener('click', e => {
+    const el = e.target.closest('.video-facade, .audio-facade');
+    if (!el || el.classList.contains('is-playing')) return;
+    const yt = el.getAttribute('data-yt');
+    const sp = el.getAttribute('data-spotify');
+    const frame = document.createElement('iframe');
+    frame.setAttribute('title', el.querySelector('.video-facade-title')?.textContent || 'Embedded player');
+    frame.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+    frame.setAttribute('allowfullscreen', '');
+    frame.setAttribute('loading', 'lazy');
+    if (yt) frame.src = 'https://www.youtube.com/embed/' + yt + '?autoplay=1&rel=0';
+    else if (sp) { frame.src = sp; frame.style.height = '152px'; }
+    else return;
+    el.classList.add('is-playing');
+    el.innerHTML = '';
+    el.appendChild(frame);
+  });
+}
+
 // ---- Init ---- //
 document.addEventListener('DOMContentLoaded', () => {
-  const saved = localStorage.getItem('iboLang') || 'he';
-  applyLang(saved);
+  // A page written in one language only (e.g. the Hebrew legal pages) locks it.
+  const locked = window.__lockLang;
+  const stored = locked || localStorage.getItem('iboLang');
+  const browserHe = (navigator.languages || [navigator.language || ''])
+    .some(l => String(l).toLowerCase().startsWith('he'));
+  const saved = stored || (browserHe ? 'he' : 'en');
+  applyLang(locked || saved);
   initNavScroll();
   initActiveNav();
   initScrollReveal();
   initContactForm();
+  initMediaFacades();
   animateCounters();
 
   document.querySelector('.lang-btn')?.addEventListener('click', toggleLang);

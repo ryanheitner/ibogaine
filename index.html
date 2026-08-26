@@ -3,40 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="The Ibogaine Foundation of Israel — advancing ibogaine-assisted therapy for PTSD, traumatic brain injury, addiction, and neurological conditions." />
-  <meta name="keywords" content="ibogaine, Israel, PTSD, TBI, traumatic brain injury, Parkinson's, addiction, psychedelic therapy, mental health, soldiers" />
-  <meta property="og:title" content="Israelis for Ibogaine" />
-  <meta property="og:description" content="Healing trauma, restoring hope. Championing ibogaine-assisted therapy for Israel's mental health crisis." />
+  <title>Israelis for Ibogaine | Ibogaine research and policy advocacy in Israel</title>
+  <meta name="description" content="A registered Israeli non-profit advancing research, public education, and responsible medical access to ibogaine for PTSD, traumatic brain injury, and addiction." />
+  <link rel="canonical" href="https://israelisforibogaine.org/" />
+  <meta name="robots" content="index, follow" />
   <meta property="og:type" content="website" />
-  <title>Israelis for Ibogaine | ישראלים למען איבוגאין</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <meta property="og:site_name" content="Israelis for Ibogaine" />
+  <meta property="og:title" content="Israelis for Ibogaine | Ibogaine research and policy advocacy in Israel" />
+  <meta property="og:description" content="A registered Israeli non-profit advancing research, public education, and responsible medical access to ibogaine for PTSD, traumatic brain injury, and addiction." />
+  <meta property="og:url" content="https://israelisforibogaine.org/" />
+  <meta property="og:image" content="https://israelisforibogaine.org/images/logo-new.png" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="images/logo-new.png" />
+  <link rel="preload" as="image" href="images/logo-new.png" />
   <link rel="stylesheet" href="css/styles.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["Organization", "NonprofitOrganization"],
+        "@type": ["Organization", "NGO"],
         "@id": "https://israelisforibogaine.org/#organization",
         "name": "Israelis for Ibogaine",
-        "alternateName": "ישראלים למען איבוגאין",
+        "alternateName": ["\u05d9\u05e9\u05e8\u05d0\u05dc\u05d9\u05dd \u05dc\u05de\u05e2\u05df \u05d0\u05d9\u05d1\u05d5\u05d2\u05d0\u05d9\u05df", "IBOGA BUSH (R.A.)"],
+        "legalName": "IBOGA BUSH (R.A.) / \u05e1\u05e0\u05d4 \u05d0\u05d9\u05d1\u05d5\u05d2\u05d4 (\u05e2\"\u05e8)",
+        "nonprofitStatus": "NonprofitANBI",
+        "identifier": {
+          "@type": "PropertyValue",
+          "name": "Israeli Registrar of Associations (Amuta) number",
+          "value": "580841922"
+        },
         "url": "https://israelisforibogaine.org/",
         "logo": "https://israelisforibogaine.org/images/logo-new.png",
-        "description": "Advocacy for ibogaine-assisted therapy as a breakthrough treatment for PTSD, traumatic brain injury, and addiction in Israel.",
+        "email": "info@israelisforibogaine.org",
+        "foundingDate": "2025",
+        "address": { "@type": "PostalAddress", "addressLocality": "Tel Aviv", "addressCountry": "IL" },
+        "areaServed": { "@type": "Country", "name": "Israel" },
+        "description": "A registered Israeli non-profit association advancing research, public education and responsible medical access to ibogaine for PTSD, traumatic brain injury and addiction.",
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "contactType": "general enquiries",
+          "email": "info@israelisforibogaine.org",
+          "availableLanguage": ["Hebrew", "English"],
+          "url": "https://israelisforibogaine.org/contact.html"
+        }],
         "sameAs": [
           "https://x.com/IbogaineIsrael",
           "https://www.linkedin.com/company/113200241/",
           "https://www.facebook.com/profile.php?id=61589446603031"
         ],
-        "knowsAbout": [
-          "Ibogaine therapy",
-          "PTSD treatment",
-          "Traumatic brain injury treatment",
-          "Addiction treatment research",
-          "Drug policy reform"
-        ]
+        "knowsAbout": ["Ibogaine therapy","PTSD treatment","Traumatic brain injury","Addiction treatment research","Drug policy reform"]
       },
       {
         "@type": "WebSite",
@@ -44,7 +60,7 @@
         "name": "Israelis for Ibogaine",
         "url": "https://israelisforibogaine.org/",
         "publisher": { "@id": "https://israelisforibogaine.org/#organization" },
-        "inLanguage": ["he-IL", "en-US"]
+        "inLanguage": ["en-US", "he-IL"]
       }
     ]
   }
@@ -52,19 +68,17 @@
 </head>
 <body>
 
-<a class="skip-link" href="#main-content" data-i18n="skipLink">Skip to main content</a>
-
-<!-- Disclaimer Banner -->
 <div class="disclaimer-banner" data-i18n="disclaimer">
   ⚠️ This website is for educational and informational purposes only!  Ibogaine is a controlled substance in many countries. Nothing here constitutes medical advice. Always consult a qualified physician.
 </div>
 
-<!-- ===== NAVBAR ===== -->
+<a class="skip-link" href="#main-content" data-i18n="skipLink">Skip to main content</a>
+
 <nav id="navbar">
   <div class="container nav-inner">
-    <a href="#hero" class="nav-logo">
+    <a href="index.html" class="nav-logo" aria-label="Israelis for Ibogaine — home">
       <div class="nav-logo-icon">
-        <img src="images/logo-new.png" alt="Israelis for Ibogaine logo" />
+        <img src="images/logo-new.png" alt="Israelis for Ibogaine logo" width="44" height="44" />
       </div>
       <div class="nav-logo-text">
         Israelis for Ibogaine
@@ -73,17 +87,15 @@
     </a>
     <ul class="nav-links">
       <li><a href="petition.html" class="petition-nav-link" data-i18n="navPetition" data-href-en="petition.html" data-href-he="petition-he.html">Sign Petition</a></li>
-      <li><a href="#mission" data-i18n="navAbout">About</a></li>
-      <li><a href="#science" data-i18n="navIbogaine">Ibogaine</a></li>
-      <li><a href="#research" data-i18n="navResearch">Research</a></li>
-      <li><a href="#crisis" data-i18n="navIsrael">Israel</a></li>
-      <li><a href="#team" data-i18n="navFounders">Our Team</a></li>
-      <li><a href="#blog" data-i18n="navBlog">Blog</a></li>
-      <li><a href="#media" data-i18n="navMedia">Media</a></li>
-      <li><a href="#contact" data-i18n="navContact">Contact</a></li>
-      <li>
-        <button type="button" class="lang-btn" data-i18n="langToggle">עברית</button>
-      </li>
+      <li><a href="about.html" data-i18n="navAbout">About</a></li>
+      <li><a href="ibogaine.html" data-i18n="navIbogaine">Ibogaine</a></li>
+      <li><a href="israel.html" data-i18n="navIsrael">Israel</a></li>
+      <li><a href="research.html" data-i18n="navResearch">Research</a></li>
+      <li><a href="team.html" data-i18n="navFounders">Our Team</a></li>
+      <li><a href="media.html" data-i18n="navMedia">Media</a></li>
+      <li><a href="blog/index.html" data-i18n="navBlog">Blog</a></li>
+      <li><a href="contact.html" data-i18n="navContact">Contact</a></li>
+      <li><button type="button" class="lang-btn" data-i18n="langToggle">עברית</button></li>
     </ul>
     <div class="nav-hamburger" aria-label="Menu" role="button" tabindex="0">
       <span></span><span></span><span></span>
@@ -102,8 +114,8 @@
       <p data-i18n="heroSub">Championing ibogaine-assisted therapy as a breakthrough treatment for PTSD, traumatic brain injury, and addiction — when Israel needs it most.</p>
       <div class="hero-btns">
         <a href="petition.html" class="btn btn-primary" data-i18n="heroCtaPetition" data-href-en="petition.html" data-href-he="petition-he.html">Sign the Petition</a>
-        <a href="#science" class="btn btn-primary" data-i18n="heroCta1">Learn More</a>
-        <a href="#contact" class="btn btn-outline" data-i18n="heroCta2">Get Involved</a>
+        <a href="ibogaine.html" class="btn btn-primary" data-i18n="heroCta1">Learn More</a>
+        <a href="contact.html" class="btn btn-outline" data-i18n="heroCta2">Get Involved</a>
       </div>
     </div>
   </div>
@@ -112,7 +124,6 @@
     <p data-i18n="heroBadgeText">Israelis currently receiving treatment for war-related psychological trauma</p>
   </div>
 </section>
-
 <!-- ===== STATS STRIP ===== -->
 <div class="stats-strip">
   <div class="container">
@@ -136,8 +147,6 @@
     </div>
   </div>
 </div>
-
-
 <!-- ===== BREAKING NEWS BANNER ===== -->
 <section id="breaking-news" class="section" style="padding: 3rem 0; background: linear-gradient(135deg, #0D2B52 0%, #1B4F8F 100%);">
   <div class="container">
@@ -158,26 +167,28 @@
   </div>
 </section>
 
-<!-- ===== MISSION ===== -->
-<section id="mission" class="section">
+<section id="mission-summary" class="section">
   <div class="container">
     <div class="grid-2">
       <div>
-        <span class="section-label" data-i18n="missionLabel">Mission</span>
-        <h2 data-i18n="missionH2">A National Imperative for Resilience, Recovery, and Brain Repair</h2>
+        <span class="section-label" data-i18n="homeMissionLabel">Our mission</span>
+        <h2 data-i18n="homeMissionH2">Advancing research and responsible access to ibogaine in Israel</h2>
         <div class="divider"></div>
-        <p data-i18n="missionP1">Israelis for Ibogaine's mission is to advance public understanding and responsible medical access to ibogaine for PTSD, traumatic brain injuries, addiction, and co-occurring mental health conditions.</p>
-        <p data-i18n="missionP2">We promote scientific research, reduce stigma, and educate the public to accelerate the safe, evidence-based adoption of ibogaine therapy, restoring the cognitive and emotional health of a nation through neuro-regeneration, one mind at a time.</p>
+        <p data-i18n="homeMissionP1">Israelis for Ibogaine is a registered Israeli non-profit association — Iboga Bush (R.A.) / סנה איבוגה (ע”ר), Amuta no. 580841922. We advance public understanding and responsible medical access to ibogaine for post-traumatic stress disorder, traumatic brain injury, and addiction.</p>
+        <p data-i18n="homeMissionP2">We are not a clinic and we do not provide or arrange treatment. We fund and support research, we work to bring clinical trials into Israeli hospitals, we educate the public and reduce stigma, and we make the policy case for a supervised, regulated pathway to access.</p>
         <div class="badge-strip">
           <span class="badge" data-i18n="missionBadge1">Non-Profit Organization</span>
           <span class="badge" data-i18n="missionBadge2">Clinical Research</span>
           <span class="badge" data-i18n="missionBadge3">Bilingual Support</span>
           <span class="badge" data-i18n="missionBadge4">Evidence-Based</span>
         </div>
+        <p style="margin-top:1.5rem">
+          <a href="about.html" class="btn btn-green" data-i18n="homeMissionCta">Read more about the organization</a>
+        </p>
       </div>
       <div class="about-visual">
         <div class="about-img-frame">
-          <img src="images/jerusalem-aerial.jpg" alt="Aerial view of Jerusalem" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" />
+          <picture><source srcset="images/jerusalem-aerial.webp" type="image/webp" /><img src="images/jerusalem-aerial.jpg" alt="Aerial view of Jerusalem" width="800" height="1200" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" /></picture>
         </div>
         <div class="about-leaf">
           <strong data-i18n="missionNum">35+ Years</strong>
@@ -188,961 +199,226 @@
   </div>
 </section>
 
-<!-- ===== ISRAEL CRISIS ===== -->
-<section id="crisis" class="section section-dark">
+<section id="explore" class="section section-alt">
   <div class="container">
-    <div class="grid-2 crisis-grid-with-image" style="align-items: start; gap: 3rem;">
-      <div class="crisis-grid-image" style="order: -1;">
-        <img src="images/support-group.jpg" alt="Support group circle discussion" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:12px;" />
-      </div>
-      <div class="crisis-content">
-        <div class="text-left">
-          <span class="section-label" data-i18n="crisisLabel">The Crisis</span>
-          <h2 data-i18n="crisisH2">A Mental Health Emergency of Historic Scale</h2>
-          <div class="divider"></div>
-          <p data-i18n="crisisIntro">Since October 7th and the ensuing regional conflict, Israel has entered a mental health crisis with no modern precedent. The scale of psychological and neurological injury now threatens not only individuals and families, but the nation's long-term resilience, workforce capacity, and social fabric.</p>
-        </div>
-        <div class="crisis-grid">
-          <div class="crisis-card">
-            <span class="crisis-num" data-i18n="crisisStat1Num">3M+</span>
-            <span data-i18n="crisisStat1Label">Israelis affected — estimated citizens currently experiencing PTSD, anxiety, or clinical depression</span>
-          </div>
-          <div class="crisis-card">
-            <span class="crisis-num" data-i18n="crisisStat2Num">40%</span>
-            <span data-i18n="crisisStat2Label">Dropout rate — trauma patients abandoning standard SSRI and talk-therapy protocols within 12 months</span>
-          </div>
-          <div class="crisis-card">
-            <span class="crisis-num" data-i18n="crisisStat3Num">1/3</span>
-            <span data-i18n="crisisStat3Label">Of IDF combat personnel returning from active duty show markers of treatment-resistant PTSD or TBI</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== THE PROBLEM ===== -->
-<section id="problem" class="section">
-  <div class="container">
-    <div class="text-center">
-      <span class="section-label" data-i18n="problemLabel">The Problem</span>
-      <h2 data-i18n="problemH2">Four Dimensions of an Unmet Crisis</h2>
-      <div class="divider divider-center"></div>
-    </div>
-    <div class="info-cards">
-      <div class="info-card">
-        <h3 data-i18n="problem1Title">🧠 The Trauma Surge</h3>
-        <p data-i18n="problem1Text">Over 3 million Israelis are symptomatic. Civilian survivors, Nova attendees, displaced families, and reserve soldiers are overwhelming an already strained mental health system unprepared for this volume or severity.</p>
-      </div>
-      <div class="info-card">
-        <h3 data-i18n="problem2Title">💥 The TBI Epidemic</h3>
-        <p data-i18n="problem2Text">Blast injuries from modern warfare are driving a surge of Traumatic Brain Injuries among IDF personnel — frequently comorbid with treatment-resistant PTSD, creating a dual-diagnosis crisis that standard care cannot address.</p>
-      </div>
-      <div class="info-card">
-        <h3 data-i18n="problem3Title">💊 Failure of the Status Quo</h3>
-        <p data-i18n="problem3Text">SSRIs and talk therapy show high dropout rates and limited efficacy for severe trauma and chronic addiction. Patients are left in a revolving door of partial treatment, relapse, and deterioration.</p>
-      </div>
-      <div class="info-card">
-        <h3 data-i18n="problem4Title">🔬 The Biological Bottleneck</h3>
-        <p data-i18n="problem4Text">Neurodegeneration and loss of synaptic plasticity in trauma victims prevent conventional therapies from 'taking hold.' Without addressing the neurological substrate, psychological interventions fail at the cellular level.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== THE SCIENCE ===== -->
-<section id="science" class="section section-alt">
-  <div class="container">
-    <div class="grid-2">
-      <div>
-        <span class="section-label" data-i18n="scienceLabel">The Science</span>
-        <h2 data-i18n="scienceH2">Ibogaine: A Catalyst for Genuine Neurological Repair</h2>
-        <div class="divider"></div>
-        <p data-i18n-html="scienceIntro1"><strong>Why Ibogaine Is Different:</strong> Ibogaine is not a recreational psychedelic. It is an oneirogen — a dream-state compound derived from the West African Tabernanthe iboga shrub that triggers deep neurological repair mechanisms unavailable to any other known substance or therapy.</p>
-        <p data-i18n="scienceIntro2">The Stanford MISTIC study demonstrated dramatic symptom reduction in PTSD and TBI in as few as one to two sessions — results unmatched in conventional psychiatric literature.</p>
-      </div>
-      <div>
-        <div class="info-cards" style="margin-top:0;">
-          <div class="info-card">
-            <h3 data-i18n="scienceMech1Title">GDNF Release</h3>
-            <p data-i18n="scienceMech1Text">Triggers Glial Cell-Derived Neurotrophic Factor, physically repairing white matter tracts and rebuilding damaged neural pathways, the biological foundation of trauma recovery.</p>
-          </div>
-          <div class="info-card">
-            <h3 data-i18n="scienceMech2Title">Dopamine Reset</h3>
-            <p data-i18n="scienceMech2Text">Resets the reward system, interrupting opioid, alcohol, and nicotine dependence and opening a critical 'biological window' for long-term sobriety.</p>
-          </div>
-          <div class="info-card">
-            <h3 data-i18n="scienceMech3Title">Rapid Remission</h3>
-            <p data-i18n="scienceMech3Text">Clinical evidence confirms significant, durable reduction of PTSD and TBI symptoms with minimal sessions reducing patient burden and system cost.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== THE SOLUTION ===== -->
-<section id="solution" class="section">
-  <div class="container">
-    <div class="text-center">
-      <span class="section-label" data-i18n="solutionLabel">The Solution</span>
-      <h2 data-i18n="solutionH2">Repairing the Brain from the Inside Out</h2>
-      <div class="divider divider-center"></div>
-      <p style="max-width:750px;margin:0 auto 2.5rem;" data-i18n-html="solutionIntro">Ibogaine's mechanism is fundamentally distinct from any approved psychiatric medication. By acting directly on the neurotrophin pathway, it addresses the <strong>biological substrate of trauma</strong>, not merely its symptoms. Where SSRIs modulate mood, ibogaine rebuilds the architecture of the mind.</p>
-    </div>
-    <div class="grid-2 solution-grid-with-image" style="gap: 3rem;">
-      <div class="info-cards">
-        <div class="info-card">
-          <h3 data-i18n="solution1Title">For PTSD</h3>
-          <p data-i18n="solution1Text">Disrupts the hyperactive fear-memory consolidation cycle, enabling patients to process trauma without re-traumatisation.</p>
-        </div>
-        <div class="info-card">
-          <h3 data-i18n="solution2Title">For TBI</h3>
-          <p data-i18n="solution2Text">Promotes axonal regeneration and myelin repair via GDNF, restoring cognitive function lost to blast injury and concussive trauma.</p>
-        </div>
-        <div class="info-card">
-          <h3 data-i18n="solution3Title">For Addiction</h3>
-          <p data-i18n="solution3Text">Eliminates acute withdrawal and resets craving pathways, providing a clean neurological slate for sustained recovery programmes.</p>
-        </div>
-      </div>
-      <div class="solution-grid-image">
-        <img src="images/brain-research.jpg" alt="Brain research visualization" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:12px;" />
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== THE MANDATE ===== -->
-<section id="mandate" class="section section-dark">
-  <div class="container">
-    <div class="text-center">
-      <span class="section-label" data-i18n="mandateLabel">The Mandate</span>
-      <h2 data-i18n="mandateH2">Four Pillars of Action</h2>
-      <div class="divider divider-center"></div>
-      <p style="max-width:750px;margin:0 auto 2.5rem;" data-i18n="mandateIntro">Israelis for Ibogaine operates across four mutually reinforcing strategic pillars, from public awareness to policy reform, forming a comprehensive national advocacy and research framework.</p>
-    </div>
-    <div class="grid-4" style="text-align:center;">
-      <div class="stat-box" style="background: rgba(255,255,255,0.05); padding: 2rem 1rem;">
-        <h3 style="color:var(--gold); font-size:1.1rem; margin-bottom:1rem;" data-i18n="mandate1Title">Public Education</h3>
-        <p style="font-size:0.9rem;" data-i18n="mandate1Text">Multi-channel campaigns to de-stigmatise ibogaine, distinguishing it categorically from recreational substances and positioning it as a specialised medical tool.</p>
-      </div>
-      <div class="stat-box" style="background: rgba(255,255,255,0.05); padding: 2rem 1rem;">
-        <h3 style="color:var(--gold); font-size:1.1rem; margin-bottom:1rem;" data-i18n="mandate2Title">Clinical Trials</h3>
-        <p style="font-size:0.9rem;" data-i18n="mandate2Text">Facilitating and co-funding Phase II/III trials within Israeli hospitals, including Ichilov and Sheba.</p>
-      </div>
-      <div class="stat-box" style="background: rgba(255,255,255,0.05); padding: 2rem 1rem;">
-        <h3 style="color:var(--gold); font-size:1.1rem; margin-bottom:1rem;" data-i18n="mandate3Title">Academic &amp; Biosynthetic Research</h3>
-        <p style="font-size:0.9rem;" data-i18n="mandate3Text">Supporting the Weizmann Institute and Tel Aviv University's Sagol School to explore ibogaine's biosynthesis.</p>
-      </div>
-      <div class="stat-box" style="background: rgba(255,255,255,0.05); padding: 2rem 1rem;">
-        <h3 style="color:var(--gold); font-size:1.1rem; margin-bottom:1rem;" data-i18n="mandate4Title">Policy &amp; Global Safety</h3>
-        <p style="font-size:0.9rem;" data-i18n="mandate4Text">Lobbying the MoH for Compassionate Use status and establishing a 'Gold Standard' protocol for safe access.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== ECOSYSTEM ===== -->
-<section id="ecosystem" class="section">
-  <div class="container">
-    <div style="margin-bottom: 2rem;">
-      <h2 data-i18n="ecoH2" style="font-size: 2.2rem; margin-bottom: 0.8rem;">The Ibogaine Israel Umbrella</h2>
-      <p style="max-width:1100px; line-height: 1.6; font-size: 1.05rem;" data-i18n-html="ecoIntro">Ibogaine Israel is designed to function as the <strong>central connective node</strong> of a broader national ecosystem, bridging academia, healthcare, civil society, and biotechnology.</p>
-    </div>
-    
-    <div class="umbrella-wrapper">
-      <div class="umbrella-diagram">
-        <div class="umb-circle umb-circle-1"></div>
-        <div class="umb-circle umb-circle-2"></div>
-        <div class="umb-circle umb-circle-3"></div>
-        
-        <div class="umb-line umb-line-1"></div>
-        <div class="umb-line umb-line-2"></div>
-        <div class="umb-line umb-line-3"></div>
-        
-        <div class="umb-label umb-label-1">
-          <h3 data-i18n="eco1Title">Research &amp; Policy</h3>
-          <p data-i18n="eco1Text">Biosynthetic research, compassionate use and gold-standard protocols</p>
-        </div>
-        <div class="umb-label umb-label-2">
-          <h3 data-i18n="eco2Title">Clinical Trials</h3>
-          <p data-i18n="eco2Text">Phase II/III trials in Ichilov and Sheba for safety and efficacy</p>
-        </div>
-        <div class="umb-label umb-label-3">
-          <h3 data-i18n="eco3Title">Core Mission</h3>
-          <p data-i18n="eco3Text">National hub for ibogaine-based brain health reform</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== LEGAL STRATEGY ===== -->
-<section id="legal" class="section">
-  <div class="container">
-    <div class="grid-2 legal-grid-with-image" style="gap: 3rem;">
-      <div>
-        <span class="section-label" data-i18n="legalLabel">Legal Strategy</span>
-        <h2 data-i18n="legalH2">A Clear Regulatory Pathway</h2>
-        <div class="divider"></div>
-        <div class="info-card" style="box-shadow: none; border: 1px solid #ccc; margin-bottom: 2rem;">
-          <h3 data-i18n="legalTaxTitle">Entity &amp; Tax Structure</h3>
-          <p data-i18n-html="legalTaxText">Ibogaine Israel is registered as a formal <strong>Amuta</strong> (Non-Profit Association) under the Israeli Ministry of Justice. We are not currently accepting donations; any future fundraising and tax treatment will be announced once formally established.</p>
-        </div>
-        <div class="info-card legal-entity-card" style="box-shadow: none; border: 1px solid #ccc; margin-bottom: 2rem;">
-          <h3 data-i18n="legalEntityTitle">Legal Entity</h3>
-          <ul class="legal-entity-list">
-            <li><strong data-i18n="legalEntityNameHeLabel">Official Name (Hebrew):</strong> <span dir="rtl">סנה איבוגה (ע”ר)</span></li>
-            <li><strong data-i18n="legalEntityNameEnLabel">Official Name (English):</strong> <span>IBOGA BUSH (R.A.)</span></li>
-            <li><strong data-i18n="legalEntityRegNoLabel">Registration Number:</strong> <span>580841922</span></li>
-            <li><strong data-i18n="legalEntityAuthorityLabel">Registered Authority:</strong> <span data-i18n="legalEntityAuthorityValue">Israeli Registrar of Associations (Rasham Ha’Amutot)</span></li>
-          </ul>
-          <p class="legal-brand-notice" data-i18n="legalBrandNotice">The website brand name may differ from the legal registered entity name. All operations, activities, and services are conducted under the registered amutah listed above.</p>
-        </div>
-      </div>
-      <div>
-        <div class="timeline mt-2" style="margin-top:0;">
-          <div class="timeline-item">
-            <h4 data-i18n="legal1Title">1. Reclassify Ibogaine</h4>
-            <p data-i18n="legal1Text">Transitioning from Schedule 1 to 'Controlled Medical Substance' enabling supervised clinical and compassionate use within licensed facilities.</p>
-          </div>
-          <div class="timeline-item">
-            <h4 data-i18n="legal2Title">2. National Pilot Programme</h4>
-            <p data-i18n="legal2Text">Advocating for a government-sanctioned 'National Ibogaine Pilot' specifically targeting combat veterans and Nova massacre survivors.</p>
-          </div>
-          <div class="timeline-item">
-            <h4 data-i18n="legal3Title">3. Compassionate Use Status</h4>
-            <p data-i18n="legal3Text">Fast-tracking MoH approval for severe, treatment-resistant patients while full trial data is compiled.</p>
-          </div>
-        </div>
-      </div>
-      <div class="legal-grid-image">
-        <img src="images/knesset.jpg" alt="The Knesset building" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:12px;" />
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== PROJECTS ===== -->
-<section id="projects" class="section">
-  <div class="container">
-    <div class="text-center">
-      <span class="section-label" data-i18n="projLabel">2026–2027 Projects</span>
-      <h2 data-i18n="projH2">Key Initiatives: Turning Vision into Evidence</h2>
-      <div class="divider divider-center"></div>
-    </div>
-    <div class="info-cards projects-cards-with-images">
-      <div class="info-card">
-        <div class="card-image-thumb">
-          <img src="images/support-group.jpg" alt="Project Iron Mind - IDF veterans support" loading="lazy" decoding="async" />
-        </div>
-        <h3 data-i18n="proj1Title">Project 'Iron Mind'</h3>
-        <p data-i18n-html="proj1Text">A funded observational study of <strong>50 IDF veterans</strong> with comorbid TBI and PTSD, utilising the Magnesium-Ibogaine protocol to generate Israel's first domestic clinical dataset.</p>
-      </div>
-      <div class="info-card">
-        <div class="card-image-thumb">
-          <img src="images/brain-research.jpg" alt="The Ibogaine Registry - research data" loading="lazy" decoding="async" />
-        </div>
-        <h3 data-i18n="proj2Title">The Ibogaine Registry</h3>
-        <p data-i18n="proj2Text">A secure, anonymised database tracking health outcomes for Israelis who have sought ibogaine treatment abroad.</p>
-      </div>
-      <div class="info-card">
-        <div class="card-image-thumb">
-          <img src="images/community-circle.jpg" alt="Survivor Outreach - community support" loading="lazy" decoding="async" />
-        </div>
-        <h3 data-i18n="proj3Title">Survivor Outreach</h3>
-        <p data-i18n="proj3Text">Building a national network connecting Nova massacre survivors, displaced families, and bereaved communities with ibogaine-assisted therapy pathways.</p>
-      </div>
-      <div class="info-card">
-        <div class="card-image-thumb">
-          <img src="images/medical-donation.jpg" alt="Planned Patient Subsidy Fund - financial assistance" loading="lazy" decoding="async" />
-        </div>
-        <h3 data-i18n="proj4Title">Planned Patient Subsidy Fund</h3>
-        <p data-i18n="proj4Text">A planned financial assistance programme that may provide grants and subsidies to Israelis who cannot afford treatment. Any launch, eligibility rules, and funding details will be announced separately.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== THE PATH FORWARD ===== -->
-<section id="path-forward" class="section">
-  <div class="container">
-    <span class="section-label" data-i18n="pathLabel">The Path Forward</span>
-    <h2 data-i18n="pathH2">Pioneering the Next Wave of Ibogaine Research</h2>
+    <span class="section-label" data-i18n="exploreLabel">Explore the site</span>
+    <h2 data-i18n="exploreH2">Where to start</h2>
     <div class="divider"></div>
-    <p style="max-width:900px; margin-bottom:2.5rem;" data-i18n="pathIntro">Building on initial successes, future research initiatives will broaden the scope of inquiry, refine treatment protocols, and deepen our understanding of ibogaine’s therapeutic mechanisms. This strategic expansion is vital for establishing ibogaine as a widely accepted neurorestorative therapy.</p>
-    <div class="path-cards">
-      <div class="path-card">
-        <div class="path-num">1</div>
-        <h3 data-i18n="path1Title">Expanded Clinical Trials</h3>
-        <p data-i18n="path1Text">Beyond TBI and PTSD, studies will explore ibogaine’s efficacy in other neurological and psychiatric conditions, including severe depression, anxiety disorders, and neurodegenerative conditions, utilising larger, more diverse cohorts.</p>
-      </div>
-      <div class="path-card">
-        <div class="path-num">2</div>
-        <h3 data-i18n="path2Title">Neuroimaging &amp; Biomarkers</h3>
-        <p data-i18n="path2Text">Advanced fMRI, PET scans, and genetic sequencing will uncover the precise neural circuits and biological markers associated with ibogaine’s brain repair effects, paving the way for personalised medicine approaches.</p>
-      </div>
-      <div class="path-card path-card-wide">
-        <div class="path-num">3</div>
-        <h3 data-i18n="path3Title">Long-term Efficacy &amp; Safety</h3>
-        <p data-i18n="path3Text">Longitudinal studies tracking patients over several years will provide critical data on sustained therapeutic benefits, relapse prevention, and long-term safety profiles, addressing concerns for chronic conditions.</p>
-      </div>
-    </div>
-    <p class="path-closing" data-i18n="pathClosing">These studies will cement Israel’s role as a leader in psychedelic neuroscience, transforming treatment paradigms for a range of complex conditions.</p>
-  </div>
-</section>
-
-<!-- ===== THE CASE ===== -->
-<section id="case" class="section">
-  <div class="container">
-    <div class="grid-2">
-      <div>
-        <span class="section-label" data-i18n="caseLabel">The Case</span>
-        <h2 data-i18n="caseH2">Why Israel? Why Now?</h2>
-        <div class="divider"></div>
-      </div>
-      <div>
-        <h3 data-i18n="case1Title" style="margin-bottom:0.5rem;">The 'Startup Nation' Advantage</h3>
-        <p data-i18n="case1Text" style="margin-bottom:1.5rem;">Israel is already a global leader in medical cannabis regulation and MDMA-assisted therapy research. The regulatory infrastructure, scientific talent, and institutional appetite are uniquely mature.</p>
-        <h3 data-i18n="case2Title" style="margin-bottom:0.5rem;">An Existential Necessity</h3>
-        <p data-i18n="case2Text">With a significant proportion of the civilian workforce and reserve military force impacted by trauma, brain health is national security. An untreated generation represents a compounding threat to Israel's economic productivity, social cohesion, and defensive capacity. The cost of inaction is not abstract. It is strategic.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== THE IMPERATIVE ===== -->
-<section id="imperative" class="section section-alt">
-  <div class="container">
-    <div class="text-center">
-      <span class="section-label" data-i18n="impLabel">The Imperative</span>
-      <h2 data-i18n="impH2">The Window Is Open — It Will Not Stay Open</h2>
-      <div class="divider divider-center"></div>
-      <blockquote class="quote-block" style="max-width:800px;margin:0 auto 3rem;font-size:1.15rem;text-align:left;" data-i18n="impQuote">"We are not asking Israel to experiment. We are asking Israel to lead as it has done with cannabis, with trauma medicine, and with every other frontier where necessity met scientific courage."</blockquote>
-    </div>
-    <div class="grid-3">
-      <div class="info-card">
-        <h3 data-i18n="imp1Title">For Policymakers</h3>
-        <p data-i18n="imp1Text">The science is credible, the precedent is clear, and the patient population is waiting.</p>
-      </div>
-      <div class="info-card">
-        <h3 data-i18n="imp2Title">For Future Partners</h3>
-        <p data-i18n="imp2Text">Future partners can help build a regulatory pathway, domestic data infrastructure, and a biosynthetic supply chain intended to serve Israeli patients for decades.</p>
-      </div>
-      <div class="info-card">
-        <h3 data-i18n="imp3Title">For Health Leaders</h3>
-        <p data-i18n="imp3Text">Standard care is failing. Ibogaine Israel offers a structured, evidence-driven, safety-first pathway to integrate a proven intervention responsibly and urgently.</p>
-      </div>
-    </div>
-    <div class="imp-closing">
-      <span data-i18n="impClosingJoin">Join us. The nation is ready to heal.</span>
-      <strong class="imp-closing-names">Israelis for Ibogaine &nbsp;·&nbsp; עמותת איבוגאין ישראל</strong>
+    <p class="section-intro" data-i18n="exploreIntro">Nine sections covering the science, the situation in Israel, the published evidence, our programme of work, and how to reach us. Each one is a full page — not a marketing summary.</p>
+    <div class="explore-grid">
+      <a class="explore-card" href="about.html">
+        <h3 data-i18n="expAboutT">About the organization</h3>
+        <p data-i18n="expAboutD">A registered Israeli non-profit — our mission, mandate, and the four pillars of our work.</p>
+        <span class="explore-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="explore-card" href="ibogaine.html">
+        <h3 data-i18n="expIboT">What ibogaine is</h3>
+        <p data-i18n="expIboD">The compound, the proposed mechanism of action, what it is studied for, and its risks.</p>
+        <span class="explore-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="explore-card" href="israel.html">
+        <h3 data-i18n="expIsrT">The crisis in Israel</h3>
+        <p data-i18n="expIsrD">Three million symptomatic citizens, a 40% treatment dropout rate, and a TBI surge.</p>
+        <span class="explore-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="explore-card" href="research.html">
+        <h3 data-i18n="expResT">The published research</h3>
+        <p data-i18n="expResD">The Nature Medicine study in veterans with TBI, and the questions still unanswered.</p>
+        <span class="explore-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="explore-card" href="projects.html">
+        <h3 data-i18n="expProjT">Projects 2026–2027</h3>
+        <p data-i18n="expProjD">Project Iron Mind, the Ibogaine Registry, survivor outreach, and a planned subsidy fund.</p>
+        <span class="explore-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="explore-card" href="governance.html">
+        <h3 data-i18n="expGovT">Governance & registration</h3>
+        <p data-i18n="expGovD">Amuta no. 580841922, our policies, and the three regulatory pathways we pursue.</p>
+        <span class="explore-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="explore-card" href="team.html">
+        <h3 data-i18n="expTeamT">Our team</h3>
+        <p data-i18n="expTeamD">The three people leading the organization, and what each of them brings.</p>
+        <span class="explore-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="explore-card" href="media.html">
+        <h3 data-i18n="expMedT">Watch & listen</h3>
+        <p data-i18n="expMedD">Conference talks, documentaries, Israeli television, and long-form podcasts.</p>
+        <span class="explore-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="explore-card" href="blog/index.html">
+        <h3 data-i18n="expBlogT">Articles & insights</h3>
+        <p data-i18n="expBlogD">Sourced long-form explainers on the science, the history, and the policy case.</p>
+        <span class="explore-arrow" aria-hidden="true">→</span>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ===== IMPACT ===== -->
-<section id="impact" class="section">
+<section id="featured" class="section">
   <div class="container">
-    <div class="text-center">
-      <span class="section-label" data-i18n="impactLabel">Impact</span>
-      <h2 data-i18n="impactH2">Voices of Recovery</h2>
-      <div class="divider divider-center"></div>
-    </div>
-    <div class="impact-layout">
-      <div class="impact-image">
-        <img src="images/embracing-hope.jpg" alt="Two women embracing in hope" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;border-radius:12px;" />
-      </div>
-      <div class="impact-quotes">
-        <blockquote class="quote-block" style="border-left:4px solid var(--green-mid);">
-          <p data-i18n="impact1Quote" style="color:var(--text-dark);font-style:italic;margin-bottom:1rem;">"I got my life back. After years of night terrors and isolation, Ibogaine helped me reconnect with my family. It felt like my brain was rewired, clearing out the static."</p>
-          <strong data-i18n="impact1Author" style="font-size:0.9rem;color:var(--text-mid);">— Former IDF Commando (PTSD)</strong>
-        </blockquote>
-        <blockquote class="quote-block" style="border-left:4px solid var(--green-mid);">
-          <p data-i18n="impact2Quote" style="color:var(--text-dark);font-style:italic;margin-bottom:1rem;">"The weight is lifted. I carried such a heavy burden. Ibogaine gave me a chance to process the unspeakable, to find peace in my mind. It's a profound reset button for the soul."</p>
-          <strong data-i18n="impact2Author" style="font-size:0.9rem;color:var(--text-mid);">— Nova Festival Survivor (Complex Trauma)</strong>
-        </blockquote>
-        <blockquote class="quote-block" style="border-left:4px solid var(--green-mid);">
-          <p data-i18n="impact3Quote" style="color:var(--text-dark);font-style:italic;margin-bottom:1rem;">"A pathway to healing. Battling both professional burnout and a growing dependency, Ibogaine was the intervention I desperately needed. It addressed the root cause offering true brain repair."</p>
-          <strong data-i18n="impact3Author" style="font-size:0.9rem;color:var(--text-mid);">— Healthcare Professional (Burnout &amp; Addiction)</strong>
-        </blockquote>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== RESEARCH ===== -->
-<section id="research" class="section section-alt">
-  <div class="container">
-    <div class="text-center">
-      <span class="section-label" data-i18n="researchLabel">Research</span>
-      <h2 data-i18n="researchH2">Key Research: Ibogaine in Military Veterans</h2>
-      <div class="divider divider-center"></div>
-    </div>
-    <div class="research-layout">
-      <div class="research-cards">
-        <div class="info-card" style="border-left: 4px solid var(--green-mid); border-top:none;">
-          <h3 data-i18n="research1Title">Magnesium–Ibogaine Therapy in Veterans with Traumatic Brain Injuries</h3>
-          <span style="font-size:0.85rem;color:var(--text-mid);display:block;margin-bottom:0.5rem;" data-i18n="research1Meta">Journal: Nature Medicine (2024)</span>
-          <p data-i18n="research1Text">This landmark Stanford study investigated the magnesium-ibogaine (MISTIC) protocol in veterans with comorbid TBI and PTSD, providing crucial evidence for ibogaine's neurorestorative potential.</p>
-        </div>
-        <div class="info-card" style="border-left: 4px solid var(--green-mid); border-top:none;">
-          <h3 data-i18n="research2Title">Neural Correlates of Ibogaine: Evidence from Functional Neuroimaging</h3>
-          <span style="font-size:0.85rem;color:var(--text-mid);display:block;margin-bottom:0.5rem;" data-i18n="research2Meta">Journal: Biological Psychiatry (2026)</span>
-          <p data-i18n="research2Text">This Stanford fMRI study of 30 Special Operations veterans found ibogaine drives widespread brain reorganisation, correlating with improvements in TBI-related disability.</p>
-        </div>
-        <div class="info-card" style="border-left: 4px solid var(--green-mid); border-top:none;">
-          <h3 data-i18n="research3Title">Psychedelics for the Management of Symptoms of Traumatic Brain Injury</h3>
-          <span style="font-size:0.85rem;color:var(--text-mid);display:block;margin-bottom:0.5rem;" data-i18n="research3Meta">Journal: PNPBP (2026)</span>
-          <p data-i18n="research3Text">This open-access global survey study examined the use of psychedelics for managing TBI symptoms across a broad international population, providing real-world evidence.</p>
-        </div>
-      </div>
-      <div class="research-image">
-        <img src="images/soldier-neural.jpg" alt="IDF soldier with neural network overlay" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;border-radius:12px;" />
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ===== OUR TEAM ===== -->
-<section id="team" class="section section-alt">
-  <div class="container">
-    <div class="text-center">
-      <span class="section-label" data-i18n="foundersLabel">Our Team</span>
-      <h2 data-i18n="foundersH2">Our Team</h2>
-      <div class="divider divider-center"></div>
-    </div>
-    <div class="founders-grid">
-
-      <div class="founder-card">
-        <div class="founder-photo">
-          <img src="images/founders/yonatan-zairi.png" alt="Yonatan Zairi" loading="lazy" decoding="async" />
-        </div>
-        <div class="founder-body">
-          <h3 data-i18n="founder1Name">Yonatan Zairi</h3>
-          <span class="founder-role" data-i18n="founder1Role">CEO</span>
-          <p data-i18n="founder1Bio">Yonatan serves as the CEO of Israelis for Ibogaine, bringing extensive expertise in clinical research and psychedelic therapy to the organization's leadership. With a foundation in Psychology from Reichman University, he has led pivotal research initiatives as a clinical trial manager overseeing breakthrough psilocybin and MDMA therapy studies. His background includes conducting specialized fMRI studies on NOVA festival survivors within a neuroscience laboratory at the Weizmann Institute of Science, deepening the clinical understanding of trauma and neuropharmacology. Additionally, Yonatan bridges the gap between scientific innovation and strategic development through his advisory work at the NEGEV fund, positioning him at the forefront of advancing novel therapeutic frameworks in Israel.</p>
-        </div>
-      </div>
-
-      <div class="founder-card">
-        <div class="founder-photo">
-          <img src="images/founders/jonathan-sinyor.png" alt="Jonathan Sinyor" loading="lazy" decoding="async" />
-        </div>
-        <div class="founder-body">
-          <h3 data-i18n="founder2Name">Jonathan Sinyor</h3>
-          <span class="founder-role" data-i18n="founder2Role">Deputy CEO</span>
-          <p data-i18n="founder2Bio">Jonathan Sinyor is Deputy CEO of Israelis for Ibogaine. Originally from the UK and now based in Tel Aviv, he was part of the founding team that built a startup from formation through Series A, and has experience investing in the psychedelics space at an investment fund. He has organised educational events for mental health professionals working with emerging therapies and research and is a member of the Psychedelic Action Task Force, which lobbies the UK government for regulatory reform.</p>
-        </div>
-      </div>
-
-      <div class="founder-card">
-        <div class="founder-photo">
-          <img src="images/founders/ryan-heitner.png" alt="Ryan Heitner" loading="lazy" decoding="async" />
-        </div>
-        <div class="founder-body">
-          <h3 data-i18n="founder3Name">Ryan Heitner</h3>
-          <span class="founder-role" data-i18n="founder3Role">Technology &amp; Advocacy</span>
-          <p data-i18n="founder3Bio">A technologist with 35 years building and leading across continents, Ryan has shipped technology in organizations of every size and shape — startups to enterprises, spanning sectors from healthcare to consumer tech. His international career has given him a rare fluency in turning complex ideas into things that actually work. He is driven by a deep conviction in the healing power of psychedelics and a long-standing personal commitment to meditation and inner work. He is unafraid to challenge the status quo on access to ibogaine for those who need it most.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ===== BLOG ===== -->
-<section id="blog" class="section">
-  <div class="container">
-    <div class="text-center">
-      <span class="section-label" data-i18n="blogLabel">Latest</span>
-      <h2 data-i18n="blogH2">Articles &amp; Insights</h2>
-      <div class="divider divider-center"></div>
-    </div>
+    <span class="section-label" data-i18n="featuredLabel">Start here</span>
+    <h2 data-i18n="featuredH2">Three articles worth your time</h2>
+    <div class="divider"></div>
     <div class="blog-grid">
-
-      <article class="blog-card" style="border: 2px solid var(--gold);">
-        <div class="blog-thumb"><img src="images/knesset.jpg" alt="Executive Order" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" /></div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="blog-tag" style="background: var(--gold); color: var(--text-dark);" data-i18n="post7Tag">Breaking News</span>
-            <span>April 2026</span>
-          </div>
-          <h3 data-i18n="post7Title">Historic Executive Order: Federal Ibogaine Research for Veterans</h3>
-          <p data-i18n="post7Excerpt">President Trump signs landmark directive directing $50M+ in federal funding to accelerate ibogaine clinical development for veterans with PTSD and TBI.</p>
-          <a href="blog/executive-order.html" class="read-more" data-i18n="readMore" data-href-en="blog/executive-order.html" data-href-he="blog-he/executive-order-he.html">Read More →</a>
-        </div>
-      </article>
-
       <article class="blog-card">
-        <div class="blog-thumb"><img src="images/ibogain_main.jpg" alt="Ibogaine plant" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" /></div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="blog-tag" data-i18n="post8Tag">Press</span>
-            <span>May 2026</span>
-          </div>
-          <h3 data-i18n="post8Title">Ibogaine — The Deadly Psychedelic That May Beat Addiction</h3>
-          <p data-i18n="post8Excerpt">Ynet's Dr. Roy Zucker examines ibogaine's extraordinary promise for addiction and PTSD — and the cardiac risks and regulatory hurdles that keep Big Pharma at bay. Plus: the Israeli firm PsyRx taking a safer microdose path.</p>
-          <a href="blog/ynet-ibogaine-article.html" class="read-more" data-i18n="readMore" data-href-en="blog/ynet-ibogaine-article.html" data-href-he="blog-he/ynet-ibogaine-article-he.html">Read More →</a>
+        <a href="blog/stanford-study.html" data-href-en="blog/stanford-study.html" data-href-he="blog-he/stanford-study-he.html" class="blog-card-img" aria-hidden="true" tabindex="-1">
+          <picture><source srcset="images/brain-research.webp" type="image/webp" /><img src="images/brain-research.jpg" alt="" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" /></picture>
+        </a>
+        <div class="blog-card-body">
+          <span class="blog-tag" data-i18n="featur1M">Research</span>
+          <h3><a href="blog/stanford-study.html" data-href-en="blog/stanford-study.html" data-href-he="blog-he/stanford-study-he.html" data-i18n="featur1T">What the Stanford results actually showed</a></h3>
+          <p data-i18n="featur1D">A magnesium–ibogaine protocol in special-operations veterans with traumatic brain injury produced large reductions in PTSD, depression and anxiety scores. Here is the study design, the numbers, and the limits.</p>
+          <a class="blog-readmore" href="blog/stanford-study.html" data-href-en="blog/stanford-study.html" data-href-he="blog-he/stanford-study-he.html" data-i18n="readMore">Read the article →</a>
         </div>
       </article>
-
       <article class="blog-card">
-        <div class="blog-thumb"><img src="images/brain-research.jpg" alt="Brain research" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" /></div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="blog-tag" data-i18n="post1Tag">Research</span>
-            <span>January 2024</span>
-          </div>
-          <h3 data-i18n="post1Title">Stanford's Landmark Study: Ibogaine Reduces PTSD by 88% in Veterans</h3>
-          <p data-i18n="post1Excerpt">A peer-reviewed study published in Nature Medicine confirms ibogaine's extraordinary efficacy for traumatic brain injury and PTSD. Here's what it means for Israel.</p>
-          <a href="blog/stanford-study.html" class="read-more" data-i18n="readMore" data-href-en="blog/stanford-study.html" data-href-he="blog-he/stanford-study-he.html">Read More →</a>
+        <a href="blog/israel-mental-health-crisis.html" data-href-en="blog/israel-mental-health-crisis.html" data-href-he="blog-he/israel-mental-health-crisis-he.html" class="blog-card-img" aria-hidden="true" tabindex="-1">
+          <picture><source srcset="images/israel-mental-health-crisis.webp" type="image/webp" /><img src="images/israel-mental-health-crisis.png" alt="" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" /></picture>
+        </a>
+        <div class="blog-card-body">
+          <span class="blog-tag" data-i18n="featur2M">Israel</span>
+          <h3><a href="blog/israel-mental-health-crisis.html" data-href-en="blog/israel-mental-health-crisis.html" data-href-he="blog-he/israel-mental-health-crisis-he.html" data-i18n="featur2T">Israel's mental health crisis after October 7</a></h3>
+          <p data-i18n="featur2D">The scale of psychological injury, why standard protocols are losing forty percent of patients within a year, and the quieter epidemic of blast-related brain injury underneath it.</p>
+          <a class="blog-readmore" href="blog/israel-mental-health-crisis.html" data-href-en="blog/israel-mental-health-crisis.html" data-href-he="blog-he/israel-mental-health-crisis-he.html" data-i18n="readMore">Read the article →</a>
         </div>
       </article>
-
       <article class="blog-card">
-        <div class="blog-thumb"><img src="images/community-circle.jpg" alt="Community support circle" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" /></div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="blog-tag" data-i18n="post2Tag">History</span>
-            <span>March 2024</span>
-          </div>
-          <h3 data-i18n="post2Title">From Gabon to the Clinic: The Remarkable History of Ibogaine</h3>
-          <p data-i18n="post2Excerpt">The iboga plant has been sacred to Bwiti communities for centuries. We trace the journey from Central African rainforests to modern psychiatric clinics.</p>
-          <a href="blog/history-of-ibogaine.html" class="read-more" data-i18n="readMore" data-href-en="blog/history-of-ibogaine.html" data-href-he="blog-he/history-of-ibogaine-he.html">Read More →</a>
+        <a href="blog/history-of-ibogaine.html" data-href-en="blog/history-of-ibogaine.html" data-href-he="blog-he/history-of-ibogaine-he.html" class="blog-card-img" aria-hidden="true" tabindex="-1">
+          <picture><source srcset="images/lotsof.webp" type="image/webp" /><img src="images/lotsof.png" alt="" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" /></picture>
+        </a>
+        <div class="blog-card-body">
+          <span class="blog-tag" data-i18n="featur3M">History</span>
+          <h3><a href="blog/history-of-ibogaine.html" data-href-en="blog/history-of-ibogaine.html" data-href-he="blog-he/history-of-ibogaine-he.html" data-i18n="featur3T">From Gabon to the modern clinic</a></h3>
+          <p data-i18n="featur3D">How a West African ceremonial plant became an addiction-interruption treatment, why it was scheduled in the United States, and how the research restarted decades later.</p>
+          <a class="blog-readmore" href="blog/history-of-ibogaine.html" data-href-en="blog/history-of-ibogaine.html" data-href-he="blog-he/history-of-ibogaine-he.html" data-i18n="readMore">Read the article →</a>
         </div>
       </article>
+    </div>
+    <p style="margin-top:2.5rem;text-align:center">
+      <a href="blog/index.html" class="btn btn-outline" data-i18n="featuredAll">See all articles</a>
+    </p>
+  </div>
+</section>
 
-      <article class="blog-card">
-        <div class="blog-thumb"><img src="images/israel-mental-health-crisis.png" alt="Israeli family at home during the national mental health crisis after October 7" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" /></div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="blog-tag" data-i18n="post3Tag">Israel</span>
-            <span>October 2024</span>
-          </div>
-          <h3 data-i18n="post3Title">October 7 and After: Israel's Mental Health Crisis Demands Bold Solutions</h3>
-          <p data-i18n="post3Excerpt">With 85,000 soldiers receiving psychological treatment and therapist shortages reaching crisis levels, conventional approaches are falling short.</p>
-          <a href="blog/israel-mental-health-crisis.html" class="read-more" data-i18n="readMore" data-href-en="blog/israel-mental-health-crisis.html" data-href-he="blog-he/israel-mental-health-crisis-he.html">Read More →</a>
-        </div>
-      </article>
-
-      <article class="blog-card">
-        <div class="blog-thumb"><img src="images/veteran-session.jpg" alt="Veteran therapy session" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" /></div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="blog-tag" data-i18n="post4Tag">Parkinson's</span>
-            <span>June 2024</span>
-          </div>
-          <h3 data-i18n="post4Title">Can Ibogaine Help Parkinson's Patients? Early Evidence Is Promising</h3>
-          <p data-i18n="post4Excerpt">Ibogaine's ability to stimulate GDNF — a key neurotrophic factor for dopamine neurons — is opening new possibilities for neurodegenerative disease treatment.</p>
-          <a href="blog/ibogaine-parkinsons.html" class="read-more" data-i18n="readMore" data-href-en="blog/ibogaine-parkinsons.html" data-href-he="blog-he/ibogaine-parkinsons-he.html">Read More →</a>
-        </div>
-      </article>
-
-      <article class="blog-card">
-        <div class="blog-thumb"><img src="images/knesset.jpg" alt="The Knesset" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" /></div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="blog-tag" data-i18n="post5Tag">Advocacy</span>
-            <span>December 2024</span>
-          </div>
-          <h3 data-i18n="post5Title">Israel Needs Ibogaine: The Case for Fast-Tracking Regulatory Approval</h3>
-          <p data-i18n="post5Excerpt">As Texas allocates $50 million for ibogaine clinical trials, Israel must move swiftly to ensure its trauma survivors have access to the world's most promising new therapy.</p>
-          <a href="blog/regulatory-advocacy.html" class="read-more" data-i18n="readMore" data-href-en="blog/regulatory-advocacy.html" data-href-he="blog-he/regulatory-advocacy-he.html">Read More →</a>
-        </div>
-      </article>
-
-      <article class="blog-card">
-        <div class="blog-thumb"><img src="images/support-group.jpg" alt="Support group" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;" /></div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="blog-tag" data-i18n="post6Tag">Recovery</span>
-            <span>February 2025</span>
-          </div>
-          <h3 data-i18n="post6Title">Howard Lotsof's Gift: The Discovery That Changed Everything</h3>
-          <p data-i18n="post6Excerpt">In 1962, a 19-year-old heroin addict named Howard Lotsof took ibogaine and woke up free. His life's work created the global ibogaine treatment movement.</p>
-          <a href="blog/howard-lotsof.html" class="read-more" data-i18n="readMore" data-href-en="blog/howard-lotsof.html" data-href-he="blog-he/howard-lotsof-he.html">Read More →</a>
-        </div>
-      </article>
-
+<section class="section related-section">
+  <div class="container">
+    <h2 class="related-h2" data-i18n="relatedH2">Continue reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="about.html">
+        <h3 data-i18n="relAboutT">About Israelis for Ibogaine</h3>
+        <p data-i18n="relAboutD">Our mission, mandate, and the four pillars of our work.</p>
+        <span class="related-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="related-card" href="ibogaine.html">
+        <h3 data-i18n="relIboT">What ibogaine is</h3>
+        <p data-i18n="relIboD">The compound, its mechanism of action, and what it treats.</p>
+        <span class="related-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="related-card" href="israel.html">
+        <h3 data-i18n="relIsrT">The crisis in Israel</h3>
+        <p data-i18n="relIsrD">Why Israel faces a mental-health emergency without modern precedent.</p>
+        <span class="related-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="related-card" href="research.html">
+        <h3 data-i18n="relResT">The research base</h3>
+        <p data-i18n="relResD">Peer-reviewed studies and the research agenda ahead.</p>
+        <span class="related-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="related-card" href="team.html">
+        <h3 data-i18n="relTeamT">Who we are</h3>
+        <p data-i18n="relTeamD">The people leading the organization.</p>
+        <span class="related-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="related-card" href="contact.html">
+        <h3 data-i18n="relConT">Get in touch</h3>
+        <p data-i18n="relConD">Patients, researchers, journalists, and volunteers.</p>
+        <span class="related-arrow" aria-hidden="true">→</span>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ===== MEDIA & RESOURCES ===== -->
-<section id="media" class="section section-alt">
+<section class="section cta-band">
   <div class="container">
-    <div class="text-center">
-      <span class="section-label" data-i18n="mediaLabel">Watch &amp; Listen</span>
-      <h2 data-i18n="mediaH2">Media &amp; Resources</h2>
-      <p style="max-width: 800px; margin: 0 auto 2.5rem;" data-i18n="mediaIntro">Explore curated podcasts, interviews, and videos about ibogaine from leading experts, advocates, and survivors.</p>
-      <div class="divider divider-center"></div>
-    </div>
-
-    <!-- Podcasts Section -->
-    <div class="media-section">
-      <h3 class="media-category-title" data-i18n="podcastsTitle">Podcasts &amp; Interviews</h3>
-      <div class="podcasts-grid" id="podcasts-content">
-        <!-- English Podcasts -->
-        <div class="media-item podcast-item" data-lang-content="en">
-          <div class="podcast-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
-              <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.5-3c0 3.03-2.47 5.5-5.5 5.5S6.5 14.03 6.5 11H5c0 3.24 2.39 5.93 5.5 6.41V21h1.5v-3.59C15.11 16.93 17.5 14.24 17.5 11h-1.5z"/>
-            </svg>
-          </div>
-          <div class="podcast-content">
-            <h4 data-i18n="enPodcast1Title">The Joe Rogan Experience #2477 - Rick Perry &amp; W. Bryan Hubbard</h4>
-            <p data-i18n="enPodcast1Desc">Former U.S. Secretary of Energy Rick Perry and Americans for Ibogaine CEO W. Bryan Hubbard discuss policy, veteran access, and the legislative push for ibogaine clinical research.</p>
-            <a href="https://www.youtube.com/watch?v=JIArjzI3gas" target="_blank" rel="noopener" class="btn btn-listen" data-i18n="listenNow">Listen Now</a>
-          </div>
-        </div>
-        <div class="media-item podcast-item" data-lang-content="en">
-          <div class="podcast-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
-              <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.5-3c0 3.03-2.47 5.5-5.5 5.5S6.5 14.03 6.5 11H5c0 3.24 2.39 5.93 5.5 6.41V21h1.5v-3.59C15.11 16.93 17.5 14.24 17.5 11h-1.5z"/>
-            </svg>
-          </div>
-          <div class="podcast-content">
-            <h4 data-i18n="enPodcast2Title">The Aubrey Marcus Podcast - W. Bryan Hubbard &amp; Robert Gallery</h4>
-            <p data-i18n="enPodcast2Desc">A deep-dive conversation exploring the growing awareness of ibogaine, featuring advocacy insights and the personal healing journey of former NFL player Robert Gallery.</p>
-            <a href="https://www.youtube.com/watch?v=-uwTGfk_sGU" target="_blank" rel="noopener" class="btn btn-listen" data-i18n="listenNow">Listen Now</a>
-          </div>
-        </div>
-        <!-- Hebrew Podcasts -->
-        <div class="media-item podcast-item" data-lang-content="he" style="display: none;">
-          <div class="podcast-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
-              <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.5-3c0 3.03-2.47 5.5-5.5 5.5S6.5 14.03 6.5 11H5c0 3.24 2.39 5.93 5.5 6.41V21h1.5v-3.59C15.11 16.93 17.5 14.24 17.5 11h-1.5z"/>
-            </svg>
-          </div>
-          <div class="podcast-content">
-            <h4 data-i18n="hePodcast1Title">ביחס לחומר — פרק 28: אקטיביזם פסיכדלי עם בועז וכטל</h4>
-            <p data-i18n="hePodcast1Desc">ד״ר רן ספיר משוחח עם בועז וכטל על אקטיביזם פסיכדלי בישראל, טיפול בהתמכרויות באיבוגאין בהולנד, וקידום מחקר וגישה חוקית לצמח האיבוגה — בפודקאסט Spotify.</p>
-            <a href="https://open.spotify.com/episode/0H4DCi1KbBfypsKC4pr9IB" target="_blank" rel="noopener" class="btn btn-listen" data-i18n="listenNowHe">האזינו עכשיו</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Videos Section -->
-    <div class="media-section">
-      <h3 class="media-category-title" data-i18n="videosTitle">Videos &amp; Presentations</h3>
-      <div class="videos-grid" id="videos-content">
-        <!-- English Videos -->
-        <div class="media-item video-item" data-lang-content="en">
-          <div class="video-embed">
-            <iframe
-              src="https://www.youtube.com/embed/B_Cr0cnBOHA"
-              title="SXSW 2026 - Ibogaine in America: The Parable of Our Time"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy">
-            </iframe>
-          </div>
-          <h4 data-i18n="enVideo1Title">SXSW 2026 - Ibogaine in America: The Parable of Our Time</h4>
-          <p data-i18n="enVideo1Desc">A featured panel from South by Southwest (SXSW) exploring ibogaine's transition from the underground to a highly researched clinical tool for addressing modern mental health crises.</p>
-        </div>
-        <div class="media-item video-item" data-lang-content="en">
-          <div class="video-embed">
-            <iframe
-              src="https://www.youtube.com/embed/cI6-Acp1DSI"
-              title="ACS Media - Ibogaine Saved Retired NFL Player Robert Gallery's Life"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy">
-            </iframe>
-          </div>
-          <h4 data-i18n="enVideo2Title">ACS Media - Ibogaine Saved Retired NFL Player Robert Gallery's Life</h4>
-          <p data-i18n="enVideo2Desc">A powerful short feature profiling former NFL offensive lineman Robert Gallery, his struggle with the long-term effects of repeated head trauma (TBI), and his recovery following ibogaine treatment.</p>
-        </div>
-        <div class="media-item video-item" data-lang-content="en">
-          <div class="video-embed">
-            <iframe
-              src="https://www.youtube.com/embed/o5qhPjdb5s4"
-              title="Boaz Wachtel — Ibogaine"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy">
-            </iframe>
-          </div>
-          <h4 data-i18n="enVideo3Title">Boaz Wachtel — Ibogaine: The Sacred Molecule of West Africa</h4>
-          <p data-i18n="enVideo3Desc">Israeli policy pioneer and ibogaine advocate Boaz Wachtel on iboga’s traditional roots, decades of clinical experience with addiction interruption, and the push for evidence-based access and research.</p>
-        </div>
-        <!-- Boaz Wachtel on Keshet 12 — Avri & Sherki Plus (Hebrew-language; Mako VOD; not iframe-embeddable) -->
-        <div class="media-item video-item" data-lang-content="en">
-          <a href="https://www.mako.co.il/mako-vod-keshet/avri_sherki_plus-s2/VOD-d5cf28293fe3e91026.htm"
-             target="_blank" rel="noopener"
-             class="video-link-card"
-             aria-label="Boaz Wachtel on Avri &amp; Sherki Plus — Keshet 12 (Hebrew)">
-            <div class="video-link-card-inner">
-              <div class="play-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
-              </div>
-              <div class="play-cta" data-i18n="enVideo4PlayCta">Watch on mako VOD →</div>
-              <div class="play-hint" data-i18n="enVideo4PlayHint">Keshet 12 · Avri &amp; Sherki Plus · 25.5.26 · Hebrew</div>
-            </div>
-          </a>
-          <h4 data-i18n-html="enVideo4TitleHtml">Boaz Wachtel on Keshet 12 — “Avri &amp; Sherki Plus” <span class="lang-badge">Hebrew</span></h4>
-          <p data-i18n-html="enVideo4DescHtml">In-depth late-night interview with foundation co-founder Boaz Wachtel on Israel’s mainstream Channel 12, with hosts Avri Gilad and Yaakov Sharki — covering ibogaine as a potential breakthrough for PTSD, traumatic brain injury and addiction, and the push for research and access in Israel. <strong>Interview is in Hebrew.</strong></p>
-        </div>
-        <!-- Hebrew Videos -->
-        <!-- Boaz Wachtel on Keshet 12 — Avri & Sherki Plus (Mako VOD; not iframe-embeddable) -->
-        <div class="media-item video-item" data-lang-content="he" style="display: none;">
-          <a href="https://www.mako.co.il/mako-vod-keshet/avri_sherki_plus-s2/VOD-d5cf28293fe3e91026.htm"
-             target="_blank" rel="noopener"
-             class="video-link-card"
-             aria-label="בועז וכטל באולפן אברי ושרקי פלוס אחד — קשת 12">
-            <div class="video-link-card-inner">
-              <div class="play-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
-              </div>
-              <div class="play-cta" data-i18n="heVideo4PlayCta">צפו ב-mako VOD ←</div>
-              <div class="play-hint" data-i18n="heVideo4PlayHint">קשת 12 · אברי ושרקי + אחד · 25.5.26</div>
-            </div>
-          </a>
-          <h4 data-i18n="heVideo4Title">בועז וכטל באולפן ״אברי ושרקי + אחד״ — קשת 12</h4>
-          <p data-i18n="heVideo4Desc">ראיון לילי מעמיק עם בועז וכטל, מייסד שותף של קרן האיבוגאין, אצל אברי גלעד ויעקב שרקי בקשת 12 — על איבוגאין כפריצת דרך אפשרית לטיפול ב-PTSD, בפגיעות ראש טראומטיות ובהתמכרויות, ועל המאמץ לקדם מחקר ונגישות בישראל.</p>
-        </div>
-        <div class="media-item video-item" data-lang-content="he" style="display: none;">
-          <div class="video-embed">
-            <iframe
-              src="https://www.youtube.com/embed/2pPPJbnZOtQ"
-              title="How Ibogaine Could Treat Depression and Anxiety — Dr. Nolan Williams (TED)"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy">
-            </iframe>
-          </div>
-          <h4 data-i18n="heVideo1Title">איך איבוגאין עשוי לטפל בדיכאון ובחרדה — ד״ר נולן ויליאמס (TED)</h4>
-          <p data-i18n="heVideo1Desc">הרצאת TED של חוקר מוח מסטנפורד על מחקר MISTIC: איבוגאין בוותיקי כוחות מיוחדים עם פגיעת מוח טראומטית, שיפור בתסמיני PTSD, דיכאון וחרדה, והפוטנציאל גם בהקשר של התמכרויות.</p>
-        </div>
-        <div class="media-item video-item" data-lang-content="he" style="display: none;">
-          <div class="video-embed">
-            <iframe
-              src="https://www.youtube.com/embed/o5qhPjdb5s4"
-              title="בועז וכטל - איבוגאין"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy">
-            </iframe>
-          </div>
-          <h4 data-i18n="heVideo2Title">בועז וכטל - ״איבוגאין - המולקולה הקדושה של מערב אפריקה״</h4>
-          <p data-i18n="heVideo2Desc">הרצאה מקיפה של בועז וכטל החולקת תובנות מניסויים קליניים ומניסיונו האישי בטיפול במטופלים.</p>
-        </div>
-        <div class="media-item video-item" data-lang-content="he" style="display: none;">
-          <div class="video-embed">
-            <iframe
-              src="https://www.youtube.com/embed/txQ6YPz7iuQ"
-              title="הסרט המלא איבוגה — Iboga Documentary"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy">
-            </iframe>
-          </div>
-          <h4 data-i18n="heVideo3Title">הסרט המלא 'איבוגה' (Iboga Documentary)</h4>
-          <p data-i18n="heVideo3Desc">סרט דוקומנטרי ישראלי של שי זאדה המספק הצצה נדירה לטקסים המסורתיים ולשילוב הרוחני של צמח האיבוגה בשבט בגבון.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Classic Videos (restored — shown for all languages) -->
-    <div class="media-section">
-      <h3 class="media-category-title" data-i18n="classicVideosTitle">More Videos</h3>
-      <div class="videos-grid">
-        <div class="media-item video-item">
-          <div class="video-embed">
-            <iframe
-              src="https://www.youtube.com/embed/360mdHMfACg"
-              title="How Ibogaine Therapy is Changing Lives for Veterans"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy">
-            </iframe>
-          </div>
-          <h4 data-i18n="video1Label">How Ibogaine Therapy is Changing Lives for Veterans</h4>
-        </div>
-        <div class="media-item video-item">
-          <div class="video-embed">
-            <iframe
-              src="https://www.youtube.com/embed/g695B9P5YdM"
-              title="Veterans Turn to Psychedelic Treatment"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy">
-            </iframe>
-          </div>
-          <h4 data-i18n="video2Label">Veterans Turn to Psychedelic Treatment</h4>
-        </div>
-        <div class="media-item video-item">
-          <div class="video-embed">
-            <iframe
-              src="https://www.youtube.com/embed/vt0E8N4FRFY"
-              title="Ibogaine: Rite of Passage — Full Documentary"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy">
-            </iframe>
-          </div>
-          <h4 data-i18n="video3Label">Ibogaine: Rite of Passage — Full Documentary</h4>
-        </div>
-      </div>
-    </div>
-
-    <!-- Featured Expert -->
-    <div style="max-width:800px;margin:4rem auto 0;padding-top:3rem;border-top:1px solid rgba(0,0,0,0.1);">
-      <h3 class="media-category-title" style="text-align:center;" data-i18n="featuredExpertTitle">Featured Expert</h3>
-      <div class="video-embed">
-        <iframe
-          src="https://www.youtube.com/embed/MQVU54KH3sg"
-          title="Dr. Raquel Gardner — Ibogaine for TBI and PTSD"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
-      </div>
-      <p class="video-label" data-i18n="gardnerVideoLabel" style="text-align:center;margin-top:1rem;">Dr. Raquel Gardner — Ibogaine for Traumatic Brain Injury &amp; PTSD</p>
-      <p data-i18n-html="gardnerBio" style="text-align:center;max-width:700px;margin:0.75rem auto 0;font-size:0.95rem;color:var(--text-light);line-height:1.6;">Dr. Raquel Gardner is a U.S. board-certified behavioral neurologist, Associate Professor at Tel Aviv University School of Medicine, and Director of Clinical Research at the Joseph Sagol Neuroscience Center, Sheba Medical Center. Her NIH- and DoD-funded research focuses on traumatic brain injury, aging, and neurodegenerative disease — and since October 7, war-related TBI across the full spectrum of severity. <a href="https://www.gardnerlab.health/" target="_blank" rel="noopener" style="color:var(--gold);">GardnerLab</a> · <a href="https://eng.sheba.co.il/Raquel-C-Gardner" target="_blank" rel="noopener" style="color:var(--gold);">Sheba Medical Center</a></p>
-    </div>
-  </div>
-</section>
-
-<!-- ===== CONTACT ===== -->
-<section id="contact" class="section">
-  <div class="container">
-    <div class="contact-grid">
-      <div class="contact-info">
-        <span class="section-label" data-i18n="contactLabel">Reach Out</span>
-        <h2 data-i18n="contactH2">Contact the Foundation</h2>
-        <div class="divider"></div>
-        <p data-i18n="contactP">Whether you are a patient seeking information, a researcher interested in collaboration, a journalist, or someone who simply wants to get involved — we want to hear from you.</p>
-        <p data-i18n="contactDonationNotice">We are not currently accepting donations. Please contact us about research, advocacy, volunteering, or future partnership opportunities.</p>
-        <div class="contact-detail">
-          <div class="contact-detail-icon">✉️</div>
-          <span data-i18n="contactEmail">info@israelisforibogaine.org</span>
-        </div>
-        <div class="contact-detail">
-          <div class="contact-detail-icon">📍</div>
-          <span data-i18n="contactCity">Tel Aviv, Israel</span>
-        </div>
-      </div>
-
-      <div class="contact-form">
-        <form id="contact-form" method="POST" action="https://script.google.com/macros/s/AKfycbxsWzAMmzoR8heJm065RcIAgHtQnsroGUY16ieWcMm5Y3IQr_dq-8oPj59ZGgMcU0pe/exec" target="hidden_iframe">
-          <div class="form-group">
-            <label for="contact-fullname" data-i18n="formName">Full Name</label>
-            <input type="text" id="contact-fullname" name="fullname" required placeholder="Your full name" />
-          </div>
-          <div class="form-group">
-            <label for="contact-replyto" data-i18n="formEmail">Email Address</label>
-            <input type="email" id="contact-replyto" name="replyto" required placeholder="your@email.com" />
-          </div>
-          <div class="form-group">
-            <label for="contact-phone" data-i18n="formPhone">Phone (optional)</label>
-            <input type="tel" id="contact-phone" name="phone" placeholder="+972 ..." />
-          </div>
-          <div class="form-group">
-            <label for="contact-subject" data-i18n="formSubject">Subject</label>
-            <select id="contact-subject" name="subject">
-              <option value="Patient / Family Member" data-i18n="formSubjectOpt1">I am a patient / family member seeking help</option>
-              <option value="Research Collaboration" data-i18n="formSubjectOpt2">Research collaboration inquiry</option>
-              <option value="Media / Press" data-i18n="formSubjectOpt3">Media / Press inquiry</option>
-              <option value="Future partnership / support" data-i18n="formSubjectOpt4">Future partnership / support</option>
-              <option value="Volunteer" data-i18n="formSubjectOpt5">Volunteer</option>
-              <option value="Other" data-i18n="formSubjectOpt6">Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="contact-message" data-i18n="formMessage">Message</label>
-            <textarea id="contact-message" name="message" required placeholder="How can we help you?"></textarea>
-          </div>
-          <button type="submit" class="btn btn-green" style="width:100%;" data-i18n="formSubmit">Send Message</button>
-          <p style="font-size:0.8rem;color:var(--text-light);margin-top:0.75rem;margin-bottom:0;" data-i18n-html="contactPrivacyNoteHtml">Your information is handled in accordance with our <a href="legal.html#privacy" data-href-en="legal.html#privacy" data-href-he="legal-he.html#privacy" style="color:var(--green-mid);text-decoration:underline;">Privacy Policy</a>.</p>
-          <div class="form-success" id="form-success" data-i18n="formSuccess" style="display:none;">✓ Thank you! We will be in touch soon.</div>
-        </form>
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-      </div>
+    <h2 data-i18n="ctaH2">Help make ibogaine therapy available in Israel</h2>
+    <p data-i18n="ctaText">Add your name to the public petition, or contact us about research collaboration, clinical partnership, volunteering, or media enquiries. We reply to every message.</p>
+    <div class="cta-btns">
+      <a href="petition.html" class="btn btn-primary" data-i18n="ctaBtn1" data-href-en="petition.html" data-href-he="petition-he.html">Sign the petition</a>
+      <a href="contact.html" class="btn btn-outline" data-i18n="ctaBtn2">Contact us</a>
     </div>
   </div>
 </section>
 
 </main>
 
-<!-- ===== FOOTER ===== -->
 <footer>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-logo">
           <div class="footer-logo-icon">
-            <img src="images/logo-new.png" alt="Israelis for Ibogaine logo" />
+            <img src="images/logo-new.png" alt="Israelis for Ibogaine logo" width="40" height="40" />
           </div>
           <span>Israelis for Ibogaine<br><small style="font-weight:700;font-size:1.1rem;opacity:0.85">ישראלים למען איבוגאין</small></span>
         </div>
         <p data-i18n="footerDesc">The Ibogaine Foundation of Israel is a non-profit organization dedicated to advancing ibogaine-assisted therapy for PTSD, TBI, addiction, and neurological conditions. We advocate for evidence-based policy, clinical access, and public education.</p>
       </div>
       <div class="footer-col">
-        <h3 data-i18n="footerLinks">Quick Links</h3>
+        <h3 data-i18n="footerLinks">The organization</h3>
         <ul>
-          <li><a href="#mission" data-i18n="navAbout">About</a></li>
-          <li><a href="#science" data-i18n="navIbogaine">Ibogaine</a></li>
-          <li><a href="#research" data-i18n="navResearch">Research</a></li>
-          <li><a href="#team" data-i18n="navFounders">Our Team</a></li>
-          <li><a href="#media" data-i18n="navMedia">Media</a></li>
-          <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+          <li><a href="about.html" data-i18n="navAbout">About</a></li>
+          <li><a href="team.html" data-i18n="navFounders">Our Team</a></li>
+          <li><a href="projects.html" data-i18n="navProjects">Projects</a></li>
+          <li><a href="governance.html" data-i18n="navGovernance">Governance &amp; Registration</a></li>
+          <li><a href="contact.html" data-i18n="navContact">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h3 data-i18n="footerResources">Resources</h3>
+        <h3 data-i18n="footerTopics">Topics</h3>
+        <ul>
+          <li><a href="ibogaine.html" data-i18n="navIbogaine">Ibogaine</a></li>
+          <li><a href="israel.html" data-i18n="navIsrael">Israel</a></li>
+          <li><a href="research.html" data-i18n="navResearch">Research</a></li>
+          <li><a href="media.html" data-i18n="navMedia">Media</a></li>
+          <li><a href="blog/index.html" data-i18n="navBlog">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footerResources">Key articles</h3>
         <ul>
           <li><a href="blog/stanford-study.html" data-i18n="footerRes1">Stanford Study</a></li>
           <li><a href="blog/history-of-ibogaine.html" data-i18n="footerRes2">Ibogaine History</a></li>
           <li><a href="blog/israel-mental-health-crisis.html" data-i18n="footerRes3">Israel Crisis</a></li>
           <li><a href="blog/ibogaine-parkinsons.html" data-i18n="footerRes4">Parkinson's</a></li>
-          <li><a href="#blog" data-i18n="footerRes5">All Articles</a></li>
+          <li><a href="blog/index.html" data-i18n="footerRes5">All Articles</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h3 data-i18n="footerLegal">Legal</h3>
         <ul>
-          <li><a href="legal.html#privacy" data-href-en="legal.html#privacy" data-href-he="legal-he.html#privacy" data-i18n="footerLegal1">Privacy Policy</a></li>
-          <li><a href="legal.html#terms" data-href-en="legal.html#terms" data-href-he="legal-he.html#terms" data-i18n="footerLegal2">Terms of Use</a></li>
-          <li><a href="legal.html#medical-disclaimer" data-href-en="legal.html#medical-disclaimer" data-href-he="legal-he.html#medical-disclaimer" data-i18n="footerLegal3">Medical Disclaimer</a></li>
+          <li><a href="privacy.html" data-href-en="privacy.html" data-href-he="privacy-he.html" data-i18n="footerLegal1">Privacy Policy</a></li>
+          <li><a href="terms.html" data-href-en="terms.html" data-href-he="terms-he.html" data-i18n="footerLegal2">Terms of Use</a></li>
+          <li><a href="medical-disclaimer.html" data-href-en="medical-disclaimer.html" data-href-he="medical-disclaimer-he.html" data-i18n="footerLegal3">Medical Disclaimer</a></li>
         </ul>
-      </div>
-      <div class="footer-col">
-        <h3 data-i18n="footerSocial">Social</h3>
+        <h3 style="margin-top:1.5rem" data-i18n="footerSocial">Social</h3>
         <ul>
-          <li><a href="https://x.com/IbogaineIsrael" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 0.5rem;">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink: 0;">
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-            </svg>
-            <span data-i18n="footerXLink">X (Twitter)</span>
-          </a></li>
-          <li><a href="https://www.linkedin.com/company/113200241/" target="_blank" rel="noopener">
-            <span data-i18n="footerLinkedIn">LinkedIn</span>
-          </a></li>
-          <li><a href="https://www.facebook.com/profile.php?id=61589446603031" target="_blank" rel="noopener">
-            <span data-i18n="footerFacebook">Facebook</span>
-          </a></li>
+          <li><a href="https://x.com/IbogaineIsrael" target="_blank" rel="noopener"><span data-i18n="footerXLink">X (Twitter)</span></a></li>
+          <li><a href="https://www.linkedin.com/company/113200241/" target="_blank" rel="noopener"><span data-i18n="footerLinkedIn">LinkedIn</span></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61589446603031" target="_blank" rel="noopener"><span data-i18n="footerFacebook">Facebook</span></a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span data-i18n="footerCopy">© 2025 Ibogaine Foundation of Israel. All rights reserved.</span>
-      <button type="button" class="lang-btn" onclick="toggleLang()" data-i18n="langToggle">עברית</button>
+      <span data-i18n="footerCopy">© 2026 Israelis for Ibogaine. All rights reserved.</span>
+      <button type="button" class="lang-btn" data-i18n="langToggle">עברית</button>
     </div>
     <p class="footer-legal-entity" data-i18n="footerLegalEntity">This website is operated by Iboga Bush (R.A.) / סנה איבוגה (ע”ר), Israeli nonprofit registration no. 580841922.</p>
-    <p class="footer-disclaimer" data-i18n="disclaimer">⚠️ This website is for educational and informational purposes only!. Ibogaine is a controlled substance in many countries. Nothing here constitutes medical advice. Always consult a qualified physician.</p>
+    <p class="footer-disclaimer" data-i18n="disclaimer">⚠️ This website is for educational and informational purposes only!  Ibogaine is a controlled substance in many countries. Nothing here constitutes medical advice. Always consult a qualified physician.</p>
   </div>
 </footer>
 
-<script src="js/nav-mobile.js"></script>
-<script src="js/main.js"></script>
+<script src="js/nav-mobile.js" defer></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>
