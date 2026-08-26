@@ -14,8 +14,13 @@
 <nav id="navbar">
   <div class="container nav-inner">
     <a href="../index.html" class="nav-logo">
-      <div class="nav-logo-icon">🌿</div>
-      <div class="nav-logo-text">קרן האיבוגאין<small>ישראל | Israel</small></div>
+      <div class="nav-logo-icon">
+        <img src="../images/logo-new.png" alt="לוגו ישראלים למען איבוגאין" />
+      </div>
+      <div class="nav-logo-text">
+        ישראלים למען איבוגאין
+        <small>Israelis for Ibogaine</small>
+      </div>
     </a>
     <ul class="nav-links">
       <li><a href="../index.html#mission">אודות</a></li>
@@ -23,8 +28,12 @@
       <li><a href="../index.html#research">מחקר</a></li>
       <li><a href="../index.html#blog">בלוג</a></li>
       <li><a href="../index.html#contact">יצירת קשר</a></li>
+      <li><a href="../petition-he.html" class="petition-nav-link">חתמו על העצומה</a></li>
       <li><a href="../blog/executive-order.html" class="lang-btn" style="padding:0.3rem 0.8rem;font-size:0.85rem;">English</a></li>
     </ul>
+    <div class="nav-hamburger" aria-label="Menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
   </div>
 </nav>
 
@@ -131,10 +140,17 @@
 
 <footer class="blog-footer">
   <div class="container">
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-bottom: 0.75rem;">
+      <a href="../legal-he.html#privacy" style="color: var(--green-mid); font-size: 0.9rem;">מדיניות פרטיות</a>
+      <a href="../legal-he.html#terms" style="color: var(--green-mid); font-size: 0.9rem;">תנאי שימוש</a>
+      <a href="../legal-he.html#medical-disclaimer" style="color: var(--green-mid); font-size: 0.9rem;">כתב ויתור רפואי</a>
+      <a href="../index.html#contact" style="color: var(--green-mid); font-size: 0.9rem;">יצירת קשר</a>
+    </div>
     <p class="footer-legal-entity" dir="rtl">אתר זה מופעל על ידי סנה איבוגה (ע”ר) / Iboga Bush (R.A.), עמותה רשומה בישראל מס׳ 580841922.</p>
   </div>
 </footer>
 
+<script src="../js/nav-mobile.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>

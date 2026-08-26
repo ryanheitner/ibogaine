@@ -125,12 +125,18 @@
 }
 .norma-cta .btn {
   white-space: nowrap;
+  text-decoration: none !important;
 }
 
 .blog-back {
   margin-top: 3rem;
   padding-top: 2rem;
   border-top: 1px solid var(--off-white);
+}
+
+.blog-back .btn {
+  text-decoration: none !important;
+  color: var(--white) !important;
 }
 
 [dir="rtl"] .blog-highlight-box {
