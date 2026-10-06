@@ -802,6 +802,36 @@ Object.assign(LANG.he, {
   footerCopy: "© 2026 ישראלים למען איבוגאין. כל הזכויות שמורות.",
 });
 
+// ---- Trial announcement (homepage, Oct 2026) ---- //
+Object.assign(LANG.en, {
+  trialPill: "Exciting news",
+  trialLabel: "Planned Phase 1b clinical trial",
+  trialH2: "Bringing ibogaine research home to Israel",
+  trialSub: "Thousands of Israelis live with the brain and psychological injuries of war, and some travel abroad for ibogaine treatment with no medical follow-up. We are working with leading Israeli researchers to launch a rigorous clinical trial, designed for FDA review, to build the evidence doctors and regulators need.",
+  trialPhaseLabel: "Phase",
+  trialPhaseValue: "1b (safety & dosing)",
+  trialSitesLabel: "Lead sites",
+  trialSitesValue: "Hadassah, Ichilov & Rambam (more sites possible)",
+  trialBudgetLabel: "Estimated budget",
+  trialBudgetValue: "~$1.2 million",
+  trialCta: "Find out more & learn how to donate",
+  trialMailNote: "Or write to us at"
+});
+Object.assign(LANG.he, {
+  trialPill: "חדשות מרגשות",
+  trialLabel: "ניסוי קליני מתוכנן בשלב 1b",
+  trialH2: "מביאים את מחקר האיבוגאין הביתה, לישראל",
+  trialSub: "אלפי ישראלים חיים עם פגיעות מוחיות ונפשיות מהמלחמה, וחלקם נוסעים לחו״ל לטיפול באיבוגאין ללא כל מעקב רפואי. אנו פועלים יחד עם חוקרים מובילים בישראל להקמת ניסוי קליני קפדני, המתוכנן להגשה לבחינת ה-FDA, כדי לבנות את הראיות שרופאים ורגולטורים זקוקים להן.",
+  trialPhaseLabel: "שלב",
+  trialPhaseValue: "1b (בטיחות ומינון)",
+  trialSitesLabel: "אתרים מובילים",
+  trialSitesValue: "הדסה, איכילוב ורמב״ם (ייתכנו אתרים נוספים)",
+  trialBudgetLabel: "תקציב משוער",
+  trialBudgetValue: "כ-1.2 מיליון דולר",
+  trialCta: "לפרטים נוספים ולמידע על תרומה",
+  trialMailNote: "או כתבו לנו בכתובת"
+});
+
 // ---- State ---- //
 let currentLang = 'en';
 
